@@ -97,12 +97,12 @@ export default async function EpisodePage(
         dangerouslySetInnerHTML={{ __html: JSON.stringify(episodeSchema) }}
       />
 
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-black text-white">
         {/* ── Nav ── */}
-        <nav className="border-b border-zinc-100 px-6 py-4 sm:px-12 lg:px-24">
+        <nav className="border-b border-zinc-800 px-6 py-4 sm:px-12 lg:px-24">
           <Link
             href="/"
-            className="text-sm font-medium text-zinc-500 transition hover:text-zinc-900"
+            className="text-sm font-medium text-zinc-500 transition hover:text-white"
           >
             ← TID Podcast
           </Link>
@@ -120,19 +120,19 @@ export default async function EpisodePage(
                   {ep.episode && `Episode ${ep.episode}`}
                 </p>
               )}
-              <h1 className="mb-4 text-3xl font-bold leading-tight tracking-tight text-zinc-900 sm:text-4xl">
+              <h1 className="mb-4 text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl">
                 {ep.title}
               </h1>
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-zinc-400">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-zinc-500">
                 <span>{formattedDate}</span>
-                {ep.guestRole && <span className="text-zinc-300">·</span>}
+                {ep.guestRole && <span className="text-zinc-700">·</span>}
                 {ep.guestRole && <span>{ep.guestRole}</span>}
               </div>
             </header>
 
             {/* ── YouTube embed ── */}
             {ep.youtubeId !== "REPLACE_WITH_YOUTUBE_ID" && (
-              <div className="mb-10 aspect-video w-full overflow-hidden rounded-xl bg-zinc-100">
+              <div className="mb-10 aspect-video w-full overflow-hidden rounded-xl bg-zinc-900">
                 <iframe
                   src={`https://www.youtube.com/embed/${ep.youtubeId}`}
                   title={ep.title}
@@ -150,7 +150,7 @@ export default async function EpisodePage(
                   href={ep.applePodcastsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 transition hover:bg-zinc-50"
+                  className="inline-flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-2 text-sm font-medium text-zinc-300 transition hover:border-zinc-500 hover:text-white"
                 >
                   Listen on Apple Podcasts
                 </a>
@@ -160,7 +160,7 @@ export default async function EpisodePage(
                   href={ep.spotifyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 transition hover:bg-zinc-50"
+                  className="inline-flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-2 text-sm font-medium text-zinc-300 transition hover:border-zinc-500 hover:text-white"
                 >
                   Listen on Spotify
                 </a>
@@ -170,7 +170,7 @@ export default async function EpisodePage(
                   href={`https://www.youtube.com/watch?v=${ep.youtubeId}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 transition hover:bg-zinc-50"
+                  className="inline-flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-2 text-sm font-medium text-zinc-300 transition hover:border-zinc-500 hover:text-white"
                 >
                   Watch on YouTube
                 </a>
@@ -183,7 +183,7 @@ export default async function EpisodePage(
                 {ep.pullQuotes.map((q, i) => (
                   <blockquote
                     key={i}
-                    className="border-l-2 border-zinc-900 pl-5 text-lg font-medium italic leading-relaxed text-zinc-700"
+                    className="border-l-2 border-white pl-5 text-lg font-medium italic leading-relaxed text-zinc-300"
                   >
                     &ldquo;{q}&rdquo;
                   </blockquote>
@@ -204,7 +204,7 @@ export default async function EpisodePage(
                         {ch.timestamp}
                       </span>
                       <div>
-                        <p className="text-sm font-semibold text-zinc-800">{ch.title}</p>
+                        <p className="text-sm font-semibold text-zinc-200">{ch.title}</p>
                         <p className="text-sm text-zinc-500">{ch.summary}</p>
                       </div>
                     </li>
@@ -218,41 +218,41 @@ export default async function EpisodePage(
               <h2 className="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-400">
                 Show notes
               </h2>
-              <div className="prose prose-zinc max-w-none text-sm leading-relaxed">
+              <div className="prose max-w-none text-sm leading-relaxed">
                 {ep.showNotes.split("\n").map((line, i) => {
                   if (line.startsWith("**") && line.endsWith("**")) {
                     return (
-                      <p key={i} className="mt-4 mb-1 font-semibold text-zinc-800">
+                      <p key={i} className="mt-4 mb-1 font-semibold text-zinc-200">
                         {line.slice(2, -2)}
                       </p>
                     );
                   }
                   if (line.startsWith("- ")) {
                     return (
-                      <p key={i} className="ml-4 text-zinc-600 before:mr-2 before:content-['–']">
+                      <p key={i} className="ml-4 text-zinc-400 before:mr-2 before:content-['–']">
                         {line.slice(2)}
                       </p>
                     );
                   }
                   if (line.trim() === "") return <br key={i} />;
-                  return <p key={i} className="text-zinc-600">{line}</p>;
+                  return <p key={i} className="text-zinc-400">{line}</p>;
                 })}
               </div>
             </section>
 
             {/* ── Guest bio ── */}
             {ep.guestBio && (
-              <section className="mb-10 rounded-xl bg-zinc-50 p-6" aria-label="About the guest">
-                <h2 className="mb-3 text-sm font-medium uppercase tracking-widest text-zinc-400">
+              <section className="mb-10 rounded-xl bg-zinc-900 p-6" aria-label="About the guest">
+                <h2 className="mb-3 text-sm font-medium uppercase tracking-widest text-zinc-500">
                   About {ep.guest}
                 </h2>
-                <p className="text-sm leading-relaxed text-zinc-600">{ep.guestBio}</p>
+                <p className="text-sm leading-relaxed text-zinc-400">{ep.guestBio}</p>
                 {ep.guestLinkedIn && (
                   <a
                     href={ep.guestLinkedIn}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-block text-sm font-medium text-zinc-900 underline underline-offset-2"
+                    className="mt-3 inline-block text-sm font-medium text-white underline underline-offset-2"
                   >
                     LinkedIn →
                   </a>
@@ -266,7 +266,7 @@ export default async function EpisodePage(
                 <h2 className="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-400">
                   Transcript
                 </h2>
-                <div className="max-h-96 overflow-y-auto rounded-xl border border-zinc-100 p-6">
+                <div className="max-h-96 overflow-y-auto rounded-xl border border-zinc-800 p-6">
                   <p className="whitespace-pre-wrap text-sm leading-relaxed text-zinc-500">
                     {ep.transcript}
                   </p>
@@ -280,7 +280,7 @@ export default async function EpisodePage(
                 {ep.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-500"
+                    className="rounded-full bg-zinc-900 px-3 py-1 text-xs font-medium text-zinc-500"
                   >
                     {tag}
                   </span>
@@ -292,12 +292,12 @@ export default async function EpisodePage(
 
         {/* ── Related episodes ── */}
         {related.length > 0 && (
-          <section className="border-t border-zinc-100 px-6 py-12 sm:px-12 lg:px-24">
+          <section className="border-t border-zinc-800 px-6 py-12 sm:px-12 lg:px-24">
             <div className="mx-auto max-w-3xl">
-              <h2 className="mb-6 text-sm font-medium uppercase tracking-widest text-zinc-400">
+              <h2 className="mb-6 text-sm font-medium uppercase tracking-widest text-zinc-500">
                 More episodes
               </h2>
-              <div className="divide-y divide-zinc-100">
+              <div className="divide-y divide-zinc-800">
                 {related.map((ep) => (
                   <EpisodeCard key={ep.slug} episode={ep} />
                 ))}
