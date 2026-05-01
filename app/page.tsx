@@ -34,6 +34,30 @@ const STELLAR_SOON = [
   { title: "Reinventing aviation, the Akasa way", guest: "Belson Coutinho", role: "Co-Founder & COO, Akasa Airlines", drop: "DROPPING SOON", initials: "BC" },
 ];
 
+const LIVE_SERIES = [
+  {
+    title: "Season 2",
+    description: "Long-form conversations with India's top innovators, founders, and leaders.",
+    href: "https://www.youtube.com/watch?v=RXVysfTfLTU&list=PLzz8OqkiSLALxl70gl4KImCriufD9yIaB",
+    videoId: "RXVysfTfLTU",
+    tag: "ONGOING",
+  },
+  {
+    title: "GCC Mini Series",
+    description: "Deep dives into India's Global Capability Centre ecosystem and what it means for the future.",
+    href: "https://www.youtube.com/watch?v=mRzFo2O2hp4&list=PLzz8OqkiSLAJk7FAG4Ec30FNpUbLxCti7",
+    videoId: "mRzFo2O2hp4",
+    tag: "MINI SERIES",
+  },
+  {
+    title: "Founders Corner",
+    description: "Unfiltered stories from India's most bold and ambitious founders.",
+    href: "https://www.youtube.com/watch?v=jstfeUM53WA&list=PLzz8OqkiSLAJVMXwwA-xc-rYfz14DtW1H",
+    videoId: "jstfeUM53WA",
+    tag: "MINI SERIES",
+  },
+];
+
 const TIMELINE = [
   { year: "Early career", title: "Startups & Consulting", body: "Cut his teeth across early-stage startups, venture capital and management consulting." },
   { year: "2015–2019", title: "Innovation, scaled", body: "Led innovation programs across Retail, FMCG and Mobility — driving 50+ deep-tech projects in NanoTech, Drones, Haptics, AR/VR/XR and Quantum Computing." },
@@ -145,90 +169,114 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ── Stats + Stellar Episodes ── */}
+      {/* ── Stats + Currently Live + Stellar Episodes ── */}
       <section id="episodes" style={{ padding: "40px 32px 100px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
 
           {/* KPI strip */}
           <div style={{
-            display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16,
+            display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16,
             padding: "32px 36px", borderRadius: 18,
             background: "linear-gradient(180deg, #161310 0%, #0E0E0D 100%)",
-            border: `1px solid ${ACCENT}1F`, marginBottom: 72,
+            border: `1px solid ${ACCENT}1F`, marginBottom: 56,
           }}>
-            {/* Stat 1: Subscribers */}
             <div style={{ display: "flex", alignItems: "baseline", gap: 18 }}>
               <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 56, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>
                 {channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "132K+"}
               </div>
               <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>LISTENERS</div>
             </div>
-
-            {/* Stat 2: Apple rating */}
             <div style={{ display: "flex", alignItems: "baseline", gap: 18, paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F` }}>
               <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 56, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>4.9★</div>
               <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>APPLE PODCASTS</div>
             </div>
+          </div>
 
-            {/* Stat 3: Currently live series */}
-            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F`, gap: 10 }}>
-              <div style={{ fontSize: 11, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 1.2 }}>CURRENTLY LIVE</div>
-              {["Season 2", "GCC Mini Series", "Founders Corner"].map((s) => (
-                <div key={s} style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <span style={{ width: 6, height: 6, borderRadius: 99, background: ACCENT, flexShrink: 0 }} />
-                  <span style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 600, fontSize: 15, letterSpacing: -0.3 }}>{s}</span>
-                </div>
+          {/* Currently Live series */}
+          <div style={{ marginBottom: 72 }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 28 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                <div style={{ width: 32, height: 3, background: ACCENT, borderRadius: 3 }} />
+                <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 1.6, fontWeight: 600 }}>CURRENTLY LIVE</span>
+              </div>
+              <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                <span style={{ width: 7, height: 7, borderRadius: 99, background: ACCENT, animation: "pulse 1.6s ease-in-out infinite" }} />
+                <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: MUTED, letterSpacing: 0.8 }}>3 ACTIVE SERIES</span>
+              </span>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
+              {LIVE_SERIES.map((s) => (
+                <a key={s.title} href={s.href} target="_blank" rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "inherit", display: "flex", flexDirection: "column", gap: 0, borderRadius: 16, overflow: "hidden", border: `1px solid ${ACCENT}22`, background: "#0F0F0E" }}>
+                  <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden" }}>
+                    <Image
+                      src={`https://img.youtube.com/vi/${s.videoId}/hqdefault.jpg`}
+                      alt={s.title}
+                      fill
+                      sizes="33vw"
+                      style={{ objectFit: "cover" }}
+                    />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.7) 100%)" }} />
+                    <div style={{ position: "absolute", top: 12, left: 12, padding: "4px 10px", borderRadius: 6, background: ACCENT, color: BG, fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1, fontWeight: 700 }}>
+                      {s.tag}
+                    </div>
+                  </div>
+                  <div style={{ padding: "18px 20px 20px" }}>
+                    <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 18, fontWeight: 700, letterSpacing: -0.4, margin: "0 0 8px", lineHeight: 1.2 }}>{s.title}</h3>
+                    <p style={{ fontSize: 13, color: MUTED, margin: 0, lineHeight: 1.5 }}>{s.description}</p>
+                    <div style={{ marginTop: 14, display: "inline-flex", alignItems: "center", gap: 6, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 11, letterSpacing: 0.8 }}>
+                      WATCH PLAYLIST ↗
+                    </div>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
 
-          {/* Section headers */}
-          <div style={{ display: "grid", gridTemplateColumns: "3fr 1fr", gap: 32, alignItems: "end", marginBottom: 32 }}>
+          {/* Latest episodes header + CTA */}
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 32 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
               <div style={{ width: 32, height: 3, background: ACCENT, borderRadius: 3 }} />
-              <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 1.6, fontWeight: 600 }}>STELLAR EPISODES — LIVE</span>
+              <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 1.6, fontWeight: 600 }}>LATEST EPISODES</span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-              <div style={{ width: 32, height: 3, background: ACCENT, borderRadius: 3 }} />
-              <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 1.6, fontWeight: 600 }}>RELEASING SOON</span>
-            </div>
+            <a
+              href="https://www.youtube.com/@TheInnovatorsandDisruptorsPodc"
+              target="_blank" rel="noopener noreferrer"
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "9px 18px", borderRadius: 999, border: `1px solid ${ACCENT}44`, color: ACCENT, textDecoration: "none", fontFamily: "var(--font-mono), monospace", fontSize: 12, letterSpacing: 0.8 }}>
+              View full channel ↗
+            </a>
           </div>
 
           {/* Cards — auto-populated from YouTube latest videos */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
-            {(latestVideos ?? STELLAR_LIVE.map((e) => ({ id: e.slug, title: e.title, thumbnail: null, viewCount: 0, _fallback: e }))).map((v: any, i: number) => {
-              const fallback = v._fallback;
-              return (
-                <a
-                  key={v.id ?? i}
-                  href={fallback ? `/episodes/${fallback.slug}` : `https://www.youtube.com/watch?v=${v.id}`}
-                  target={fallback ? undefined : "_blank"}
-                  rel={fallback ? undefined : "noopener noreferrer"}
-                  style={{ textDecoration: "none", color: "inherit", display: "flex", flexDirection: "column", gap: 14 }}
-                >
-                  <div style={{ position: "relative", aspectRatio: "16/10", borderRadius: 12, overflow: "hidden", background: "linear-gradient(135deg, #2A1F0E 0%, #0E0E0D 100%)", border: `1px solid ${ACCENT}22` }}>
-                    {v.thumbnail ? (
-                      <Image src={v.thumbnail} alt={v.title} fill sizes="33vw" style={{ objectFit: "cover" }} />
-                    ) : (
-                      <div style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center" }}>
-                        <div style={{ width: 64, height: 64, borderRadius: 99, background: ACCENT, color: BG, display: "grid", placeItems: "center", fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 18 }}>
-                          {fallback?.initials ?? "EP"}
-                        </div>
-                      </div>
-                    )}
-                    <div style={{ position: "absolute", top: 10, left: 10, padding: "4px 10px", borderRadius: 6, background: "rgba(11,11,11,0.85)", border: `1px solid ${ACCENT}55`, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1, fontWeight: 600 }}>
-                      {i === 0 ? "LATEST" : `EP ${i + 1}`}
-                    </div>
-                    {v.viewCount > 0 && (
-                      <div style={{ position: "absolute", bottom: 10, right: 10, padding: "3px 8px", borderRadius: 4, background: "rgba(11,11,11,0.85)", color: TEXT, fontFamily: "var(--font-mono), monospace", fontSize: 11 }}>
-                        {fmt(v.viewCount)} views
-                      </div>
-                    )}
+            {(latestVideos ?? []).map((v, i) => (
+              <a
+                key={v.id}
+                href={`https://www.youtube.com/watch?v=${v.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit", display: "flex", flexDirection: "column", gap: 14 }}
+              >
+                <div style={{ position: "relative", aspectRatio: "16/9", borderRadius: 12, overflow: "hidden", background: "#1a1208", border: `1px solid ${ACCENT}22` }}>
+                  <Image
+                    src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
+                    alt={v.title}
+                    fill
+                    sizes="33vw"
+                    style={{ objectFit: "cover" }}
+                  />
+                  <div style={{ position: "absolute", top: 10, left: 10, padding: "4px 10px", borderRadius: 6, background: "rgba(11,11,11,0.85)", border: `1px solid ${ACCENT}55`, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1, fontWeight: 600 }}>
+                    {i === 0 ? "LATEST" : `#${i + 1}`}
                   </div>
-                  <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 16, fontWeight: 600, letterSpacing: -0.3, margin: 0, lineHeight: 1.3 }}>{v.title}</h3>
-                </a>
-              );
-            })}
+                  {v.viewCount > 0 && (
+                    <div style={{ position: "absolute", bottom: 10, right: 10, padding: "3px 8px", borderRadius: 4, background: "rgba(11,11,11,0.85)", color: TEXT, fontFamily: "var(--font-mono), monospace", fontSize: 11 }}>
+                      {fmt(v.viewCount)} views
+                    </div>
+                  )}
+                </div>
+                <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 15, fontWeight: 600, letterSpacing: -0.3, margin: 0, lineHeight: 1.35 }}>{v.title}</h3>
+              </a>
+            ))}
           </div>
         </div>
       </section>

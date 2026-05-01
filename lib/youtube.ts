@@ -68,10 +68,7 @@ export async function getLatestVideos(count = 3): Promise<YTVideo[] | null> {
   return details.items.map((v: any) => ({
     id: v.id,
     title: v.snippet.title,
-    thumbnail:
-      v.snippet.thumbnails.maxres?.url ??
-      v.snippet.thumbnails.high?.url ??
-      `https://img.youtube.com/vi/${v.id}/hqdefault.jpg`,
+    thumbnail: `https://img.youtube.com/vi/${v.id}/hqdefault.jpg`,
     viewCount: parseInt(v.statistics.viewCount ?? "0"),
   }));
 }
