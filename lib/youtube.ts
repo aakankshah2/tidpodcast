@@ -14,8 +14,11 @@ export type YTVideo = {
 };
 
 export function fmt(n: number): string {
-  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
-  if (n >= 1_000) return `${(n / 1_000).toFixed(1)}K`;
+  if (n >= 1_000_000) {
+    const v = n / 1_000_000;
+    return `${v % 1 === 0 ? v : v.toFixed(1)}M`;
+  }
+  if (n >= 1_000) return `${Math.floor(n / 1_000)}K`;
   return n.toLocaleString("en-IN");
 }
 
