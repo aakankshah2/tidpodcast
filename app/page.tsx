@@ -175,7 +175,7 @@ export default async function HomePage() {
 
           {/* KPI strip */}
           <div style={{
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16,
+            display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 0,
             padding: "32px 36px", borderRadius: 18,
             background: "linear-gradient(180deg, #161310 0%, #0E0E0D 100%)",
             border: `1px solid ${ACCENT}1F`, marginBottom: 56,
@@ -189,6 +189,16 @@ export default async function HomePage() {
             <div style={{ display: "flex", alignItems: "baseline", gap: 18, paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F` }}>
               <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 56, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>4.9★</div>
               <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>APPLE PODCASTS</div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F`, gap: 8 }}>
+              <div style={{ fontSize: 11, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 1.2, marginBottom: 2 }}>3 ACTIVE SERIES</div>
+              {LIVE_SERIES.map((s) => (
+                <a key={s.title} href={s.href} target="_blank" rel="noopener noreferrer"
+                  style={{ display: "flex", alignItems: "center", gap: 8, textDecoration: "none" }}>
+                  <span style={{ width: 6, height: 6, borderRadius: 99, background: ACCENT, flexShrink: 0 }} />
+                  <span style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 600, fontSize: 15, letterSpacing: -0.3, color: TEXT }}>{s.title}</span>
+                </a>
+              ))}
             </div>
           </div>
 
