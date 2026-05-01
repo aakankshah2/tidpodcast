@@ -73,6 +73,35 @@ export async function getLatestVideos(count = 3): Promise<YTVideo[] | null> {
   }));
 }
 
+export type YTVideoDetail = {
+  id: string;
+  title: string;
+  description: string;
+  thumbnail: string;
+  viewCount: number;
+  publishedAt: string;
+};
+
+export async function getVideoById(videoId: string): Promise<YTVideoDetail | null> {
+  const key = process.env.YOUTUBE_API_KEY;
+  if (!key) return null;
+
+  const data = await yt<any>(
+    `https://www.googleapis.com/youtube/v3/videos?part=statistics,snippet&id=${videoId}&key=${key}`
+  );
+  const item = data?.items?.[0];
+  if (!item) return null;
+
+  return {
+    id: item.id,
+    title: item.snippet.title,
+    description: item.snippet.description ?? "",
+    thumbnail: `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`,
+    viewCount: parseInt(item.statistics.viewCount ?? "0"),
+    publishedAt: item.snippet.publishedAt,
+  };
+}
+
 export async function getTopVideos(count = 6): Promise<YTVideo[] | null> {
   const key = process.env.YOUTUBE_API_KEY;
   if (!key) return null;

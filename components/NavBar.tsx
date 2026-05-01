@@ -69,7 +69,7 @@ export default function NavBar() {
             ["Episodes", "#episodes"],
             ["Guests", "/guests"],
             ["Collective", "/collective"],
-            ["About", "#about"],
+            ["Meet the Host", "#about"],
           ].map(([label, href]) => (
             <a key={label} href={href} style={{ color: "var(--text)", textDecoration: "none", fontSize: 14, opacity: 0.72, transition: "opacity 160ms" }}
               onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.opacity = "1")}

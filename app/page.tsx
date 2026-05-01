@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import NewsletterSection from "@/components/NewsletterSection";
-import { getChannelStats, getTopVideos, getLatestVideos, fmt } from "@/lib/youtube";
+import { getChannelStats, fmt } from "@/lib/youtube";
 import { getAllEpisodes } from "@/lib/episodes";
 
 const ACCENT = "#F5C518";
@@ -18,12 +18,18 @@ const SOCIALS = [
 ];
 
 const GUESTS = [
-  { name: "Paroma Chatterjee", role: "CEO, Revolut India", initials: "PC", slug: "paroma-chatterjee-revolut-india" },
-  { name: "Amish Tripathi & Mukul Deora", role: "Founders, The Age of Bhaarat", initials: "AT", slug: "amish-tripathi-mukul-deora-indian-mythology-gaming" },
-  { name: "Belson Coutinho", role: "Co-Founder & COO, Akasa Airlines", initials: "BC", slug: null },
-  { name: "Howard Dawber", role: "Deputy Mayor, London", initials: "HD", slug: null },
-  { name: "Kamal Sharma", role: "CIO, Carrier", initials: "KS", slug: null },
-  { name: "Ewout de Wit", role: "Consul General, Netherlands", initials: "EW", slug: null },
+  { name: "Paroma Chatterjee", role: "CEO, Revolut India", initials: "PC", slug: "paroma-chatterjee-revolut-india", videoId: "RXVysfTfLTU" },
+  { name: "Amish Tripathi & Mukul Deora", role: "Founders, The Age of Bhaarat", initials: "AT", slug: "amish-tripathi-mukul-deora-indian-mythology-gaming", videoId: "9xX6zGVmi-I" },
+  { name: "Howard Dawber", role: "Deputy Mayor, London", initials: "HD", slug: null, videoId: "ohz9qVsZKvc" },
+  { name: "Ewout de Wit", role: "Consul General, Netherlands", initials: "EW", slug: null, videoId: "EtjjAmPeUv8" },
+  { name: "Lalit Ahuja", role: "Founder, ANSR", initials: "LA", slug: null, videoId: "j0zRG0aNPM8" },
+  { name: "Jatin Varma", role: "Founder, Comic Con India", initials: "JV", slug: null, videoId: "amg7koOAeNg" },
+  { name: "Tarun Katial", role: "Built BigFM & Zee5", initials: "TK", slug: null, videoId: "dbRXcHDwvKk" },
+  { name: "Subhendu Panigrahi", role: "Co-Founder & CEO, FOKO", initials: "SP", slug: null, videoId: "UFCWqvBzd8c" },
+  { name: "Dr. Rajesh Puneyani", role: "Head of GCC, Kenvue India", initials: "RP", slug: null, videoId: "S7T_V13la7U" },
+  { name: "Sanjeev Kumar Gupta", role: "Invest Karnataka", initials: "SG", slug: null, videoId: "uGTCfN11Mug" },
+  { name: "Malahar Pinnelli", role: "Leadership Coach", initials: "MP", slug: null, videoId: "Et1nsVj5-YY" },
+  { name: "Belson Coutinho", role: "Co-Founder & COO, Akasa Airlines", initials: "BC", slug: null, videoId: null },
 ];
 
 const STELLAR_LIVE = [
@@ -58,6 +64,24 @@ const LIVE_SERIES = [
   },
 ];
 
+const TOP_EPISODES = [
+  {
+    videoId: "TMTcFqtu1fw",
+    title: "Karnataka's Billion Dollar Playbook",
+    guest: "ft. Sanjeev Gupta",
+  },
+  {
+    videoId: "47tZ4q9zwgo",
+    title: "Synthetic Yet Real — The New Age of Personalized Video Content",
+    guest: "EP12",
+  },
+  {
+    videoId: "mlgIgeQEg_M",
+    title: "Modern Day Spirituality for High-Output Leaders",
+    guest: "S2 EP6 · ft. Dr. Shubha",
+  },
+];
+
 const TIMELINE = [
   { year: "Early career", title: "Startups & Consulting", body: "Cut his teeth across early-stage startups, venture capital and management consulting." },
   { year: "2015–2019", title: "Innovation, scaled", body: "Led innovation programs across Retail, FMCG and Mobility — driving 50+ deep-tech projects in NanoTech, Drones, Haptics, AR/VR/XR and Quantum Computing." },
@@ -69,11 +93,7 @@ const TIMELINE = [
 ];
 
 export default async function HomePage() {
-  const [channelStats, topVideos, latestVideos] = await Promise.all([
-    getChannelStats(),
-    getTopVideos(3),
-    getLatestVideos(3),
-  ]);
+  const channelStats = await getChannelStats();
   const episodes = getAllEpisodes();
   const episodeCount = channelStats?.videoCount ?? episodes.length;
 
@@ -204,7 +224,7 @@ export default async function HomePage() {
 
           {/* Currently Live series */}
           <div style={{ marginBottom: 72 }}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 28 }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 36 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
                 <div style={{ width: 32, height: 3, background: ACCENT, borderRadius: 3 }} />
                 <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 1.6, fontWeight: 600 }}>CURRENTLY LIVE</span>
@@ -214,40 +234,74 @@ export default async function HomePage() {
                 <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: MUTED, letterSpacing: 0.8 }}>3 ACTIVE SERIES</span>
               </span>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
-              {LIVE_SERIES.map((s) => (
-                <a key={s.title} href={s.href} target="_blank" rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "inherit", display: "flex", flexDirection: "column", gap: 0, borderRadius: 16, overflow: "hidden", border: `1px solid ${ACCENT}22`, background: "#0F0F0E" }}>
-                  <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden" }}>
+
+            {/* Season 2 */}
+            <div style={{ marginBottom: 32, padding: "28px 32px 32px", borderRadius: 18, border: `1px solid ${ACCENT}22`, background: SURFACE }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 28, marginBottom: 24, alignItems: "center" }}>
+                {/* Left: text */}
+                <div>
+                  <div style={{ display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 12 }}>
+                    <span style={{ width: 7, height: 7, borderRadius: 99, background: ACCENT, animation: "pulse 1.6s ease-in-out infinite" }} />
+                    <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, color: ACCENT, letterSpacing: 1.6, fontWeight: 700 }}>ONGOING</span>
+                  </div>
+                  <h2 style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 28, letterSpacing: -0.8, lineHeight: 1.1, margin: "0 0 8px" }}>Season 2</h2>
+                  <p style={{ fontSize: 14, color: MUTED, margin: "0 0 18px", lineHeight: 1.6 }}>{LIVE_SERIES[0].description}</p>
+                  <a href={LIVE_SERIES[0].href} target="_blank" rel="noopener noreferrer"
+                    style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 18px", borderRadius: 999, border: `1px solid ${ACCENT}44`, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 11, letterSpacing: 0.8, textDecoration: "none" }}>
+                    Full playlist ↗
+                  </a>
+                </div>
+                {/* Right: thumbnail */}
+                <a href={LIVE_SERIES[0].href} target="_blank" rel="noopener noreferrer" style={{ display: "block", textDecoration: "none" }}>
+                  <div style={{ position: "relative", aspectRatio: "16/9", borderRadius: 12, overflow: "hidden", background: "#1a1208" }}>
                     <Image
-                      src={`https://img.youtube.com/vi/${s.videoId}/hqdefault.jpg`}
-                      alt={s.title}
+                      src={`https://img.youtube.com/vi/${LIVE_SERIES[0].videoId}/hqdefault.jpg`}
+                      alt="Season 2"
                       fill
-                      sizes="33vw"
+                      sizes="320px"
                       style={{ objectFit: "cover" }}
                     />
-                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.7) 100%)" }} />
-                    <div style={{ position: "absolute", top: 12, left: 12, padding: "4px 10px", borderRadius: 6, background: ACCENT, color: BG, fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1, fontWeight: 700 }}>
-                      {s.tag}
-                    </div>
-                  </div>
-                  <div style={{ padding: "18px 20px 20px" }}>
-                    <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 18, fontWeight: 700, letterSpacing: -0.4, margin: "0 0 8px", lineHeight: 1.2 }}>{s.title}</h3>
-                    <p style={{ fontSize: 13, color: MUTED, margin: 0, lineHeight: 1.5 }}>{s.description}</p>
-                    <div style={{ marginTop: 14, display: "inline-flex", alignItems: "center", gap: 6, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 11, letterSpacing: 0.8 }}>
-                      WATCH PLAYLIST ↗
-                    </div>
                   </div>
                 </a>
+              </div>
+            </div>
+
+            {/* GCC + Founders Corner */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
+              {[LIVE_SERIES[1], LIVE_SERIES[2]].map((s) => (
+                <div key={s.title} style={{ padding: "28px 28px 28px", borderRadius: 18, border: `1px solid ${ACCENT}18`, background: SURFACE, display: "flex", flexDirection: "column", gap: 20 }}>
+                  <div>
+                    <div style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 12 }}>
+                      <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, color: ACCENT, letterSpacing: 1.4, fontWeight: 700 }}>{s.tag}</span>
+                    </div>
+                    <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 22, fontWeight: 700, letterSpacing: -0.5, margin: "0 0 8px", lineHeight: 1.15 }}>{s.title}</h3>
+                    <p style={{ fontSize: 13.5, color: MUTED, margin: 0, lineHeight: 1.6 }}>{s.description}</p>
+                  </div>
+                  <a href={s.href} target="_blank" rel="noopener noreferrer" style={{ display: "block", textDecoration: "none", flexShrink: 0 }}>
+                    <div style={{ position: "relative", aspectRatio: "16/9", borderRadius: 10, overflow: "hidden", background: "#1a1208" }}>
+                      <Image
+                        src={`https://img.youtube.com/vi/${s.videoId}/hqdefault.jpg`}
+                        alt={s.title}
+                        fill
+                        sizes="50vw"
+                        style={{ objectFit: "cover" }}
+                      />
+                    </div>
+                  </a>
+                  <a href={s.href} target="_blank" rel="noopener noreferrer"
+                    style={{ display: "inline-flex", alignItems: "center", gap: 6, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 11, letterSpacing: 0.8, textDecoration: "none" }}>
+                    Watch playlist ↗
+                  </a>
+                </div>
               ))}
             </div>
           </div>
 
-          {/* Latest episodes header + CTA */}
+          {/* Top Trending Episodes header + CTA */}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 32 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
               <div style={{ width: 32, height: 3, background: ACCENT, borderRadius: 3 }} />
-              <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 1.6, fontWeight: 600 }}>LATEST EPISODES</span>
+              <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 1.6, fontWeight: 600 }}>TOP TRENDING EPISODES</span>
             </div>
             <a
               href="https://www.youtube.com/@TheInnovatorsandDisruptorsPodc"
@@ -257,34 +311,31 @@ export default async function HomePage() {
             </a>
           </div>
 
-          {/* Cards — auto-populated from YouTube latest videos */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
-            {(latestVideos ?? []).map((v, i) => (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
+            {TOP_EPISODES.map((ep, i) => (
               <a
-                key={v.id}
-                href={`https://www.youtube.com/watch?v=${v.id}`}
+                key={ep.videoId}
+                href={`https://www.youtube.com/watch?v=${ep.videoId}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none", color: "inherit", display: "flex", flexDirection: "column", gap: 14 }}
               >
-                <div style={{ position: "relative", aspectRatio: "16/9", borderRadius: 12, overflow: "hidden", background: "#1a1208", border: `1px solid ${ACCENT}22` }}>
+                <div style={{ position: "relative", aspectRatio: "16/9", borderRadius: 14, overflow: "hidden", background: "#1a1208", border: `1px solid ${ACCENT}22` }}>
                   <Image
-                    src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
-                    alt={v.title}
+                    src={`https://img.youtube.com/vi/${ep.videoId}/hqdefault.jpg`}
+                    alt={ep.title}
                     fill
                     sizes="33vw"
                     style={{ objectFit: "cover" }}
                   />
-                  <div style={{ position: "absolute", top: 10, left: 10, padding: "4px 10px", borderRadius: 6, background: "rgba(11,11,11,0.85)", border: `1px solid ${ACCENT}55`, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1, fontWeight: 600 }}>
-                    {i === 0 ? "LATEST" : `#${i + 1}`}
+                  <div style={{ position: "absolute", top: 12, left: 12, width: 32, height: 32, borderRadius: 8, background: i === 0 ? ACCENT : "rgba(11,11,11,0.88)", border: i === 0 ? "none" : `1px solid ${ACCENT}55`, display: "grid", placeItems: "center", fontFamily: "var(--font-display), system-ui", fontWeight: 800, fontSize: 15, color: i === 0 ? BG : ACCENT }}>
+                    {i + 1}
                   </div>
-                  {v.viewCount > 0 && (
-                    <div style={{ position: "absolute", bottom: 10, right: 10, padding: "3px 8px", borderRadius: 4, background: "rgba(11,11,11,0.85)", color: TEXT, fontFamily: "var(--font-mono), monospace", fontSize: 11 }}>
-                      {fmt(v.viewCount)} views
-                    </div>
-                  )}
                 </div>
-                <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 15, fontWeight: 600, letterSpacing: -0.3, margin: 0, lineHeight: 1.35 }}>{v.title}</h3>
+                <div>
+                  <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 15, fontWeight: 600, letterSpacing: -0.3, margin: "0 0 5px", lineHeight: 1.35 }}>{ep.title}</h3>
+                  <p style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: MUTED, margin: 0, letterSpacing: 0.4 }}>{ep.guest}</p>
+                </div>
               </a>
             ))}
           </div>
@@ -309,15 +360,43 @@ export default async function HomePage() {
               See full guest list <span>→</span>
             </a>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
             {GUESTS.map((g) => (
-              <div key={g.name} style={{ padding: 28, borderRadius: 18, background: "#0F0F0E", border: "1px solid rgba(244,241,234,0.06)", position: "relative", overflow: "hidden" }}>
-                <div style={{ width: 72, height: 72, borderRadius: 99, background: BG, border: "1px solid rgba(244,241,234,0.14)", display: "grid", placeItems: "center", fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 22, letterSpacing: -0.5, color: ACCENT, marginBottom: 24 }}>{g.initials}</div>
-                <h4 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 22, fontWeight: 600, letterSpacing: -0.5, margin: 0 }}>{g.name}</h4>
-                <p style={{ color: MUTED, fontSize: 14, margin: "6px 0 0" }}>{g.role}</p>
-                {g.slug && (
-                  <Link href={`/episodes/${g.slug}`} style={{ position: "absolute", top: 24, right: 24, color: ACCENT, fontSize: 18, textDecoration: "none" }}>↗</Link>
+              <div key={g.name} style={{ borderRadius: 14, background: "#0F0F0E", border: "1px solid rgba(244,241,234,0.06)", overflow: "hidden", position: "relative" }}>
+                {/* Thumbnail or initials avatar */}
+                {g.videoId ? (
+                  <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden" }}>
+                    {/* Thumbnail — links to internal episode page if slug exists, else YouTube */}
+                    {g.slug ? (
+                      <Link href={`/episodes/${g.slug}`} style={{ display: "block", position: "absolute", inset: 0 }}>
+                        <Image src={`https://img.youtube.com/vi/${g.videoId}/hqdefault.jpg`} alt={g.name} fill sizes="33vw" style={{ objectFit: "cover" }} />
+                      </Link>
+                    ) : (
+                      <a href={`https://www.youtube.com/watch?v=${g.videoId}`} target="_blank" rel="noopener noreferrer" style={{ display: "block", position: "absolute", inset: 0 }}>
+                        <Image src={`https://img.youtube.com/vi/${g.videoId}/hqdefault.jpg`} alt={g.name} fill sizes="33vw" style={{ objectFit: "cover" }} />
+                      </a>
+                    )}
+                    {/* YouTube play button — always opens YouTube */}
+                    <a href={`https://www.youtube.com/watch?v=${g.videoId}`} target="_blank" rel="noopener noreferrer"
+                      style={{ position: "absolute", top: 10, right: 10, width: 32, height: 32, borderRadius: 8, background: ACCENT, display: "grid", placeItems: "center", textDecoration: "none", zIndex: 1 }}>
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="#0B0B0B"><path d="M23.5 6.2c-.27-1.02-1.07-1.83-2.09-2.1C19.55 3.6 12 3.6 12 3.6s-7.55 0-9.41.5C1.57 4.37.77 5.18.5 6.2 0 8.07 0 12 0 12s0 3.93.5 5.8c.27 1.02 1.07 1.83 2.09 2.1 1.86.5 9.41.5 9.41.5s7.55 0 9.41-.5c1.02-.27 1.82-1.08 2.09-2.1.5-1.87.5-5.8.5-5.8s0-3.93-.5-5.8zM9.6 15.6V8.4l6.24 3.6-6.24 3.6z"/></svg>
+                    </a>
+                  </div>
+                ) : (
+                  <div style={{ aspectRatio: "16/9", display: "grid", placeItems: "center", background: "#161410", borderBottom: "1px solid rgba(244,241,234,0.04)" }}>
+                    <div style={{ width: 64, height: 64, borderRadius: 99, background: BG, border: `1px solid ${ACCENT}33`, display: "grid", placeItems: "center", fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 22, color: ACCENT }}>
+                      {g.initials}
+                    </div>
+                  </div>
                 )}
+                {/* Name + role */}
+                <div style={{ padding: "14px 16px 18px" }}>
+                  <h4 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 15, fontWeight: 600, letterSpacing: -0.3, margin: "0 0 4px", lineHeight: 1.25 }}>{g.name}</h4>
+                  <p style={{ color: MUTED, fontSize: 12, margin: 0, lineHeight: 1.4 }}>{g.role}</p>
+                  {!g.videoId && (
+                    <span style={{ display: "inline-block", marginTop: 10, fontFamily: "var(--font-mono), monospace", fontSize: 9, color: ACCENT, letterSpacing: 1.2, border: `1px solid ${ACCENT}33`, padding: "3px 8px", borderRadius: 4 }}>UPCOMING</span>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -402,7 +481,7 @@ export default async function HomePage() {
               {/* Stats grid */}
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14, marginTop: 36 }}>
                 {[
-                  { k: "122K+", v: "YouTube subscribers" },
+                  { k: channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "132K+", v: "YouTube subscribers" },
                   { k: "30+", v: "Startup investments" },
                   { k: "50+", v: "Deep-tech projects" },
                   { k: "G20", v: "Summit speaker" },
