@@ -1,6 +1,42 @@
 @import "tailwindcss";
 
+:root {
+  --accent: #F5C518;
+  --bg: #0B0B0B;
+  --surface: #141414;
+  --text: #F4F1EA;
+  --muted: #8A867E;
+}
+
+* { box-sizing: border-box; }
+
 body {
-  background: #000;
-  color: #fff;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "cv11";
+  overflow-x: hidden;
+}
+
+/* Subtle film grain */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  background-image: radial-gradient(rgba(255,255,255,0.018) 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.85); }
 }
