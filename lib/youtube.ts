@@ -49,6 +49,33 @@ export async function getChannelStats(): Promise<ChannelStats | null> {
   };
 }
 
+export async function getLatestVideos(count = 3): Promise<YTVideo[] | null> {
+  const key = process.env.YOUTUBE_API_KEY;
+  if (!key) return null;
+
+  const search = await yt<any>(
+    `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&type=video&order=date&maxResults=${count}&videoDuration=long&key=${key}`
+  );
+  if (!search?.items?.length) return null;
+
+  const ids = search.items.map((v: any) => v.id.videoId).join(",");
+
+  const details = await yt<any>(
+    `https://www.googleapis.com/youtube/v3/videos?part=statistics,snippet&id=${ids}&key=${key}`
+  );
+  if (!details?.items?.length) return null;
+
+  return details.items.map((v: any) => ({
+    id: v.id,
+    title: v.snippet.title,
+    thumbnail:
+      v.snippet.thumbnails.maxres?.url ??
+      v.snippet.thumbnails.high?.url ??
+      `https://img.youtube.com/vi/${v.id}/hqdefault.jpg`,
+    viewCount: parseInt(v.statistics.viewCount ?? "0"),
+  }));
+}
+
 export async function getTopVideos(count = 6): Promise<YTVideo[] | null> {
   const key = process.env.YOUTUBE_API_KEY;
   if (!key) return null;

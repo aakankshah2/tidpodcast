@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import NewsletterSection from "@/components/NewsletterSection";
-import { getChannelStats, getTopVideos, fmt } from "@/lib/youtube";
+import { getChannelStats, getTopVideos, getLatestVideos, fmt } from "@/lib/youtube";
 import { getAllEpisodes } from "@/lib/episodes";
 
 const ACCENT = "#F5C518";
@@ -45,9 +45,10 @@ const TIMELINE = [
 ];
 
 export default async function HomePage() {
-  const [channelStats, topVideos] = await Promise.all([
+  const [channelStats, topVideos, latestVideos] = await Promise.all([
     getChannelStats(),
     getTopVideos(3),
+    getLatestVideos(3),
   ]);
   const episodes = getAllEpisodes();
   const episodeCount = channelStats?.videoCount ?? episodes.length;
@@ -193,40 +194,41 @@ export default async function HomePage() {
             </div>
           </div>
 
-          {/* Cards */}
+          {/* Cards — auto-populated from YouTube latest videos */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
-            {STELLAR_LIVE.map((e) => (
-              <Link key={e.ep} href={`/episodes/${e.slug}`} style={{ textDecoration: "none", color: "inherit", display: "flex", flexDirection: "column", gap: 14 }}>
-                <div style={{ position: "relative", aspectRatio: "16/10", borderRadius: 12, overflow: "hidden", background: "linear-gradient(135deg, #2A1F0E 0%, #0E0E0D 100%)", border: `1px solid ${ACCENT}22` }}>
-                  <div style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center" }}>
-                    <div style={{ width: 64, height: 64, borderRadius: 99, background: ACCENT, color: BG, border: `1px solid ${ACCENT}`, display: "grid", placeItems: "center", fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 18, letterSpacing: -0.5 }}>{e.initials}</div>
+            {(latestVideos ?? STELLAR_LIVE.map((e) => ({ id: e.slug, title: e.title, thumbnail: null, viewCount: 0, _fallback: e }))).map((v: any, i: number) => {
+              const fallback = v._fallback;
+              return (
+                <a
+                  key={v.id ?? i}
+                  href={fallback ? `/episodes/${fallback.slug}` : `https://www.youtube.com/watch?v=${v.id}`}
+                  target={fallback ? undefined : "_blank"}
+                  rel={fallback ? undefined : "noopener noreferrer"}
+                  style={{ textDecoration: "none", color: "inherit", display: "flex", flexDirection: "column", gap: 14 }}
+                >
+                  <div style={{ position: "relative", aspectRatio: "16/10", borderRadius: 12, overflow: "hidden", background: "linear-gradient(135deg, #2A1F0E 0%, #0E0E0D 100%)", border: `1px solid ${ACCENT}22` }}>
+                    {v.thumbnail ? (
+                      <Image src={v.thumbnail} alt={v.title} fill sizes="33vw" style={{ objectFit: "cover" }} />
+                    ) : (
+                      <div style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center" }}>
+                        <div style={{ width: 64, height: 64, borderRadius: 99, background: ACCENT, color: BG, display: "grid", placeItems: "center", fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 18 }}>
+                          {fallback?.initials ?? "EP"}
+                        </div>
+                      </div>
+                    )}
+                    <div style={{ position: "absolute", top: 10, left: 10, padding: "4px 10px", borderRadius: 6, background: "rgba(11,11,11,0.85)", border: `1px solid ${ACCENT}55`, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1, fontWeight: 600 }}>
+                      {i === 0 ? "LATEST" : `EP ${i + 1}`}
+                    </div>
+                    {v.viewCount > 0 && (
+                      <div style={{ position: "absolute", bottom: 10, right: 10, padding: "3px 8px", borderRadius: 4, background: "rgba(11,11,11,0.85)", color: TEXT, fontFamily: "var(--font-mono), monospace", fontSize: 11 }}>
+                        {fmt(v.viewCount)} views
+                      </div>
+                    )}
                   </div>
-                  <div style={{ position: "absolute", top: 10, left: 10, padding: "4px 10px", borderRadius: 6, background: "rgba(11,11,11,0.85)", border: `1px solid ${ACCENT}55`, color: ACCENT, fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1, fontWeight: 600 }}>{e.ep}</div>
-                  <div style={{ position: "absolute", bottom: 10, right: 10, padding: "3px 8px", borderRadius: 4, background: "rgba(11,11,11,0.85)", color: TEXT, fontFamily: "var(--font-mono), monospace", fontSize: 11 }}>{e.dur}</div>
-                </div>
-                <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 16, fontWeight: 600, letterSpacing: -0.3, margin: 0, lineHeight: 1.3 }}>{e.title}</h3>
-                <div>
-                  <div style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 600, fontSize: 15, letterSpacing: -0.2 }}>{e.guest}</div>
-                  <div style={{ fontSize: 12, color: MUTED, fontStyle: "italic", marginTop: 4, lineHeight: 1.4 }}>{e.role}</div>
-                </div>
-              </Link>
-            ))}
-            {STELLAR_SOON.map((e) => (
-              <div key={e.guest} style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-                <div style={{ position: "relative", aspectRatio: "16/10", borderRadius: 12, overflow: "hidden", background: "linear-gradient(135deg, #1B1814 0%, #0E0E0D 100%)", border: `1px solid ${ACCENT}22` }}>
-                  <div style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center" }}>
-                    <div style={{ width: 64, height: 64, borderRadius: 99, background: BG, color: ACCENT, border: `1px solid ${ACCENT}`, display: "grid", placeItems: "center", fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 18 }}>{e.initials}</div>
-                  </div>
-                  <div style={{ position: "absolute", top: 10, left: 10, padding: "4px 10px", borderRadius: 6, background: BG, border: `1px solid ${ACCENT}55`, color: TEXT, fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1, fontWeight: 600 }}>UPCOMING</div>
-                </div>
-                <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 16, fontWeight: 600, letterSpacing: -0.3, margin: 0, lineHeight: 1.3 }}>{e.title}</h3>
-                <div>
-                  <div style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 600, fontSize: 15, letterSpacing: -0.2 }}>{e.guest}</div>
-                  <div style={{ fontSize: 12, color: MUTED, fontStyle: "italic", marginTop: 4 }}>{e.role}</div>
-                  <div style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, color: ACCENT, letterSpacing: 1, marginTop: 8 }}>{e.drop}</div>
-                </div>
-              </div>
-            ))}
+                  <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 16, fontWeight: 600, letterSpacing: -0.3, margin: 0, lineHeight: 1.3 }}>{v.title}</h3>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
