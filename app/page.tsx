@@ -3,6 +3,7 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import NewsletterSection from "@/components/NewsletterSection";
 import { getChannelStats, fmt } from "@/lib/youtube";
+import { getInstagramFollowers } from "@/lib/instagram";
 import { getAllEpisodes } from "@/lib/episodes";
 
 const ACCENT = "#F5C518";
@@ -21,15 +22,7 @@ const GUESTS = [
   { name: "Paroma Chatterjee", role: "CEO, Revolut India", initials: "PC", slug: "paroma-chatterjee-revolut-india", videoId: "RXVysfTfLTU" },
   { name: "Amish Tripathi & Mukul Deora", role: "Founders, The Age of Bhaarat", initials: "AT", slug: "amish-tripathi-mukul-deora-indian-mythology-gaming", videoId: "9xX6zGVmi-I" },
   { name: "Howard Dawber", role: "Deputy Mayor, London", initials: "HD", slug: null, videoId: "ohz9qVsZKvc" },
-  { name: "Ewout de Wit", role: "Consul General, Netherlands", initials: "EW", slug: null, videoId: "EtjjAmPeUv8" },
-  { name: "Lalit Ahuja", role: "Founder, ANSR", initials: "LA", slug: null, videoId: "j0zRG0aNPM8" },
-  { name: "Jatin Varma", role: "Founder, Comic Con India", initials: "JV", slug: null, videoId: "amg7koOAeNg" },
-  { name: "Tarun Katial", role: "Built BigFM & Zee5", initials: "TK", slug: null, videoId: "dbRXcHDwvKk" },
-  { name: "Subhendu Panigrahi", role: "Co-Founder & CEO, FOKO", initials: "SP", slug: null, videoId: "UFCWqvBzd8c" },
-  { name: "Dr. Rajesh Puneyani", role: "Head of GCC, Kenvue India", initials: "RP", slug: null, videoId: "S7T_V13la7U" },
-  { name: "Sanjeev Kumar Gupta", role: "Invest Karnataka", initials: "SG", slug: null, videoId: "uGTCfN11Mug" },
-  { name: "Malahar Pinnelli", role: "Leadership Coach", initials: "MP", slug: null, videoId: "Et1nsVj5-YY" },
-  { name: "Belson Coutinho", role: "Co-Founder & COO, Akasa Airlines", initials: "BC", slug: null, videoId: null },
+  { name: "Pankaj Rai", role: "CDO, Aditya Birla Group", initials: "PR", slug: null, videoId: "eDHxchzMRAY" },
 ];
 
 const STELLAR_LIVE = [
@@ -93,7 +86,10 @@ const TIMELINE = [
 ];
 
 export default async function HomePage() {
-  const channelStats = await getChannelStats();
+  const [channelStats, igFollowers] = await Promise.all([
+    getChannelStats(),
+    getInstagramFollowers("theinnovatorsanddisruptors"),
+  ]);
   const episodes = getAllEpisodes();
   const episodeCount = channelStats?.videoCount ?? episodes.length;
 
@@ -207,8 +203,10 @@ export default async function HomePage() {
               <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>LISTENERS</div>
             </div>
             <div style={{ display: "flex", alignItems: "baseline", gap: 18, paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F` }}>
-              <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 56, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>4.9★</div>
-              <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>APPLE PODCASTS</div>
+              <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 56, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>
+                {igFollowers ? `${fmt(igFollowers)}+` : "49K+"}
+              </div>
+              <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>INSTAGRAM</div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F`, gap: 8 }}>
               <div style={{ fontSize: 11, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 1.2, marginBottom: 2 }}>3 ACTIVE SERIES</div>
