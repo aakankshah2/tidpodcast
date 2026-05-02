@@ -16,6 +16,8 @@ const SOCIALS = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/abhaytandon/", path: "M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v14H.22V8zm7.4 0h4.37v1.92h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v8.44h-4.56v-7.48c0-1.78-.03-4.07-2.48-4.07-2.48 0-2.86 1.94-2.86 3.94V22H7.62V8z" },
   { label: "YouTube", href: "https://www.youtube.com/@TheInnovatorsandDisruptorsPodc", path: "M23.5 6.2c-.27-1.02-1.07-1.83-2.09-2.1C19.55 3.6 12 3.6 12 3.6s-7.55 0-9.41.5C1.57 4.37.77 5.18.5 6.2 0 8.07 0 12 0 12s0 3.93.5 5.8c.27 1.02 1.07 1.83 2.09 2.1 1.86.5 9.41.5 9.41.5s7.55 0 9.41-.5c1.02-.27 1.82-1.08 2.09-2.1.5-1.87.5-5.8.5-5.8s0-3.93-.5-5.8zM9.6 15.6V8.4l6.24 3.6-6.24 3.6z" },
   { label: "Instagram", href: "https://www.instagram.com/theinnovatorsanddisruptors/", path: "M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91C23.99 15.67 24 15.26 24 12s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.94 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 105.84 12 6.16 6.16 0 0012 5.84zm0 10.16A4 4 0 1116 12a4 4 0 01-4 4zm6.41-11.85a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z" },
+  { label: "Spotify", href: "https://open.spotify.com/show/19fdhWlhtNnRn3HuAzEKAO", path: "M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-.998.24-2.741-1.678-6.181-2.058-10.141-1.14-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.239.999h.019zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" },
+  { label: "Apple Podcasts", href: "https://podcasts.apple.com/gb/podcast/the-innovators-and-disruptors-podcast/id1798971388", path: "M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.065a4.678 4.678 0 110 9.356 4.678 4.678 0 010-9.356zm0 1.25a3.428 3.428 0 100 6.856 3.428 3.428 0 000-6.856zm0 1.61a1.818 1.818 0 110 3.636 1.818 1.818 0 010-3.636zm-5.768 8.516c.2-.33.55-.52.92-.52h9.696c.37 0 .72.19.92.52l.59.978C16.714 18.1 14.45 19.2 12 19.2c-2.45 0-4.714-1.1-6.358-2.78l.59-.979z" },
 ];
 
 const GUESTS = [
@@ -106,9 +108,9 @@ export default async function HomePage() {
             border: `1px solid ${ACCENT}22`,
             minHeight: 460,
             display: "grid", gridTemplateColumns: "1.05fr 1fr",
-          }}>
+          }} className="hero-grid">
             {/* LEFT: copy */}
-            <div style={{ position: "relative", padding: "56px 56px 56px 64px", display: "flex", flexDirection: "column", justifyContent: "center", zIndex: 2 }}>
+            <div className="hero-copy" style={{ position: "relative", padding: "56px 56px 56px 64px", display: "flex", flexDirection: "column", justifyContent: "center", zIndex: 2 }}>
               {/* Yellow rule + tagline */}
               <div style={{ display: "flex", gap: 18, alignItems: "stretch", marginBottom: 28 }}>
                 <div style={{ width: 4, background: ACCENT, borderRadius: 2 }} />
@@ -146,17 +148,17 @@ export default async function HomePage() {
             </div>
 
             {/* RIGHT: photo + badge */}
-            <div style={{ position: "relative", overflow: "hidden" }}>
+            <div className="hero-image-panel" style={{ position: "relative", overflow: "hidden" }}>
               <Image
-                src="/abhay.jpg"
+                src="/abhay-hero.jpg"
                 alt="Abhay Tandon, host of The Innovators and Disruptors Podcast"
                 fill
                 sizes="50vw"
-                style={{ objectFit: "cover", objectPosition: "center 30%" }}
+                style={{ objectFit: "cover", objectPosition: "30% top" }}
                 priority
               />
               {/* Left fade */}
-              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(5,5,5,0.7) 18%, rgba(5,5,5,0.0) 45%, rgba(5,5,5,0.0) 70%, rgba(5,5,5,0.55) 100%)" }} />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(5,5,5,0.85) 0%, rgba(5,5,5,0.4) 12%, rgba(5,5,5,0.0) 32%, rgba(5,5,5,0.0) 70%, rgba(5,5,5,0.4) 100%)" }} />
               {/* Bottom fade */}
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.55) 100%)" }} />
 
@@ -186,11 +188,11 @@ export default async function HomePage() {
       </section>
 
       {/* ── Stats + Currently Live + Stellar Episodes ── */}
-      <section id="episodes" style={{ padding: "40px 32px 100px" }}>
+      <section id="episodes" className="section-px" style={{ padding: "40px 32px 100px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
 
           {/* KPI strip */}
-          <div style={{
+          <div className="kpi-grid" style={{
             display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 0,
             padding: "32px 36px", borderRadius: 18,
             background: "linear-gradient(180deg, #161310 0%, #0E0E0D 100%)",
@@ -202,13 +204,13 @@ export default async function HomePage() {
               </div>
               <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>LISTENERS</div>
             </div>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 18, paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F` }}>
+            <div className="kpi-divider" style={{ display: "flex", alignItems: "baseline", gap: 18, paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F` }}>
               <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 56, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>
                 {igFollowers ? `${fmt(igFollowers)}+` : "49K+"}
               </div>
               <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>INSTAGRAM</div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F`, gap: 8 }}>
+            <div className="kpi-divider" style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F`, gap: 8 }}>
               <div style={{ fontSize: 11, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 1.2, marginBottom: 2 }}>3 ACTIVE SERIES</div>
               {LIVE_SERIES.map((s) => (
                 <a key={s.title} href={s.href} target="_blank" rel="noopener noreferrer"
@@ -235,7 +237,7 @@ export default async function HomePage() {
 
             {/* Season 2 */}
             <div style={{ marginBottom: 32, padding: "28px 32px 32px", borderRadius: 18, border: `1px solid ${ACCENT}22`, background: SURFACE }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 28, marginBottom: 24, alignItems: "center" }}>
+              <div className="season2-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 28, marginBottom: 24, alignItems: "center" }}>
                 {/* Left: text */}
                 <div>
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 12 }}>
@@ -265,7 +267,7 @@ export default async function HomePage() {
             </div>
 
             {/* GCC + Founders Corner */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
+            <div className="series-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
               {[LIVE_SERIES[1], LIVE_SERIES[2]].map((s) => (
                 <div key={s.title} style={{ padding: "28px 28px 28px", borderRadius: 18, border: `1px solid ${ACCENT}18`, background: SURFACE, display: "flex", flexDirection: "column", gap: 20 }}>
                   <div>
@@ -309,7 +311,7 @@ export default async function HomePage() {
             </a>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
+          <div className="trending-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
             {TOP_EPISODES.map((ep, i) => (
               <a
                 key={ep.videoId}
@@ -341,7 +343,7 @@ export default async function HomePage() {
       </section>
 
       {/* ── Guests ── */}
-      <section id="guests" style={{ padding: "100px 32px", background: SURFACE }}>
+      <section id="guests" className="section-px" style={{ padding: "100px 32px", background: SURFACE }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 32, marginBottom: 56, flexWrap: "wrap" }}>
             <div>
@@ -358,7 +360,7 @@ export default async function HomePage() {
               See full guest list <span>→</span>
             </a>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
+          <div className="guests-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
             {GUESTS.map((g) => (
               <div key={g.name} style={{ borderRadius: 14, background: "#0F0F0E", border: "1px solid rgba(244,241,234,0.06)", overflow: "hidden", position: "relative" }}>
                 {/* Thumbnail or initials avatar */}
@@ -446,11 +448,11 @@ export default async function HomePage() {
       </section>
 
       {/* ── About ── */}
-      <section id="about" style={{ padding: "120px 32px", background: SURFACE, position: "relative", overflow: "hidden" }}>
+      <section id="about" className="section-px" style={{ padding: "120px 32px", background: SURFACE, position: "relative", overflow: "hidden" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "0.85fr 1.15fr", gap: 64, alignItems: "center" }}>
+          <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "0.85fr 1.15fr", gap: 64, alignItems: "center" }}>
             {/* Photo */}
-            <div style={{ position: "relative" }}>
+            <div className="about-photo" style={{ position: "relative" }}>
               <div style={{ borderRadius: 20, overflow: "hidden", border: `1px solid ${ACCENT}22`, aspectRatio: "4/5", background: BG, position: "relative" }}>
                 <Image src="/abhay.jpg" alt="Abhay Tandon" fill sizes="35vw" style={{ objectFit: "cover", objectPosition: "center 25%" }} />
               </div>
@@ -477,7 +479,7 @@ export default async function HomePage() {
               </p>
 
               {/* Stats grid */}
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14, marginTop: 36 }}>
+              <div className="about-stats" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14, marginTop: 36 }}>
                 {[
                   { k: channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "132K+", v: "YouTube subscribers" },
                   { k: "30+", v: "Startup investments" },
@@ -492,7 +494,7 @@ export default async function HomePage() {
               </div>
 
               {/* Credentials */}
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 32 }}>
+              <div className="credentials-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 32 }}>
                 {[
                   "Founder & GP, TID Collective",
                   "Global Head of Innovation",
@@ -524,7 +526,7 @@ export default async function HomePage() {
             <div style={{ position: "relative", paddingLeft: 32 }}>
               <div style={{ position: "absolute", left: 7, top: 6, bottom: 6, width: 2, background: `linear-gradient(180deg, ${ACCENT} 0%, ${ACCENT}33 80%, transparent 100%)` }} />
               {TIMELINE.map((t, i) => (
-                <div key={i} style={{ position: "relative", paddingBottom: 36, display: "grid", gridTemplateColumns: "180px 1fr", gap: 32 }}>
+                <div key={i} className="timeline-row" style={{ position: "relative", paddingBottom: 36, display: "grid", gridTemplateColumns: "180px 1fr", gap: 32 }}>
                   <div style={{ position: "absolute", left: -32, top: 4, width: 16, height: 16, borderRadius: 99, background: BG, border: `2px solid ${ACCENT}`, boxShadow: i === TIMELINE.length - 1 ? `0 0 0 6px ${ACCENT}33` : "none" }} />
                   <div style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, letterSpacing: 1.2, color: ACCENT, paddingTop: 4 }}>{t.year.toUpperCase()}</div>
                   <div>
@@ -543,7 +545,7 @@ export default async function HomePage() {
 
       {/* ── Footer ── */}
       <footer style={{ borderTop: "1px solid rgba(244,241,234,0.08)", padding: "56px 32px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 48 }}>
+        <div className="footer-grid" style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 48 }}>
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
               <div style={{ width: 32, height: 32, borderRadius: 8, background: ACCENT, display: "grid", placeItems: "center", color: BG, fontFamily: "var(--font-display), system-ui", fontWeight: 800, fontSize: 14 }}>T</div>

@@ -25,6 +25,7 @@ export default function NewsletterSection() {
           </p>
           {!submitted ? (
             <form
+              className="newsletter-form"
               onSubmit={(e) => { e.preventDefault(); if (valid) setSubmitted(true); }}
               style={{ display: "flex", gap: 8, marginTop: 36, padding: 6, background: "#0B0B0B", borderRadius: 999, maxWidth: 480 }}
             >

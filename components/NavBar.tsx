@@ -74,12 +74,12 @@ export default function NavBar() {
         </a>
 
         {/* Nav links + socials + CTA */}
-        <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
+        <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: 24 }}>
           {[
             ["Episodes", "#episodes"],
             ["Guests", "/guests"],
             ["Collective", "/collective"],
-            ["Meet the Host", "#about"],
+            ["Meet the Host", "/#about"],
           ].map(([label, href]) => (
             <a key={label} href={href} style={{ color: "var(--text)", textDecoration: "none", fontSize: 14, opacity: 0.72, transition: "opacity 160ms" }}
               onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.opacity = "1")}

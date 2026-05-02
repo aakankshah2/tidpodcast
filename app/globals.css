@@ -40,3 +40,33 @@ body::before {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.6; transform: scale(0.85); }
 }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .nav-links { display: none !important; }
+
+  .hero-grid { grid-template-columns: 1fr !important; min-height: auto !important; }
+  .hero-image-panel { height: 260px !important; }
+  .hero-copy { padding: 36px 20px 40px !important; }
+
+  .section-px { padding-left: 16px !important; padding-right: 16px !important; }
+
+  .kpi-grid { grid-template-columns: 1fr !important; padding: 24px 20px !important; }
+  .kpi-divider { border-left: none !important; padding-left: 0 !important; border-top: 1px solid rgba(245,197,24,0.12) !important; padding-top: 20px !important; }
+
+  .season2-grid { grid-template-columns: 1fr !important; }
+  .series-grid { grid-template-columns: 1fr !important; }
+  .trending-grid { grid-template-columns: 1fr !important; }
+  .guests-grid { grid-template-columns: 1fr 1fr !important; }
+
+  .about-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .about-photo { display: none !important; }
+  .about-stats { grid-template-columns: 1fr 1fr !important; }
+  .credentials-grid { grid-template-columns: 1fr !important; }
+  .timeline-row { grid-template-columns: 100px 1fr !important; gap: 16px !important; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+
+  .newsletter-form { flex-direction: column !important; border-radius: 16px !important; }
+  .newsletter-form button { border-radius: 999px !important; }
+}

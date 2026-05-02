@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
+import { getChannelStats, fmt } from "@/lib/youtube";
 
 const ACCENT = "#F5C518";
 const BG = "#0B0B0B";
@@ -19,7 +20,7 @@ const PILLARS = [
     title: "TID Podcast",
     tagline: "Innovators, leaders, and creators — building in India.",
     body: "Long-form conversations with India's top founders, operators, and iconoclasts. Every episode is a masterclass in building from scratch — from Revolut to Akasa Airlines to the Age of Bhaarat.",
-    meta: "122K+ subscribers · Weekly drops",
+    meta: "__PODCAST_META__",
     href: "/",
     cta: "Listen now",
     img: "/tid-podcast.jpg",
@@ -55,7 +56,11 @@ const VALUES = [
   { title: "Startups", body: "We've been in the room with 30+ founders. We back bold people with capital, connections, and conviction." },
 ];
 
-export default function CollectivePage() {
+export default async function CollectivePage() {
+  const channelStats = await getChannelStats();
+  const subCount = channelStats ? `${fmt(channelStats.subscriberCount)}+` : "122K+";
+  const videoCount = channelStats ? channelStats.videoCount : null;
+
   return (
     <div style={{ background: BG, color: TEXT, minHeight: "100vh" }}>
       <NavBar />
@@ -103,7 +108,7 @@ export default function CollectivePage() {
             {/* Stats column */}
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
               {[
-                { k: "122K+", v: "YouTube\nsubscribers", color: ACCENT },
+                { k: subCount, v: "YouTube\nsubscribers", color: ACCENT },
                 { k: "50+", v: "Deep-tech\nengagements", color: "#A8E6CF" },
                 { k: "30+", v: "Portfolio\ncompanies", color: "#C4B0FF" },
                 { k: "9+", v: "Years of\ninnovation", color: ACCENT },
@@ -140,7 +145,11 @@ export default function CollectivePage() {
                   <p style={{ fontSize: 14, fontStyle: "italic", color: p.color, margin: "0 0 18px", fontFamily: "var(--font-display), system-ui", fontWeight: 500 }}>{p.tagline}</p>
                   <p style={{ fontSize: 15, lineHeight: 1.65, color: MUTED, margin: "0 0 28px" }}>{p.body}</p>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 20, borderTop: `1px solid rgba(244,241,234,0.08)` }}>
-                    <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: MUTED, letterSpacing: 0.6 }}>{p.meta}</span>
+                    <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: MUTED, letterSpacing: 0.6 }}>
+                      {p.meta === "__PODCAST_META__"
+                        ? `${subCount} subscribers${videoCount ? ` · ${videoCount} episodes` : " · Weekly drops"}`
+                        : p.meta}
+                    </span>
                     <a href={p.href} target={p.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 18px", borderRadius: 999, background: `${p.color}18`, border: `1px solid ${p.color}44`, color: p.color, textDecoration: "none", fontFamily: "var(--font-mono), monospace", fontSize: 11, letterSpacing: 0.8 }}>
                       {p.cta}
                     </a>
