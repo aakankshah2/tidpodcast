@@ -58,7 +58,7 @@ const VALUES = [
 
 export default async function CollectivePage() {
   const channelStats = await getChannelStats();
-  const subCount = channelStats ? `${fmt(channelStats.subscriberCount)}+` : "122K+";
+  const subCount = channelStats ? `${fmt(channelStats.subscriberCount)}+` : "195K+";
   const videoCount = channelStats ? channelStats.videoCount : null;
 
   return (

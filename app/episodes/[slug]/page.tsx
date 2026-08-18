@@ -19,7 +19,8 @@ export async function generateMetadata(
   const ep = getEpisodeBySlug(slug);
   if (!ep) return {};
 
-  const title = `${ep.title}`;
+  const title = ep.title;
+  const brandedTitle = `${ep.title} | TID Podcast`;
   const url = `${SITE_URL}/episodes/${ep.slug}`;
 
   return {
@@ -27,15 +28,15 @@ export async function generateMetadata(
     description: ep.description,
     alternates: { canonical: url },
     openGraph: {
-      type: "website",
-      title,
+      type: "article",
+      title: brandedTitle,
       description: ep.description,
       url,
       images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: ep.title }],
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: brandedTitle,
       description: ep.description,
       images: ["/og-image.jpg"],
     },

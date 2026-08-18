@@ -1,12 +1,40 @@
 "use client";
 import { useState } from "react";
+import { useMutation } from "convex/react";
+import { api } from "@/convex/_generated/api";
 
 const ACCENT = "#F5C518";
 
 export default function NewsletterSection() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
+  const subscribe = useMutation(api.subscribers.subscribe);
   const valid = /\S+@\S+\.\S+/.test(email);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!valid || pending) return;
+    setError(null);
+    setPending(true);
+    try {
+      const result = await subscribe({
+        email,
+        source: "homepage",
+        userAgent: typeof navigator !== "undefined" ? navigator.userAgent : undefined,
+      });
+      if (result.ok) {
+        setSubmitted(true);
+      } else {
+        setError("That email looks off — try again?");
+      }
+    } catch {
+      setError("Something went wrong. Please try again in a moment.");
+    } finally {
+      setPending(false);
+    }
+  }
 
   return (
     <section style={{ padding: "0 32px 100px" }}>
@@ -24,34 +52,40 @@ export default function NewsletterSection() {
             Plus a short note on what surprised me, what we cut, and one thing the guest said off-mic.
           </p>
           {!submitted ? (
-            <form
-              className="newsletter-form"
-              onSubmit={(e) => { e.preventDefault(); if (valid) setSubmitted(true); }}
-              style={{ display: "flex", gap: 8, marginTop: 36, padding: 6, background: "#0B0B0B", borderRadius: 999, maxWidth: 480 }}
-            >
-              <input
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                type="email"
-                placeholder="founder@yourcompany.in"
-                style={{
-                  flex: 1, background: "transparent", border: "none", outline: "none",
-                  color: "#F4F1EA", padding: "12px 18px", fontSize: 15, fontFamily: "inherit",
-                }}
-              />
-              <button
-                type="submit"
-                disabled={!valid}
-                style={{
-                  background: valid ? ACCENT : "rgba(245,197,24,0.4)",
-                  color: "#0B0B0B", border: "none", borderRadius: 999,
-                  padding: "12px 22px", fontWeight: 600, fontSize: 14,
-                  cursor: valid ? "pointer" : "not-allowed", fontFamily: "inherit",
-                }}
+            <>
+              <form
+                className="newsletter-form"
+                onSubmit={handleSubmit}
+                style={{ display: "flex", gap: 8, marginTop: 36, padding: 6, background: "#0B0B0B", borderRadius: 999, maxWidth: 480 }}
               >
-                Subscribe →
-              </button>
-            </form>
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  placeholder="founder@yourcompany.in"
+                  disabled={pending}
+                  style={{
+                    flex: 1, background: "transparent", border: "none", outline: "none",
+                    color: "#F4F1EA", padding: "12px 18px", fontSize: 15, fontFamily: "inherit",
+                  }}
+                />
+                <button
+                  type="submit"
+                  disabled={!valid || pending}
+                  style={{
+                    background: valid && !pending ? ACCENT : "rgba(245,197,24,0.4)",
+                    color: "#0B0B0B", border: "none", borderRadius: 999,
+                    padding: "12px 22px", fontWeight: 600, fontSize: 14,
+                    cursor: valid && !pending ? "pointer" : "not-allowed", fontFamily: "inherit",
+                  }}
+                >
+                  {pending ? "..." : "Subscribe →"}
+                </button>
+              </form>
+              {error && (
+                <p style={{ marginTop: 12, color: "#0B0B0B", fontSize: 13, fontWeight: 500 }}>{error}</p>
+              )}
+            </>
           ) : (
             <div style={{ marginTop: 36, padding: "18px 24px", background: "#0B0B0B", color: ACCENT, borderRadius: 999, display: "inline-flex", alignItems: "center", gap: 12, fontWeight: 500 }}>
               <span style={{ width: 20, height: 20, borderRadius: 99, background: ACCENT, color: "#0B0B0B", display: "grid", placeItems: "center", fontSize: 12 }}>✓</span>

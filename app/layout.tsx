@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Bricolage_Grotesque, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { ConvexProviderClient } from "@/components/ConvexProviderClient";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -44,6 +46,49 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE_URL}/#abhay-tandon`,
+  name: "Abhay Tandon",
+  url: SITE_URL,
+  image: `${SITE_URL}/abhay.jpg`,
+  jobTitle: "Founder & Host, TID Collective",
+  description:
+    "Abhay Tandon is the founder of TID Collective and host of TID Podcast (The Innovators and Disruptors Podcast). A global corporate-innovation leader, TEDx 2025 speaker, and angel investor in 30+ early-stage startups, he has represented India at the G20 Summit and led 50+ deep-tech projects across NanoTech, Drones, Haptics, AR/VR/XR and Quantum Computing.",
+  nationality: { "@type": "Country", name: "India" },
+  worksFor: {
+    "@type": "Organization",
+    name: "TID Collective",
+    url: SITE_URL,
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/abhaytandon/",
+    "https://www.youtube.com/@TheInnovatorsandDisruptorsPodc",
+    "https://www.instagram.com/theinnovatorsanddisruptors/",
+    "https://open.spotify.com/show/19fdhWlhtNnRn3HuAzEKAO",
+    "https://podcasts.apple.com/gb/podcast/the-innovators-and-disruptors-podcast/id1798971388",
+  ],
+  knowsAbout: [
+    "Corporate Innovation",
+    "Entrepreneurship",
+    "Venture Capital",
+    "Deep Technology",
+    "Startups",
+    "India's innovation ecosystem",
+    "Global Capability Centres",
+  ],
+  award: [
+    "Top 10 Corporate Innovation Leaders, India 2021",
+    "IAMAI Gold Award for Innovation in e-Commerce",
+    "Trailblazer Award — Karnataka Ecosystem",
+  ],
+  memberOf: [
+    { "@type": "Organization", name: "Forbes Technology Council" },
+    { "@type": "Organization", name: "TiE", url: "https://tie.org" },
+  ],
+};
+
 const podcastSeriesSchema = {
   "@context": "https://schema.org",
   "@type": "PodcastSeries",
@@ -52,11 +97,7 @@ const podcastSeriesSchema = {
   description: SHOW_DESCRIPTION,
   url: SITE_URL,
   image: `${SITE_URL}/og-image.jpg`,
-  author: {
-    "@type": "Person",
-    name: "Abhay Tandon",
-    url: "https://www.linkedin.com/in/abhaytandon/",
-  },
+  author: { "@id": `${SITE_URL}/#abhay-tandon` },
   inLanguage: "en",
   countryOfOrigin: "IN",
 };
@@ -67,6 +108,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script
           type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(podcastSeriesSchema) }}
         />
       </head>
@@ -74,7 +119,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         style={{ fontFamily: `var(--font-inter), system-ui, sans-serif` }}
         className={`${inter.variable} ${bricolage.variable} ${jetbrainsMono.variable}`}
       >
-        {children}
+        <ConvexProviderClient>{children}</ConvexProviderClient>
+        <Analytics />
       </body>
     </html>
   );

@@ -3,7 +3,6 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import NewsletterSection from "@/components/NewsletterSection";
 import { getChannelStats, fmt } from "@/lib/youtube";
-import { getInstagramFollowers } from "@/lib/instagram";
 import { getAllEpisodes } from "@/lib/episodes";
 
 const ACCENT = "#F5C518";
@@ -27,20 +26,12 @@ const GUESTS = [
   { name: "Pankaj Rai", role: "CDO, Aditya Birla Group", initials: "PR", slug: null, videoId: "eDHxchzMRAY" },
 ];
 
-const STELLAR_LIVE = [
-  { ep: "S2 EP9", title: "Building for a Billion — India's Future with Revolut", guest: "Paroma Chatterjee", role: "CEO, Revolut India", dur: "1:10:48", initials: "PC", slug: "paroma-chatterjee-revolut-india" },
-  { ep: "S2 EP8", title: "Indian Mythology x Gaming — The Age of Bhaarat", guest: "Amish Tripathi & Mukul Deora", role: "Founders, The Age of Bhaarat", dur: "1:21:49", initials: "AT", slug: "amish-tripathi-mukul-deora-indian-mythology-gaming" },
-];
-const STELLAR_SOON = [
-  { title: "Reinventing aviation, the Akasa way", guest: "Belson Coutinho", role: "Co-Founder & COO, Akasa Airlines", drop: "DROPPING SOON", initials: "BC" },
-];
-
 const LIVE_SERIES = [
   {
     title: "Season 2",
-    description: "Long-form conversations with India's top innovators, founders, and leaders.",
-    href: "https://www.youtube.com/watch?v=RXVysfTfLTU&list=PLzz8OqkiSLALxl70gl4KImCriufD9yIaB",
-    videoId: "RXVysfTfLTU",
+    description: "Weekly long-form conversations with India's top founders, CEOs, and corporate innovators — from FinTech and mythological gaming to aviation and digital commerce. Unscripted, 60–90 minutes.",
+    href: "https://www.youtube.com/watch?v=CHBv-sMconw&list=PLzz8OqkiSLALxl70gl4KImCriufD9yIaB",
+    videoId: "CHBv-sMconw",
     tag: "ONGOING",
   },
   {
@@ -61,19 +52,54 @@ const LIVE_SERIES = [
 
 const TOP_EPISODES = [
   {
+    videoId: "6boCRQzRLKo",
+    title: "Stories to Systems — Reimagining Cinema, Business & Impact",
+    guest: "S2 EP13 · ft. Richa Chadha",
+  },
+  {
+    videoId: "KGhzluwzY40",
+    title: "Decoding New Age Aviation in India with Akasa",
+    guest: "S2 EP12 · ft. Belson Coutinho",
+  },
+  {
     videoId: "TMTcFqtu1fw",
     title: "Karnataka's Billion Dollar Playbook",
     guest: "ft. Sanjeev Gupta",
   },
+];
+
+const FAQS = [
   {
-    videoId: "47tZ4q9zwgo",
-    title: "Synthetic Yet Real — The New Age of Personalized Video Content",
-    guest: "EP12",
+    q: "What is TID Podcast?",
+    a: "TID Podcast — short for The Innovators and Disruptors Podcast — is India's leading long-form podcast on innovation and entrepreneurship. Hosted by Abhay Tandon, it features weekly conversations with India's top founders, CEOs, and corporate innovation leaders.",
   },
   {
-    videoId: "mlgIgeQEg_M",
-    title: "Modern Day Spirituality for High-Output Leaders",
-    guest: "S2 EP6 · ft. Dr. Shubha",
+    q: "Who hosts TID Podcast?",
+    a: "Abhay Tandon hosts TID Podcast. He is the founder of TID Collective, a global corporate-innovation leader, TEDx 2025 speaker, Forbes Technology Council member, and angel investor in 30+ early-stage startups. He has represented India at the G20 Summit.",
+  },
+  {
+    q: "Where can I listen to TID Podcast?",
+    a: "TID Podcast is free on YouTube, Spotify, and Apple Podcasts. The YouTube channel @TheInnovatorsandDisruptorsPodc has 195K+ subscribers and hosts the full video catalogue.",
+  },
+  {
+    q: "How often are new episodes released?",
+    a: "New episodes drop weekly. Season 2 is currently ongoing, alongside two parallel mini-series — the GCC Mini Series on India's Global Capability Centre ecosystem, and Founders Corner with India's most ambitious early-stage founders.",
+  },
+  {
+    q: "What topics does TID Podcast cover?",
+    a: "TID Podcast covers innovation, disruption, and entrepreneurship across India — spanning FinTech, deep tech, AI, aviation, retail, FMCG, gaming, mobility, spirituality for leaders, and India's Global Capability Centre (GCC) ecosystem.",
+  },
+  {
+    q: "How long are TID Podcast episodes?",
+    a: "Episodes typically run 60 to 90 minutes. They are unscripted long-form conversations with no edits or filler — built for listeners who want depth, not headlines.",
+  },
+  {
+    q: "What is TID Collective?",
+    a: "TID Collective is the broader innovation ecosystem founded by Abhay Tandon. It comprises three verticals: TID Podcast (media, 195K+ subscribers), TID Consulting (corporate-innovation advisory, 50+ deep-tech engagements), and TID Ventures (angel investments in 30+ early-stage startups).",
+  },
+  {
+    q: "Who has been featured on TID Podcast?",
+    a: "Recent guests include Paroma Chatterjee (CEO, Revolut India), Amish Tripathi and Mukul Deora (founders, The Age of Bhaarat), Howard Dawber (Deputy Mayor of London), Pankaj Rai (CDO, Aditya Birla Group), Sanjeev Gupta (on Karnataka's billion-dollar playbook), and Dr. Shubha on modern spirituality for high-output leaders.",
   },
 ];
 
@@ -84,14 +110,11 @@ const TIMELINE = [
   { year: "2023", title: "Live Commerce for TVS", body: "Implements innovative live-commerce for TVS Motor Company. Begins angel investing across emerging-tech startups." },
   { year: "2024", title: "Gold at India Digital Summit", body: "Wins IAMAI Gold Award for Innovation in e-Commerce. Launches the Innovators and Disruptors Podcast." },
   { year: "2025", title: "TEDx & G20 Stage", body: "Delivers TEDx talk 'From Observation to Breakthroughs'. Represents India at the G20 Summit on India's innovation potential." },
-  { year: "Today", title: "Founder, TID Collective", body: "Runs TID Podcast (122K+), TID Consulting and TID Ventures (30+ portfolio companies). Upcoming author on Corporate Innovation." },
+  { year: "Today", title: "Founder, TID Collective", body: "Runs TID Podcast (195K+), TID Consulting and TID Ventures (30+ portfolio companies). Upcoming author on Corporate Innovation." },
 ];
 
 export default async function HomePage() {
-  const [channelStats, igFollowers] = await Promise.all([
-    getChannelStats(),
-    getInstagramFollowers("theinnovatorsanddisruptors"),
-  ]);
+  const channelStats = await getChannelStats();
   const episodes = getAllEpisodes();
   const episodeCount = channelStats?.videoCount ?? episodes.length;
 
@@ -100,17 +123,17 @@ export default async function HomePage() {
       <NavBar />
 
       {/* ── Hero ── */}
-      <section id="top" style={{ padding: "32px 32px 48px" }}>
+      <section id="top" style={{ padding: "32px 32px 24px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{
             position: "relative", borderRadius: 20, overflow: "hidden",
             background: "radial-gradient(120% 100% at 75% 50%, #2A1F0E 0%, #120D06 35%, #050505 70%)",
             border: `1px solid ${ACCENT}22`,
-            minHeight: 460,
+            minHeight: 380,
             display: "grid", gridTemplateColumns: "1.05fr 1fr",
           }} className="hero-grid">
             {/* LEFT: copy */}
-            <div className="hero-copy" style={{ position: "relative", padding: "56px 56px 56px 64px", display: "flex", flexDirection: "column", justifyContent: "center", zIndex: 2 }}>
+            <div className="hero-copy" style={{ position: "relative", padding: "36px 48px 36px 52px", display: "flex", flexDirection: "column", justifyContent: "center", zIndex: 2 }}>
               {/* Yellow rule + tagline */}
               <div style={{ display: "flex", gap: 18, alignItems: "stretch", marginBottom: 28 }}>
                 <div style={{ width: 4, background: ACCENT, borderRadius: 2 }} />
@@ -125,9 +148,14 @@ export default async function HomePage() {
               </div>
 
               {/* Wordmark */}
-              <div style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 800, fontSize: "clamp(64px, 7.4vw, 112px)", lineHeight: 0.86, letterSpacing: -3, color: TEXT, textTransform: "uppercase", marginTop: 4 }}>
+              <div className="hero-wordmark" style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 800, fontSize: "clamp(64px, 7.4vw, 112px)", lineHeight: 0.86, letterSpacing: -3, color: TEXT, textTransform: "uppercase", marginTop: 4 }}>
                 Innovative<br />Stories
               </div>
+
+              {/* What is TID Podcast — answer-format subtitle */}
+              <p style={{ fontSize: 15, lineHeight: 1.55, color: "rgba(244,241,234,0.68)", maxWidth: 440, margin: "20px 0 0" }}>
+                India&apos;s leading long-form podcast on innovation and entrepreneurship. Weekly conversations with top founders, CEOs, and corporate innovators — free on YouTube, Spotify, and Apple Podcasts.
+              </p>
 
               {/* Hosted by + socials */}
               <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 36 }}>
@@ -153,8 +181,9 @@ export default async function HomePage() {
                 src="/abhay-hero.jpg"
                 alt="Abhay Tandon, host of The Innovators and Disruptors Podcast"
                 fill
-                sizes="50vw"
-                style={{ objectFit: "cover", objectPosition: "30% top" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="hero-image"
+                style={{ objectFit: "cover" }}
                 priority
               />
               {/* Left fade */}
@@ -163,7 +192,7 @@ export default async function HomePage() {
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.55) 100%)" }} />
 
               {/* New Episode card */}
-              <div style={{ position: "absolute", top: 36, right: 36, zIndex: 3, display: "flex", flexDirection: "column", gap: 10, alignItems: "flex-end" }}>
+              <div className="hero-badge-stack" style={{ position: "absolute", top: 36, right: 36, zIndex: 3, display: "flex", flexDirection: "column", gap: 10, alignItems: "flex-end" }}>
                 <div style={{ background: ACCENT, color: BG, padding: "10px 18px", borderRadius: 8, fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 18, letterSpacing: -0.3, boxShadow: `0 12px 32px -12px ${ACCENT}80` }}>
                   New Episode
                 </div>
@@ -173,40 +202,34 @@ export default async function HomePage() {
               </div>
 
               {/* Live pulse pill */}
-              <div style={{ position: "absolute", bottom: 28, right: 32, zIndex: 3, display: "inline-flex", alignItems: "center", gap: 10, padding: "10px 16px", borderRadius: 14, background: "rgba(11,11,11,0.78)", border: `1px solid ${ACCENT}44`, backdropFilter: "blur(10px)", maxWidth: 360 }}>
+              <div className="hero-live-pill" style={{ position: "absolute", bottom: 28, right: 32, zIndex: 3, display: "inline-flex", alignItems: "center", gap: 10, padding: "10px 16px", borderRadius: 14, background: "rgba(11,11,11,0.78)", border: `1px solid ${ACCENT}44`, backdropFilter: "blur(10px)", maxWidth: 360 }}>
                 <span style={{ width: 8, height: 8, borderRadius: 99, background: ACCENT, boxShadow: `0 0 12px ${ACCENT}`, animation: "pulse 1.6s ease-in-out infinite", flexShrink: 0 }} />
                 <div style={{ display: "flex", flexDirection: "column", gap: 2, lineHeight: 1.1, minWidth: 0 }}>
-                  <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1.4, color: ACCENT, fontWeight: 600 }}>S2 · EP. 09 — OUT NOW</span>
+                  <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1.4, color: ACCENT, fontWeight: 600 }}>S2 · EP. 14 — OUT NOW</span>
                   <span style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 600, fontSize: 13, color: TEXT, letterSpacing: -0.2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    Building for a Billion — India&apos;s Future with Revolut
+                    The Stories That Control Us — Free Will, AI &amp; Civilisation
                   </span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ── Stats + Currently Live + Stellar Episodes ── */}
-      <section id="episodes" className="section-px" style={{ padding: "40px 32px 100px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-
-          {/* KPI strip */}
+          {/* KPI strip — inside hero section so it lands in first scroll */}
           <div className="kpi-grid" style={{
             display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 0,
-            padding: "32px 36px", borderRadius: 18,
+            padding: "28px 36px", borderRadius: 18,
             background: "linear-gradient(180deg, #161310 0%, #0E0E0D 100%)",
-            border: `1px solid ${ACCENT}1F`, marginBottom: 56,
+            border: `1px solid ${ACCENT}1F`, marginTop: 16,
           }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 18 }}>
-              <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 56, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>
-                {channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "132K+"}
+              <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 52, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>
+                {channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "195K+"}
               </div>
               <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>LISTENERS</div>
             </div>
             <div className="kpi-divider" style={{ display: "flex", alignItems: "baseline", gap: 18, paddingLeft: 36, borderLeft: `1px solid ${ACCENT}1F` }}>
-              <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 56, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>
-                {igFollowers ? `${fmt(igFollowers)}+` : "49K+"}
+              <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 52, fontWeight: 700, letterSpacing: -2.5, color: ACCENT, lineHeight: 1 }}>
+                {"65K+"}
               </div>
               <div style={{ fontSize: 13, color: MUTED, fontFamily: "var(--font-mono), monospace", letterSpacing: 0.8 }}>INSTAGRAM</div>
             </div>
@@ -221,6 +244,12 @@ export default async function HomePage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Stats + Currently Live + Stellar Episodes ── */}
+      <section id="episodes" className="section-px" style={{ padding: "40px 32px 100px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
 
           {/* Currently Live series */}
           <div style={{ marginBottom: 72 }}>
@@ -413,16 +442,16 @@ export default async function HomePage() {
               <span style={{ width: 14, height: 2, background: ACCENT }} />
             </div>
             <h2 style={{ fontFamily: "var(--font-display), system-ui", fontSize: "clamp(36px, 4.8vw, 64px)", fontWeight: 700, letterSpacing: -2, lineHeight: 1, margin: 0 }}>
-              An ecosystem at the intersection of{" "}
-              <span style={{ fontStyle: "italic", color: ACCENT, fontWeight: 600 }}>storytelling, strategy & startups</span>.
+              TID Collective is India&apos;s innovation ecosystem — media,{" "}
+              <span style={{ fontStyle: "italic", color: ACCENT, fontWeight: 600 }}>strategy & investing</span> in one roof.
             </h2>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: MUTED, marginTop: 22, maxWidth: 720, marginLeft: "auto", marginRight: "auto" }}>
-              Where India&apos;s founders, builders and leaders go for inspiration — across three deeply connected verticals.
+              Three verticals, one mission: TID Podcast (195K+ subscribers), TID Consulting (50+ deep-tech engagements), and TID Ventures (30+ portfolio companies) — all built around India&apos;s innovation ecosystem.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
             {[
-              { num: "01", title: "TID Podcast", tagline: "Innovators, leaders, and creators — Building in India.", meta: "122K+ subscribers · Weekly drops", img: "/tid-podcast.jpg" },
+              { num: "01", title: "TID Podcast", tagline: "Innovators, leaders, and creators — Building in India.", meta: `${channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "195K+"} subscribers · Weekly drops`, img: "/tid-podcast.jpg" },
               { num: "02", title: "TID Consulting", tagline: "Partnering with corporates and startups to unlock growth.", meta: "50+ deep-tech engagements", img: "/tid-consulting.jpg" },
               { num: "03", title: "TID Ventures", tagline: "Investing in bold founders and emerging-tech startups.", meta: "30+ portfolio companies", img: "/tid-ventures.jpg" },
             ].map((p) => (
@@ -466,10 +495,10 @@ export default async function HomePage() {
             <div>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, letterSpacing: 1.4, marginBottom: 18 }}>
                 <span style={{ width: 14, height: 2, background: ACCENT }} />
-                MEET THE HOST
+                WHO IS ABHAY TANDON
               </div>
               <h2 style={{ fontFamily: "var(--font-display), system-ui", fontSize: "clamp(36px, 4.6vw, 56px)", fontWeight: 700, letterSpacing: -2, lineHeight: 1, margin: 0 }}>
-                A global innovation leader, in the host&apos;s chair.
+                India&apos;s leading voice on corporate innovation — host, advisor, investor.
               </h2>
               <p style={{ fontSize: 17, lineHeight: 1.6, color: MUTED, marginTop: 24, maxWidth: 580 }}>
                 Abhay Tandon is a global corporate-innovation leader and the founder of <span style={{ color: TEXT }}>TID Collective</span> — a podcast, advisory and investment platform. He&apos;s led innovation across retail, FMCG and mobility, executed 50+ deep-tech projects across NanoTech, Drones, Haptics, AR/VR/XR and Quantum Computing, and angel-invested in 30+ early-stage startups.
@@ -481,7 +510,7 @@ export default async function HomePage() {
               {/* Stats grid */}
               <div className="about-stats" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14, marginTop: 36 }}>
                 {[
-                  { k: channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "132K+", v: "YouTube subscribers" },
+                  { k: channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "195K+", v: "YouTube subscribers" },
                   { k: "30+", v: "Startup investments" },
                   { k: "50+", v: "Deep-tech projects" },
                   { k: "G20", v: "Summit speaker" },
@@ -540,6 +569,52 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ── FAQ ── */}
+      <section id="faq" className="section-px" style={{ padding: "100px 32px", background: BG }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: FAQS.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            }),
+          }}
+        />
+        <div style={{ maxWidth: 920, margin: "0 auto" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, letterSpacing: 1.4, marginBottom: 18 }}>
+            <span style={{ width: 14, height: 2, background: ACCENT }} />
+            FREQUENTLY ASKED
+          </div>
+          <h2 style={{ fontFamily: "var(--font-display), system-ui", fontSize: "clamp(36px, 4.6vw, 56px)", fontWeight: 700, letterSpacing: -2, lineHeight: 1, margin: "0 0 56px" }}>
+            Common questions, <span style={{ fontStyle: "italic", color: ACCENT }}>direct answers</span>.
+          </h2>
+          <div>
+            {FAQS.map((f, i) => (
+              <div
+                key={f.q}
+                style={{
+                  padding: "28px 0",
+                  borderTop: i === 0 ? `1px solid ${ACCENT}22` : "none",
+                  borderBottom: `1px solid ${ACCENT}22`,
+                }}
+              >
+                <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 22, fontWeight: 600, letterSpacing: -0.5, lineHeight: 1.3, margin: "0 0 14px", color: TEXT }}>
+                  {f.q}
+                </h3>
+                <p style={{ fontSize: 16, color: MUTED, lineHeight: 1.65, margin: 0, maxWidth: 760 }}>
+                  {f.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Newsletter ── */}
       <NewsletterSection />
 
@@ -552,12 +627,12 @@ export default async function HomePage() {
               <span style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 17, letterSpacing: -0.3 }}>TIDPodcast<span style={{ color: ACCENT }}>.in</span></span>
             </div>
             <p style={{ color: MUTED, fontSize: 13, lineHeight: 1.6, margin: 0, maxWidth: 320 }}>
-              The Innovators and Disruptors Podcast. Long-form conversations with the people rebuilding India.
+              The Innovators and Disruptors Podcast — India&apos;s weekly long-form show on innovation and entrepreneurship, hosted by Abhay Tandon. Free on YouTube, Spotify, and Apple Podcasts.
             </p>
           </div>
           {[
             { h: "Listen", l: [["Spotify", "https://creators.spotify.com/pod/profile/abhay-tandon"], ["Apple Podcasts", "https://podcasts.apple.com/gb/podcast/the-innovators-and-disruptors-podcast/id1798971388"], ["YouTube", "https://www.youtube.com/@TheInnovatorsandDisruptorsPodc"]] },
-            { h: "Explore", l: [["All episodes", "#episodes"], ["Guests", "/guests"], ["About Abhay", "#about"], ["TID Collective", "/collective"]] },
+            { h: "Explore", l: [["All episodes", "#episodes"], ["Guests", "/guests"], ["About Abhay", "#about"], ["FAQ", "#faq"], ["TID Collective", "/collective"]] },
             { h: "Connect", l: [["LinkedIn", "https://www.linkedin.com/in/abhaytandon/"], ["Instagram", "https://www.instagram.com/theinnovatorsanddisruptors/"]] },
           ].map((c) => (
             <div key={c.h}>

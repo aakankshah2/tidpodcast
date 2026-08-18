@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
-import { getVideoById, fmt } from "@/lib/youtube";
+import { getVideoById, getTranscript, fmt } from "@/lib/youtube";
 import type { Metadata } from "next";
 
 const ACCENT = "#F5C518";
@@ -16,28 +16,116 @@ export async function generateMetadata(
   const { videoId } = await params;
   const video = await getVideoById(videoId);
   if (!video) return { title: "Episode" };
+  const description = video.description.slice(0, 160) || "The Innovators and Disruptors Podcast";
+  const brandedTitle = `${video.title} | TID Podcast`;
   return {
     title: video.title,
-    description: video.description.slice(0, 160) || "The Innovators and Disruptors Podcast",
+    description,
+    alternates: { canonical: `https://tidpodcast.in/episodes/yt/${videoId}` },
     openGraph: {
-      images: [{ url: video.thumbnail, width: 480, height: 360 }],
+      type: "video.episode",
+      title: brandedTitle,
+      description,
+      url: `https://tidpodcast.in/episodes/yt/${videoId}`,
+      images: [{ url: video.thumbnail, width: 480, height: 360, alt: video.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: brandedTitle,
+      description,
+      images: [video.thumbnail],
     },
   };
+}
+
+function formatTimestamp(seconds: number): string {
+  const total = Math.floor(seconds);
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  if (h > 0) return `${h}:${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+  return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
 export default async function YTEpisodePage(
   { params }: { params: Promise<{ videoId: string }> }
 ) {
   const { videoId } = await params;
-  const video = await getVideoById(videoId);
+  const [video, transcript] = await Promise.all([
+    getVideoById(videoId),
+    getTranscript(videoId),
+  ]);
 
   const title = video?.title ?? "Episode";
   const publishedDate = video?.publishedAt
     ? new Date(video.publishedAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })
     : null;
 
+  const combinedSchema = video ? {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "PodcastEpisode",
+        name: video.title,
+        description: video.description.slice(0, 300),
+        datePublished: video.publishedAt,
+        url: `https://tidpodcast.in/episodes/yt/${videoId}`,
+        image: video.thumbnail,
+        author: { "@id": "https://tidpodcast.in/#abhay-tandon" },
+        associatedMedia: {
+          "@type": "MediaObject",
+          embedUrl: `https://www.youtube.com/embed/${videoId}`,
+          url: `https://www.youtube.com/watch?v=${videoId}`,
+        },
+        partOfSeries: {
+          "@type": "PodcastSeries",
+          name: "The Innovators and Disruptors Podcast",
+          url: "https://tidpodcast.in",
+        },
+      },
+      {
+        "@type": "VideoObject",
+        name: video.title,
+        description: video.description.slice(0, 500) || "Episode of The Innovators and Disruptors Podcast",
+        thumbnailUrl: [
+          video.thumbnail,
+          `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
+        ],
+        uploadDate: video.publishedAt,
+        contentUrl: `https://www.youtube.com/watch?v=${videoId}`,
+        embedUrl: `https://www.youtube.com/embed/${videoId}`,
+        ...(video.duration ? { duration: video.duration } : {}),
+        ...(video.tags.length ? { keywords: video.tags.join(", ") } : {}),
+        ...(transcript && transcript.length > 0
+          ? { transcript: transcript.map((p) => p.text).join(" ").slice(0, 50000) }
+          : {}),
+        publisher: {
+          "@type": "Organization",
+          name: "TID Podcast",
+          url: "https://tidpodcast.in",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://tidpodcast.in/og-image.jpg",
+          },
+        },
+        author: { "@id": "https://tidpodcast.in/#abhay-tandon" },
+        interactionStatistic: {
+          "@type": "InteractionCounter",
+          interactionType: { "@type": "WatchAction" },
+          userInteractionCount: video.viewCount,
+        },
+      },
+    ],
+  } : null;
+
   return (
     <div style={{ background: BG, color: TEXT, minHeight: "100vh" }}>
+      {combinedSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
+        />
+      )}
       <NavBar />
 
       {/* Breadcrumb */}
@@ -90,6 +178,34 @@ export default async function YTEpisodePage(
                   {video.description.slice(0, 800)}{video.description.length > 800 ? "…" : ""}
                 </p>
               </div>
+            )}
+
+            {/* Transcript */}
+            {transcript && transcript.length > 0 && (
+              <details style={{ marginTop: 20, padding: "24px 28px", borderRadius: 14, background: SURFACE, border: "1px solid rgba(244,241,234,0.06)" }}>
+                <summary style={{ cursor: "pointer", listStyle: "none", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
+                  <span style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                    <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, color: ACCENT, letterSpacing: 1.4 }}>FULL TRANSCRIPT</span>
+                    <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, color: MUTED, letterSpacing: 0.6 }}>{transcript.length} sections · auto-generated</span>
+                  </span>
+                  <span style={{ fontSize: 12, color: ACCENT, letterSpacing: 0.6 }}>Show ▾</span>
+                </summary>
+                <div style={{ marginTop: 20, paddingTop: 20, borderTop: `1px solid ${ACCENT}1F`, display: "flex", flexDirection: "column", gap: 18 }}>
+                  {transcript.map((p, i) => (
+                    <div key={i} style={{ display: "grid", gridTemplateColumns: "60px 1fr", gap: 16 }}>
+                      <a
+                        href={`https://www.youtube.com/watch?v=${videoId}&t=${Math.floor(p.start)}s`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, textDecoration: "none", paddingTop: 2 }}
+                      >
+                        {formatTimestamp(p.start)}
+                      </a>
+                      <p style={{ fontSize: 14, color: TEXT, lineHeight: 1.7, margin: 0, opacity: 0.85 }}>{p.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </details>
             )}
           </div>
 

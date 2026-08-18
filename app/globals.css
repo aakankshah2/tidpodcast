@@ -41,13 +41,47 @@ body::before {
   50% { opacity: 0.6; transform: scale(0.85); }
 }
 
+/* Default hero image framing (desktop) */
+.hero-image { object-position: 30% top; }
+
+/* Guest list rows */
+.guest-row:hover { background: rgba(245, 197, 24, 0.04); }
+
 /* ── Mobile ── */
 @media (max-width: 768px) {
   .nav-links { display: none !important; }
 
   .hero-grid { grid-template-columns: 1fr !important; min-height: auto !important; }
-  .hero-image-panel { height: 260px !important; }
-  .hero-copy { padding: 36px 20px 40px !important; }
+  .hero-grid > * { min-width: 0 !important; }
+  .hero-image-panel {
+    height: 380px !important;
+    order: -1 !important;
+  }
+  .hero-image { object-position: center 18% !important; }
+  .hero-copy { padding: 28px 20px 36px !important; }
+  .hero-wordmark {
+    font-size: 48px !important;
+    letter-spacing: -1.5px !important;
+  }
+  .hero-badge-stack {
+    top: 16px !important;
+    right: 16px !important;
+    gap: 6px !important;
+  }
+  .hero-badge-stack > div:first-child {
+    padding: 8px 14px !important;
+    font-size: 14px !important;
+  }
+  .hero-badge-stack > div:nth-child(2) {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+  }
+  .hero-live-pill {
+    left: 16px !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    max-width: none !important;
+  }
 
   .section-px { padding-left: 16px !important; padding-right: 16px !important; }
 
@@ -58,6 +92,7 @@ body::before {
   .series-grid { grid-template-columns: 1fr !important; }
   .trending-grid { grid-template-columns: 1fr !important; }
   .guests-grid { grid-template-columns: 1fr 1fr !important; }
+  .dir-grid { grid-template-columns: 1fr !important; }
 
   .about-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
   .about-photo { display: none !important; }
@@ -66,6 +101,19 @@ body::before {
   .timeline-row { grid-template-columns: 100px 1fr !important; gap: 16px !important; }
 
   .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+
+  .guest-row {
+    grid-template-columns: 36px 1fr 28px !important;
+    gap: 14px !important;
+    padding: 18px 4px !important;
+  }
+  .guest-row-meta {
+    grid-column: 2 !important;
+    margin-top: 6px !important;
+    font-size: 10px !important;
+    gap: 8px !important;
+    flex-wrap: wrap;
+  }
 
   .newsletter-form { flex-direction: column !important; border-radius: 16px !important; }
   .newsletter-form button { border-radius: 999px !important; }
