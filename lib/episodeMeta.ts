@@ -16,6 +16,10 @@ export type GuestMeta = {
 export type EpisodeMeta = {
   seoTitle?: string;
   description?: string;
+  // Lets the page emit valid schema even when the YouTube API is unavailable —
+  // Google requires uploadDate on a VideoObject.
+  publishedAt?: string;
+  duration?: string;
   guest?: GuestMeta;
   about?: string[];
 };

@@ -105,18 +105,29 @@ export default async function YTEpisodePage(
     ? meta.about.map((name) => ({ "@type": "Thing", name }))
     : null;
 
-  const combinedSchema = video ? {
+  // Fall back to hand-written metadata so a YouTube outage costs us the view
+  // count, not the entire structured data block.
+  const schemaName = meta?.seoTitle || video?.title;
+  const schemaDescription =
+    meta?.description ||
+    video?.description.slice(0, 500) ||
+    "Episode of The Innovators and Disruptors Podcast";
+  const uploadDate = video?.publishedAt || meta?.publishedAt;
+  const schemaDuration = video?.duration || meta?.duration;
+  const thumbnail = video?.thumbnail || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+
+  const combinedSchema = schemaName && uploadDate ? {
     "@context": "https://schema.org",
     "@graph": [
       ...(guestNode ? [guestNode] : []),
       {
         "@type": "PodcastEpisode",
-        name: meta?.seoTitle || video.title,
-        alternateName: video.title,
-        description: meta?.description || video.description.slice(0, 300),
-        datePublished: video.publishedAt,
+        name: schemaName,
+        ...(video?.title && video.title !== schemaName ? { alternateName: video.title } : {}),
+        description: schemaDescription.slice(0, 300),
+        datePublished: uploadDate,
         url: `https://tidpodcast.in/episodes/yt/${videoId}`,
-        image: video.thumbnail,
+        image: thumbnail,
         author: { "@id": "https://tidpodcast.in/#abhay-tandon" },
         ...(guestRef ? { actor: guestRef, about: guestRef } : {}),
         ...(aboutNodes ? { mentions: aboutNodes } : {}),
@@ -133,22 +144,20 @@ export default async function YTEpisodePage(
       },
       {
         "@type": "VideoObject",
-        name: meta?.seoTitle || video.title,
-        alternateName: video.title,
-        description:
-          meta?.description ||
-          video.description.slice(0, 500) ||
-          "Episode of The Innovators and Disruptors Podcast",
+        name: schemaName,
+        ...(video?.title && video.title !== schemaName ? { alternateName: video.title } : {}),
+        description: schemaDescription,
         ...(guestRef ? { actor: guestRef, about: guestRef } : {}),
+        ...(aboutNodes ? { mentions: aboutNodes } : {}),
         thumbnailUrl: [
-          video.thumbnail,
+          thumbnail,
           `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
         ],
-        uploadDate: video.publishedAt,
+        uploadDate,
         contentUrl: `https://www.youtube.com/watch?v=${videoId}`,
         embedUrl: `https://www.youtube.com/embed/${videoId}`,
-        ...(video.duration ? { duration: video.duration } : {}),
-        ...(video.tags.length ? { keywords: video.tags.join(", ") } : {}),
+        ...(schemaDuration ? { duration: schemaDuration } : {}),
+        ...(video?.tags.length ? { keywords: video.tags.join(", ") } : {}),
         ...(transcript && transcript.length > 0
           ? { transcript: transcript.map((p) => p.text).join(" ").slice(0, 50000) }
           : {}),
@@ -162,11 +171,15 @@ export default async function YTEpisodePage(
           },
         },
         author: { "@id": "https://tidpodcast.in/#abhay-tandon" },
-        interactionStatistic: {
-          "@type": "InteractionCounter",
-          interactionType: { "@type": "WatchAction" },
-          userInteractionCount: video.viewCount,
-        },
+        ...(video
+          ? {
+              interactionStatistic: {
+                "@type": "InteractionCounter",
+                interactionType: { "@type": "WatchAction" },
+                userInteractionCount: video.viewCount,
+              },
+            }
+          : {}),
       },
     ],
   } : null;
