@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import { getVideoById, getTranscript, fmt } from "@/lib/youtube";
+import { getEpisodeMeta, guestId } from "@/lib/episodeMeta";
 import type { Metadata } from "next";
 
 const ACCENT = "#F5C518";
@@ -15,11 +16,29 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { videoId } = await params;
   const video = await getVideoById(videoId);
-  if (!video) return { title: "Episode" };
-  const description = video.description.slice(0, 160) || "The Innovators and Disruptors Podcast";
-  const brandedTitle = `${video.title} | TID Podcast`;
+  const meta = getEpisodeMeta(videoId);
+  // Hand-written metadata still stands if the YouTube API is down or out of
+  // quota — otherwise an outage silently costs us the page title.
+  if (!video) {
+    if (!meta?.seoTitle) return { title: "Episode" };
+    return {
+      title: meta.seoTitle,
+      description: meta.description,
+      alternates: { canonical: `https://tidpodcast.in/episodes/yt/${videoId}` },
+    };
+  }
+  // A hand-written description beats a blind slice of the YouTube copy, which
+  // tends to cut off mid-sentence.
+  const description =
+    meta?.description ||
+    video.description.slice(0, 160) ||
+    "The Innovators and Disruptors Podcast";
+  // The YouTube title leads with the episode number; the SEO title leads with
+  // the guest, which is what people actually search for.
+  const pageTitle = meta?.seoTitle || video.title;
+  const brandedTitle = `${pageTitle} | TID Podcast`;
   return {
-    title: video.title,
+    title: pageTitle,
     description,
     alternates: { canonical: `https://tidpodcast.in/episodes/yt/${videoId}` },
     openGraph: {
@@ -38,8 +57,13 @@ export async function generateMetadata(
   };
 }
 
-function formatTimestamp(seconds: number): string {
-  const total = Math.floor(seconds);
+// Transcript `start` values are stored in milliseconds.
+function toSeconds(ms: number): number {
+  return Math.floor(ms / 1000);
+}
+
+function formatTimestamp(ms: number): string {
+  const total = toSeconds(ms);
   const h = Math.floor(total / 3600);
   const m = Math.floor((total % 3600) / 60);
   const s = total % 60;
@@ -61,17 +85,41 @@ export default async function YTEpisodePage(
     ? new Date(video.publishedAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })
     : null;
 
+  const meta = getEpisodeMeta(videoId);
+  const guest = meta?.guest;
+  // Naming the guest as a linked Person is what lets Google connect this page
+  // to them as a public figure, rather than treating it as untitled video copy.
+  const guestNode = guest
+    ? {
+        "@type": "Person",
+        "@id": guestId(guest),
+        name: guest.name,
+        ...(guest.alternateName ? { alternateName: guest.alternateName } : {}),
+        ...(guest.jobTitle ? { jobTitle: guest.jobTitle } : {}),
+        ...(guest.description ? { description: guest.description } : {}),
+        ...(guest.sameAs?.length ? { sameAs: guest.sameAs } : {}),
+      }
+    : null;
+  const guestRef = guest ? { "@id": guestId(guest) } : null;
+  const aboutNodes = meta?.about?.length
+    ? meta.about.map((name) => ({ "@type": "Thing", name }))
+    : null;
+
   const combinedSchema = video ? {
     "@context": "https://schema.org",
     "@graph": [
+      ...(guestNode ? [guestNode] : []),
       {
         "@type": "PodcastEpisode",
-        name: video.title,
-        description: video.description.slice(0, 300),
+        name: meta?.seoTitle || video.title,
+        alternateName: video.title,
+        description: meta?.description || video.description.slice(0, 300),
         datePublished: video.publishedAt,
         url: `https://tidpodcast.in/episodes/yt/${videoId}`,
         image: video.thumbnail,
         author: { "@id": "https://tidpodcast.in/#abhay-tandon" },
+        ...(guestRef ? { actor: guestRef, about: guestRef } : {}),
+        ...(aboutNodes ? { mentions: aboutNodes } : {}),
         associatedMedia: {
           "@type": "MediaObject",
           embedUrl: `https://www.youtube.com/embed/${videoId}`,
@@ -85,8 +133,13 @@ export default async function YTEpisodePage(
       },
       {
         "@type": "VideoObject",
-        name: video.title,
-        description: video.description.slice(0, 500) || "Episode of The Innovators and Disruptors Podcast",
+        name: meta?.seoTitle || video.title,
+        alternateName: video.title,
+        description:
+          meta?.description ||
+          video.description.slice(0, 500) ||
+          "Episode of The Innovators and Disruptors Podcast",
+        ...(guestRef ? { actor: guestRef, about: guestRef } : {}),
         thumbnailUrl: [
           video.thumbnail,
           `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
@@ -194,7 +247,7 @@ export default async function YTEpisodePage(
                   {transcript.map((p, i) => (
                     <div key={i} style={{ display: "grid", gridTemplateColumns: "60px 1fr", gap: 16 }}>
                       <a
-                        href={`https://www.youtube.com/watch?v=${videoId}&t=${Math.floor(p.start)}s`}
+                        href={`https://www.youtube.com/watch?v=${videoId}&t=${toSeconds(p.start)}s`}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, textDecoration: "none", paddingTop: 2 }}

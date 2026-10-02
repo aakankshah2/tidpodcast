@@ -14026,5 +14026,787 @@
       "start": 3327079,
       "text": "to the channel and do send us some suggestions as well thank you"
     }
+  ],
+  "42ExkWGLLhM": [
+    {
+      "start": 0,
+      "text": "Abhay Tandon: Hello everyone, welcome to the season finale of season two of the Innovators and Disruptors Podcast. I'm your host, Abhay Tandon, and I'm super, super excited — not just because it's the season finale, but because we have someone with us who is very, very interesting. You know, I'm so glad that this conversation is happening today. This conversation is on nation building, and as many of you would already know, the whole thesis of why the Innovators and Disruptors Podcast started was to talk about how we're building from India, for India and the world. And the guest today is at the epitome of nation building for me. We've had a lot of conversations in the past across multiple episodes where people have come in to talk about their expertise and experiences in nation building. This, for me, is probably the best finale that I can think about, because I have someone with me who's going to talk to us about space. As you can see from a lot of the stuff over here as well — the props — it's themed around space. But the journey culminated into space and is still continuing to grow into space, and the journey itself is very interesting. And for that, now let me welcome Group Captain Shubhanshu Shukla. Thank you so much, sir, for coming in."
+    },
+    {
+      "start": 65000,
+      "text": "Shubhanshu Shukla: My pleasure to be here. Thank you for having me."
+    },
+    {
+      "start": 70000,
+      "text": "Abhay Tandon: It's such a pleasure to host you. Your journey is so fantastic. For audiences who do not know this and should know this about you: you're a fighter pilot in the Indian Air Force. Then you became a test pilot. You also did your master's from IISc Bangalore — so that means you're a techie as well, and a lot of people would also take a lot of pride in that fact, because sometimes we don't. Scientists are the backbone of the country, and you have a very strong depth in the technology domain as well. And now you're an astronaut — the second astronaut from India to go to space, and the first Indian astronaut to go to the International Space Station. There's so many other accolades and achievements, including the Ashok Chakra that you were awarded, which was conferred on you by President Murmu as well. So, fantastic to have you here."
+    },
+    {
+      "start": 118000,
+      "text": "Shubhanshu Shukla: Again, very glad to be here and happy to be having this conversation with you."
+    },
+    {
+      "start": 123000,
+      "text": "Abhay Tandon: There's so many things that I want to go into. I do want to talk to you about your book as well, The Second Orbit. I started reading it; I've read some part of it already. It's very fascinating. I love the way you have actually described so much of what's going on inside of your own head internally, as well as how you are seeing things — and you're describing a lot of those things very visually as well. Very, very beautiful. I think a must-read for everyone, and I'll go into that as well. I do want to talk to you today a lot about how India's space ecosystem is growing already and how it needs to further grow from here — the opportunities and impact, and the applications of this for everyday life as well as national security and beyond, I'm assuming, in the future. I think there's going to be a lot of things in the beyond realm that we are not yet aware of."
+    },
+    {
+      "start": 169000,
+      "text": "Shubhanshu Shukla: Absolutely. I think that this is a domain that we have started exploring and the possibilities right now are only limited by what we can imagine. So it is going to expand. It is going to expand into sectors and domains that we currently do not know of. And it is absolutely exciting to be here at this point of time, I would say."
+    },
+    {
+      "start": 187000,
+      "text": "Abhay Tandon: Fantastic, sir. Shux, sir, you have spent years training for the mission, right? These include various kinds of trainings. I'm sure there's going to be a lot of physical, a lot of mental trainings, mental models as well that you would have gone through, right? Space trainings, you've handled G-forces, you've handled different kind of systems, you understand the technology behind it, so on and so forth. But in one of the sentences, you have mentioned this, that when you are in the aircraft, you're probably 15 seconds behind the aircraft, right? And I'm assuming that meant that, you know, relatively, in spite of all the trainings, there were things that were unknown to you when you're going there. And of course, that's a known fact that, you know, when you go to space, a lot of things would be unknown. But inside the aircraft, knowing all the systems being acclimatised to the G-forces and so on and so forth, what did you mean by you feeling behind and in that situation? What kicks in? Does instinct kicks in? Is training really that helpful? Or is there a different mental model that you apply to stay, you know, in control of the situation?"
+    },
+    {
+      "start": 254000,
+      "text": "Shubhanshu Shukla: Yeah. Okay. I think what you're referring to is when I mentioned the launch, rocket launch."
+    },
+    {
+      "start": 260000,
+      "text": "Abhay Tandon: Yes, sir."
+    },
+    {
+      "start": 261000,
+      "text": "Shubhanshu Shukla: So yes, you train very extensively about the mission. There are a lot of things that you have to learn. You repeat them enough number of times so that they kind of become your muscle memory, and you become very proficient by the time you are approaching the mission. That is the aim of training — to prepare you for spaceflight. So when I was strapped onto the rocket on 25th of June last year, amongst the crew of four that we were, I was the only one from the aviation background. I have been a fighter pilot, then a test pilot, and then I went on to become an astronaut, and I was the only one with that kind of background. Two were engineers, and my commander was a biochemist. So in my mind, before the launch, I was very confident that this is something I know. Because even when you take off in a fighter aircraft, when you engage the afterburner on the takeoff roll, you get that kick. You get that sudden surge of thrust, and then you release brakes and then you take to the sky. So in my mind, I thought that this is something that is familiar to me. I know this. I had an imagination of what it would feel like. But when the ignition happened — there were nine engines when they came on in the rocket — the scale, or the magnitude, of what was happening was completely different from what I had in mind. So it was the shift from my perception to the reality that I was experiencing. That is what threw me off. It was just too powerful for me to imagine. My experience guided my expectation, but the reality was quite different. And just a metric: a Sukhoi class of aircraft produces about 250 kilonewtons of thrust, and Falcon 9 produces about 7,300 kilonewtons. You know, it's a magnitude higher and then some more. Obviously there is a weight difference, which is there."
+    },
+    {
+      "start": 365000,
+      "text": "Abhay Tandon: But 30x more."
+    },
+    {
+      "start": 366000,
+      "text": "Shubhanshu Shukla: Yeah. But the scale of it was what actually kind of threw me off. So, yes, I was taken by surprise. I was the mission pilot. I was supposed to be monitoring things and looking at things and, you know, certain call outs. And my commander had to kind of punch me in the arm and say, and so that woke me up. I got back. Instinct kicks in earlier. For me, at least that is what happened. That instinct kicked in earlier. As soon as I realised, okay, this is not, I know I'm not paying attention. And when I had that interaction, brief interaction, I was hoping, okay, get back to it. And as soon as you say that you, you, you get back in the game, you are there, you are scanning things, you are looking at stuff and you are calling out, moving on to the next item. It is very rapid and you're trained for it, trained for that. So you get back to it, you know? So first thing was instinct gets you back doing what you want. And then of course the training and the procedure that you have, it ensures that you stay within those timelines that have been decided, which is safe, which is, which is known, which is very well rehearsed that you follow them. And then you eventually in eight minutes reach the orbit."
+    },
+    {
+      "start": 431000,
+      "text": "Abhay Tandon: Wow."
+    },
+    {
+      "start": 432000,
+      "text": "Shubhanshu Shukla: Yeah."
+    },
+    {
+      "start": 432000,
+      "text": "Abhay Tandon: 28,500 kilometres per hour."
+    },
+    {
+      "start": 434000,
+      "text": "Shubhanshu Shukla: Yes."
+    },
+    {
+      "start": 434000,
+      "text": "Abhay Tandon: Eight minutes to orbit, right? Wow. That's some speed. I mean, I wish we had something of that sort in Bangalore. We could probably be stuck in Bangalore for eight days on the street, and in eight minutes you've reached the International Space Station in orbit. So that's—"
+    },
+    {
+      "start": 446000,
+      "text": "Shubhanshu Shukla: Yes, yes. It is quick. It is very quick."
+    },
+    {
+      "start": 451000,
+      "text": "Abhay Tandon: Wow, fantastic. Amazing to know what goes on. Because you'd also mentioned this journey — the whole spaceflight journey — as managed crisis, right? You refer to it as managed crisis. Now, with all the training, with the experience that you have had, could you talk to us about what an astronaut sees differently about managed crisis, and how to manage it effectively, that currently entrepreneurs, founders and businessmen sometimes fail to understand?"
+    },
+    {
+      "start": 485000,
+      "text": "Shubhanshu Shukla: See, I would not really know what people fail to understand, because everybody is different and they are sitting at different benchmarks. But if you look at a spaceflight, or a rocket launch per se, when you talk about being a managed crisis: it is a rocket that is standing on ground, about 500 tons of propellant that can explode, and on top of that there is a seat. You strap yourself to that seat, and you tie yourself up with that seat, and then you light this propellant on fire, and then you go to the sky. It cannot get any bigger crisis than this. And you really need to have a lot of confidence in this — whatever this entire thing that we are doing, you really have to have a very good confidence in that. So I think, how we deal with it in spaceflight: there is never a hundred percent, zero percent answer. It is always a percentage of assurance that you have. It is always a percentage of confidence that you have in the solution that you have at hand. And it is deliberated, it is discussed, it is agreed upon. And once it is done, then every member of the team is fully committed to that decision. And that commitment is what sees you through that activity. So yes, your decisions will never be 100-0. To the founders: I don't know where you are, at what benchmark, at what point you are sitting or standing today. But wherever you are, you can make the best possible decision based on the knowledge that you have at that point of time. The knowledge will change. Your decision will change in the future. There is no doubt about it. But when that happens, when you have taken a decision, then the commitment is what is going to see you through. 100% commitment to that decision is going to see you through that phase. That is what we do. That is how we manage this in the spaceflight domain as well."
+    },
+    {
+      "start": 594000,
+      "text": "Abhay Tandon: Fantastic. So is that the learning that you had before and after the flight? Because you also mentioned this on record that, you know, you are ready for a space flight only once you have done a space flight, right?"
+    },
+    {
+      "start": 604000,
+      "text": "Shubhanshu Shukla: So that was said in a different context. And the reason was that no matter how hard you prepare, no matter how hard you train, and I'll take the context of my space flight per se, you know what we did, the environment coming together of all the factors happens only when you are undertaking the flight. This is not possible to be simulated on ground. So even though you are very well prepared, there is a small delta that you have to navigate during the actual mission itself, which is not known in advance to you beforehand. So that is what I meant when I said that you're ready for a space flight when you finish one. It is because that even though you know, theoretically, okay, this is how things are going to happen. This is how I'm going to expect it. But when you reach there, you realise, okay, it is a slightly different version of what I thought it would be. And then you realise, okay, I could have done this better. I could have planned for this better. I could have, you know, that is the realisation that you have at the end of your space flight. So that is the context in which I said that, you know, you are ready for a space flight when you finish one. But I think that is true for anybody who's trying to do anything new. No matter how well prepared you are, when you actually start doing that thing, you realise that there are deltas, there are changes, there are differences to what your perception and what your reality is. And you have to navigate that when you're actually undertaking and when you're actually doing that exercise."
+    },
+    {
+      "start": 681000,
+      "text": "Abhay Tandon: Makes a lot of sense. So psychologically speaking, I mean, I had a nervous laughter when you spoke about the propellant being lit on fire, right? I was laughing, but that was a very nervous laughter because I was like, I can't even imagine being in that craft. I mean, that's the courage, valor, strength that you've had, right, mentally and physically to, you know, to be in that cockpit and take that risk. But when you talk about taking calculated risk, right, I would have been very afraid. I don't know if you were afraid during that point in time because there were so many unknowns that you were getting yourself into. All the trainings aside, like you mentioned, there's so many unknowns out there, right? Would psychologically it make more sense to be afraid or not to be afraid?"
+    },
+    {
+      "start": 722000,
+      "text": "Shubhanshu Shukla: I think that the risk is very well known when you are undertaking such a mission. The courage that you have to sit on top of the seat, it is not just yours. Actually, it is that courage is founded in the ability and the engineering of thousands of people who have been working on that system for years. So it is a collective courage that you have when you sit on that seat. So it is not an individual courage. So you get strength, you get the courage because you have trust and faith in the ability of people who have been working for years together. You know, that is the culture that is there in the human space flight domain. That is one part of it. But yes, when you enter such a mission, there is a risk. There is always a risk. Like I said, there is nothing like 100 and 0. It doesn't happen like that. So there is a risk. The way we deal with risk is that you kind of manage it. You calculate the risk. You get down to a number. You try to mitigate it as much as possible and get to as low value as possible. And once that is there, you accept that risk and then you get into the mission. That is where the courage part comes in because it is known that there is risk, but you accept that because that is the best that you can do. So all of that, again, this is known before you get into the rocket, before you sit in the carpet, before you sit on the seat. But when that ignition happens, you know, there is a moment when that happens, When you feel like, is it too much? When you think that, you know, maybe, did I figure out all the things beforehand properly or not? You know, there is a moment that happens, which is true for, again, I would say, which is true for any field. Any sector, any domain, any business, any exam that you appear for, it is always the case. There are moments when you are thrown off, when you are scared, when you are afraid. And I think the ability to push through, to continue is a very key ability in such domains. You know, it is also a skill. What do you do when you are scared? What do you do when you are afraid? And everybody is afraid at some point of time. It is not that it is a domain specific attribute. Everybody is afraid at some point of time. So what do you do at that point of time? So this is, again, part of the training, you know, guidance that I have experienced and I have learned over my years in the Air Force as well as during this mission, that fear is also an emotion that if you analyze it, it is rooted in the future. What can happen? What can go wrong? What if, right? It is always in the future. So the trick is if you can remove yourself from the future and come back to the present, what can I do now? What is in my control now? What is the next call out item? What is the next checklist? What is the next button that I have to press? What is the next call I have to give? Just keep that doing that one thing after another for some time. And you realise within eight minutes, you are you're in orbit and the feeling is gone. So being focused on what is under your control in the moment, I think removes most of it. That is the trick that we do in aviation as well when something goes wrong and as well as spaceflight. So I think that is a very key skill, which I feel can be cultivated by training, by practicing repeatedly."
+    },
+    {
+      "start": 916000,
+      "text": "Abhay Tandon: Makes a lot of sense. That was very profound, and beautiful, the way you explained the whole thing. And I think that's going to help a lot of youngsters specifically — even elders as well, for that matter — because I joke around about this with my son. My name is Abhay, which literally means the one without fear, and I'm like, that's not the reality of it. Everyone has some or the other fears, and it's okay to have fears as long as you're able to manage those fears. And the way you described being in the present is so beautiful. I think that's a very, very good learning for a lot of people who are going to be listening to our conversation as well. Thank you. Interestingly, I noticed a very brilliant point that you made, which was about when you were on the International Space Station and you were seeing the Earth. You called it your home, and there were no visible boundaries. You spoke about that. At another point in your journey of 20 days, when you passed over India, you were very emotionally overwhelmed about that as well — because there's also a lot of, if I can take the liberty of saying, patriotism. You're from the forces, so there's a lot of ingrained patriotism as well, and I'm assuming that would have also led to that emotional feeling that you had looking at India, because that's your home. So on one side Earth becomes home, with no boundaries, no national boundaries; and on the other side, when we look at India, there's also a very, very innate, strong, imbibed feeling of home. How does this dichotomy — is this a dichotomy in the first place? And second, in today's world, where are the boundaries of being global versus being national?"
+    },
+    {
+      "start": 1020000,
+      "text": "Shubhanshu Shukla: Yeah, it's a very interesting question. I don't think that there is a dichotomy here. It is just how we look at it, or how we understand it. So yes, the first feeling that I got when I was in space and I looked back at Earth was this, that this is home. And that probably came out of the desire to have a sense of belongingness to something, to derive a sense of identity from something, some group. If you take the example of children going to school: to everybody in school, for a child the home is the identity — my parents, my siblings, they talk about them. When you leave your school and you go to a college, to everybody in college your school becomes your identity: that I am from such and such school, I've studied here, I've studied in such and such place. Then if you leave your city, go to some other city to work, your city becomes your identity — you introduce yourself as, I'm from such and such place, I belong to such and such place. What are you trying to do? You're trying to derive your sense of identity. And if you extend that: when you leave your country and you go to some other country, your country becomes your sense of identity. You say that I'm from such and such place, I'm from India, I'm from Poland, I'm from Hungary, or whatever place — you introduce yourself as that. And as an extension, what happens is that when you leave your planet and you go outside, your planet becomes your identity. It's a very natural progression. It is not something that you force, it is not something that you have to deliberately think about. This is what comes to you when you look at Earth. You feel, I'm from Earth. I'm not from a particular place; I'm from that planet. That is a very strong feeling that you get. Having said that, coming to the second part of it — looking at India per se. If you think about it, anything that I am today, it is because of this country. It is because of the people who are in this country. It is because of what has been happening in this nation for me. So everything that I am today, everything that I know, all my experiences, all my character that I have today, is a contribution of this place to me. It is natural for me to be very, very emotionally attached to this particular place on the planet. I don't believe in this zero-sum game. I don't think that that is true. I don't think that if it is happening for me, it will not happen for you; or if it is happening for you, it will not happen for me. I don't think that. And so that is where I put these two feelings together. You can be very passionately, or very emotionally, attached to India and still think about the world. It's already there in our scriptures — we talk about Vasudhaiva Kutumbakam in a very, very big way historically as well. And this is what we have always felt. So this is what I feel: that there is no dichotomy. While being patriotic and nationalistic about our own country, we can still think about the world. We can still think about the globe. That is how I attach both of them together. It is possible to be emotional about things locally but still care about the world globally. Because at the end of it, whatever we do here, we may not see it, but it affects everybody else on this planet in some way. It will reach all the people there. So this thought is already very well established. We have had this philosophy in our culture before as well. And it is just about that. This was the experience that I had when I was there up in space. And this is what I feel — I think we kind of somewhere already know about it. We just have to propagate it even more across the world, so we can really grow together."
+    },
+    {
+      "start": 1220000,
+      "text": "Abhay Tandon: Makes sense."
+    },
+    {
+      "start": 1221000,
+      "text": "Shubhanshu Shukla: Yes."
+    },
+    {
+      "start": 1221000,
+      "text": "Abhay Tandon: Fantastic, sir. Thank you so much. I also want to go into a little bit of technical aspects. If I'm not wrong, there were seven microgravity experiments being conducted by you when you were at ISS, right? Could you give us a little bit of a perspective about what those experiments were? Two, was there any particular experiment that made you feel that, you know, really this is what people of Earth should actually understand and think about that, you know, this is how it works separately or differently outside versus what could potentially happen on Earth and how this will lead to value creation on Earth?"
+    },
+    {
+      "start": 1258000,
+      "text": "Shubhanshu Shukla: Yeah. Again, you know, very interesting question. So for the first time, we were able to conduct microgravity research on the International Space Station. And I took with me seven different experiments prepared by different institutions all over the country. The connecting theme was that we also wanted to enable our own human spaceflight in the future. So all these experiments were pointing their vectors towards this direction. Whichever different domains they were, they were somehow contributing to this particular aspect. So I worked on myogenesis to prevent muscle atrophy in space. I grew cyanobacteria and microalgae, possible source of food nutrition in space, long-duration space flight. Again, I took sprouts with me, some seeds as well, again, for the sake of addressing the problem of food security for long-duration missions. I researched on cognitive loads on astronauts while interacting with screens in the environment of microgravity. It is turning into a much more screen-based interaction, even in space now. So that was something that we wanted to explore. So like I said, you know, all of them are pointing towards the central theme, which is enabling our own human spaceflight in the future. I talk about the myogenesis one. It was a very involved experiment. What happens when you reach the environment of space because gravity is not there, you don't use your muscles. We don't realise it. But even while sitting, while standing, while walking on Earth, we are always using our muscles. And when they are in use, they maintain themselves or they grow if you put them under additional load. Now, when you don't have this, when you have no load on your muscles, you lose it very quickly. That is what is known as muscle atrophy due to the environment of microgravity. Right. This, the scientists wanted to research, is there a way to prevent this by using certain supplements? So I took certain stem cells with me and I introduced these supplements to the stem cells under the influence of microgravity. And we had a control. We wanted to see whether there is a difference between how well. So injury repair and muscle atrophy are inverse in relationship. So we wanted to see if they are, you know, quickly repairing themselves in case of damage, which will indicate that if you introduce it in a normal patient, it would prevent muscle degeneration, that kind of relationship. So we did that and we found some very encouraging results. So this was a research that was happening in space. How does it tie here on ground? People have muscle degenerative diseases."
+    },
+    {
+      "start": 1398000,
+      "text": "Abhay Tandon: Muscle dystrophy in others, yes."
+    },
+    {
+      "start": 1399000,
+      "text": "Shubhanshu Shukla: They have dystrophies, right? So if you are able to find a solution for a problem that you emanated in space, it is a possible solution for people with these diseases on Earth as well. I'm just taking one example. There are numerous such examples that can be derived from what we have learned from the environment of space, which have been applied to people here on Earth. So this is probably one of the very classic example that I've taken, but definitely connects very well to people here on Earth in our society."
+    },
+    {
+      "start": 1425000,
+      "text": "Abhay Tandon: That's fantastic. And so fascinating for me, specifically also more because I've done my engineering in biotechnology back in the day. And I was doing a lot of experiments myself on human genetics too back in the day. In fact, I presented a white paper at IIT Madras and CCMB, the Centre for Cellular and Molecular Biology, back in the day on muscular dystrophy. Right. So can relate so much to what you're saying because there's still a lot of effort going into regenerative technologies today, right, in terms of muscles. And very probably comes across as very stupid and lame. But I'm just thinking out loud, you know, I do not know the science behind it right now, the technology behind it. But could there not be some actuator or maybe I don't know if it even works in the microgravity situation, but actuators which would keep pushing your muscles to activate them. I don't know if something of that sort even works in microgravity, but I just had a random thought."
+    },
+    {
+      "start": 1479000,
+      "text": "Shubhanshu Shukla: It's not a layman thing. It's not a random thought. What you are thinking is actually kind of already being experimented on ISS."
+    },
+    {
+      "start": 1486000,
+      "text": "Abhay Tandon: Is it? Okay."
+    },
+    {
+      "start": 1486000,
+      "text": "Shubhanshu Shukla: So there was an ongoing experiment while I was there on muscle stimulation using electrical means. So you had, there were astronauts who were participating in that and they would paste these patches on different parts of their body with wires turning to a central unit, which will electrically stimulate your muscles in that region. And it is painful. It is not very comfortable, but it was an experiment that was ongoing, which was kind of trying to study the same thing that you're saying. Is it possible to actuate them electrically, to stimulate them so that they continue to grow? While that is being studied, it is also mandatory for astronauts to stay on station to exercise every day for two hours. There is a resistive machine and there are two aerobic machines. One is a cycle and one is a treadmill. And so one hour for aerobic conditioning and one hour for resistive conditioning is mandatory. Otherwise, you know, it will be very difficult for you to stay for long durations."
+    },
+    {
+      "start": 1544000,
+      "text": "Abhay Tandon: Right."
+    },
+    {
+      "start": 1545000,
+      "text": "Shubhanshu Shukla: So that has also been happening. But this experiment was being conducted while I was up there in space."
+    },
+    {
+      "start": 1549000,
+      "text": "Abhay Tandon: Fantastic. When you said long period in space, could you describe? Because I think most people will not really be able to understand the difference of, you know, 20 days in space versus 20 days on Earth. Right. 20 days in space as is very long. Right. There's a lot of effects that you saw yourself after you returned back as well. And I do want to touch upon that too, that, you know, when you went to space, you in some ways unlearned gravity. And when you came back, there was a very stark reminder that there is a lot of gravity back home, right? So that must have had some challenges too. Could you share a little bit of a perspective about that?"
+    },
+    {
+      "start": 1589000,
+      "text": "Shubhanshu Shukla: Absolutely. So what happens is when you reach that environment of space, for the first time, your body is experiencing this environment. It has not been in this environment before. And I'm talking about evolutionary as well. What we are today, we have never seen this environment. My body, before I went to space, had never seen this environment for 39 years. And first time it was exposed to that. You do get exposed on ground when you do simulations in the parabolic flights. But that is only episodes of 30 to 35 seconds. So it is not a sustained period of exposure to microgravity. So when you reach there, physiologically, there are a lot of changes in your body, which are immediate in nature. Within a week, these happen. Like, you know, when gravity goes missing, you know, it is not acting. All the blood from your leg, it shifts to your head. Your head actually becomes bigger. It swells up. Your heart is not working against gravity to supply blood to your brain. So it actually becomes smaller. It shrinks in size by about 10 to 15 percent, depending on how long have you been staying there. There is a sense of confusion because of the fluid shift, brain fog. You would say there are headaches. Some people feel nauseous because of the space motion sickness symptom that I'm describing. You also become taller in space. You grow in height because gravity is not pulling it down. So your spine, you know, it extends. So you grow by a few centimeters while you are there in space. Lastly, we talked about it. The loss of muscle, which happens, which starts happening very quickly. So these are some changes which you see almost kind of immediately within a week when you're there. Three to four days, you see these changes start happening. And within a week."
+    },
+    {
+      "start": 1681000,
+      "text": "Abhay Tandon: Must be very painful also, by the way."
+    },
+    {
+      "start": 1681000,
+      "text": "Shubhanshu Shukla: Yeah, you do have headaches, you have backache, then your, you know, your spine is extending and so it is not comfortable in the initial few days, you know, space flight is not very comfortable. It is challenging, you know, you are advised to use medications if it is not manageable. And all these things happen when you are there for the initial few days. After about a week or eight days, you become comfortable with what is happening, your body gets used to that environment. Like you said, you learn gravity in this environment, right. And thereafter, you continue to stay there. As per the definition of a long-duration space, because these are, I'm talking about, near-term changes, you know, immediate changes. But there are some long-term changes as well. The effect of radiation, which you are getting exposed to, which is a higher dosage, you know. The muscle atrophy that we are talking about. All these probably are long-term changes which happen over a period of time. So the distinction happens at 30 days. Anything lesser than 30 days, NASA considers it to be a short-duration thing. And anything beyond that is a long duration mission. That is what is being defined as. The longer you stay, the longer you have to come back and rehabilitate. You know, it takes that much more time for rehabilitation for you to get back to normal because the changes are that much more. So that is the kind of distinction which happens in short duration, long duration missions. But the progression is like very rapid. The symptoms are very rapid in the initial few days. And then they kind of try to go out and grow, you know, at a lesser rate as compared to the initial few days when you are in space. So yes, you learn the environment of gravity, microgravity when you reach space and you relearn the environment of gravity when you come back to Earth."
+    },
+    {
+      "start": 1776000,
+      "text": "Abhay Tandon: How long did it take for you to rehabilitate after?"
+    },
+    {
+      "start": 1779000,
+      "text": "Shubhanshu Shukla: For me, about eight days to start doing everything almost normally, what I was doing. The long-term changes like the muscle loss and it takes time. You have to rebuild the muscle by doing exercise and everything. So that takes time. But in terms of day-to-day functions, like driving, walking around, moving fast, running, all these things, it took me about eight days."
+    },
+    {
+      "start": 1800000,
+      "text": "Abhay Tandon: Got it."
+    },
+    {
+      "start": 1801000,
+      "text": "Shubhanshu Shukla: Yes."
+    },
+    {
+      "start": 1801000,
+      "text": "Abhay Tandon: Does it also feel after this whole experience that humans also need to realise two things, right? One is that probably humans are more fragile than they consider themselves to be. You know, once you go beyond your realm of being on Earth, right? You go beyond that. And the second thing is resilience that, you know, we are so adaptable. We have so much of resilience that, you know, we are ready to do that and beyond. Right. We do want to, you know, probably set up a colony on Mars and moon as well. Right. So eventually. So interspace travel. So do you have any thoughts about these two perspectives, both, you know, how fragile we are as humans outside of our home as Earth? And at the same time, the resilience in our mental thinking about some of these challenges that we are taking up."
+    },
+    {
+      "start": 1852000,
+      "text": "Shubhanshu Shukla: Yeah, I think we don't need to leave the confinements of Earth to realise that we are fragile. There are enough things happening here on Earth as well, which very clearly point out that how fragile we are. And I think that realisation should definitely be there in all of us. You know, it kind of humbles you. It kind of tells you that, you know, how massive these things are and what are we doing here in this part, you know, and that is one part of it. The fragility, I think, is very, very important. It becomes even more highlighted when you are out there in space. But there are a lot of things that happen here also, which tell us that we are fragile. We are affected by things which are not in our control. We cannot do anything about it. We are affected by them. So definitely that gets highlighted very distinctly. But as a counterpoint, I think we are also very resilient as a species. There is no doubt about it. Again, reiterating the same point. As a species, never seen this environment of microgravity. Your body has never seen that. You reach there and within a week, you're okay. That is your adaptability of your body. That is what it can do. That is where it can take you. So I think that there is a lot of resilience that we have in ourselves. We have to exercise that. And this is something we learned in training also. When I started training back in 2002 with the National Defence Academy, this is something that was taught to you that your body can always take much more than what your mind can take. It is always, it works. The body takes much more than the mind can take."
+    },
+    {
+      "start": 1938000,
+      "text": "Abhay Tandon: Absolutely."
+    },
+    {
+      "start": 1939000,
+      "text": "Shubhanshu Shukla: Your mind always gives up."
+    },
+    {
+      "start": 1941000,
+      "text": "Abhay Tandon: Faster?"
+    },
+    {
+      "start": 1941000,
+      "text": "Shubhanshu Shukla: Faster."
+    },
+    {
+      "start": 1942000,
+      "text": "Abhay Tandon: Okay."
+    },
+    {
+      "start": 1942000,
+      "text": "Shubhanshu Shukla: You know, and you stop. You stop. You can still go. You stop because you're thinking that you have to stop because you'll not be able to take it. But nothing is stopping. You can keep on moving. You can still keep on moving. So I think that is the relationship which is there. So yes, resilience, I think we as a species have a very, very high resilience for things that have not been done before that are very unknown, that are very difficult. You see people achieving stupendous feats, you know, which are so difficult to even think of. People are running ultramarathons, 100 kilometres, 600 kilometres. You know, people are doing things which is unimaginable, but they are able to do. That is the kind of resilience we have. So I think that both the aspects are very important and should be kept in mind side by side. You know, both are very, very important to understand. Yes, we are very resilient. We can do great things. But at the end of the day, there are certain things which are definitely well beyond our control. We don't know that how it will affect us so that is where the fragility comes in."
+    },
+    {
+      "start": 1996000,
+      "text": "Abhay Tandon: Fantastic. Thank you, thank you so much for sharing. Again, very profound. And on that note, I will now move to the second stage of the mission — sorry for the bad pun there. But I do want to talk about the fact that today we are sitting with a very, very celebrated astronaut, and I want to go from there to a five-year-old boy in Lucknow who was not one of those kids who would say that, you know, I want to be an astronaut. So I want to go back to that journey, because you as a kid did not call it out — this was not your biggest aspiration, that hey, listen, I want to be an astronaut at the age of five. A lot of kids today — my own son is five years of age and he talks about space tech so much. You did not aspire necessarily to be an astronaut at that point in time. How did that change over the course of time — at the age of, let's say, 14, when you wrote yourself a letter; at the age of 18; 28; and about two, three years back at 38, when you were just about to take up that flight?"
+    },
+    {
+      "start": 2052000,
+      "text": "Shubhanshu Shukla: Yeah, I think change has been a very constant theme in my life till today. I think it is in everybody's life. Every experience, every interaction that you have has the potential to change you, should you be ready for it — if you're ready to accept that. So, five: I actually don't remember what I was thinking at five, you know, to be very honest. Fourteen — yes, 14. I would say that I did not have the conviction to believe that these are possible things for me, that these are things that I can do at that age. Gradually we moved on. Sixteen and a half, 17 — I had already applied for the NDA. At 18, I was in the academy."
+    },
+    {
+      "start": 2089000,
+      "text": "Abhay Tandon: And by the way, you did not even tell your parents that you had applied for the NDA. That was a sign of independent thinking, I'm assuming."
+    },
+    {
+      "start": 2100000,
+      "text": "Shubhanshu Shukla: No. I knew my family was not very keen on me joining the armed forces. So I knew that if I kind of told them, they would not, you know, let me go — or maybe they would not have stopped me, but they would have definitely in some ways dissuaded me. That is what I felt at that time."
+    },
+    {
+      "start": 2114000,
+      "text": "Abhay Tandon: You realise, right? This is almost a movie in the making."
+    },
+    {
+      "start": 2125000,
+      "text": "Shubhanshu Shukla: So I did apply. I did write the exam without telling them; they did not know that I had written the exam. And there was a group of friends who had applied in the school — I was the one who got selected. So my friends came over to my house to tell me, in January. At that time you had this Employment News newspaper that would come with the results of the UPSC, and they came to my house to congratulate me — because the phone and all, you know, it was not so common during those days. So they came to my house to congratulate me on cycles, and that was the first time my parents came to know. Okay, what is happening? This is what you have applied for and gotten through. So that was the story of the application process per se. But before that — like 14, if you talked about — I did not think that I could be somebody like that, that I could be a fighter pilot. So at every step that I was able to navigate, like getting through that written, was a kind of validation for me: okay, this has happened. And then when I was going for the interview, I remember the feeling that I had, that I want to try this, I want to go and see how it happens. Again, even at that point of time, I did not have that aspiration that I will get into the NDA. Even at that point I did not think that. I was just looking at the interview. I was saying, okay, let us go, let us see how it happens, we'll go and try for this as well. And I went, and I really enjoyed that entire experience of the SSB. It was in Dehradun, and it was again a very different world — how things were happening, how we were interacting there. And then I got through that, and then the medicals, and eventually the academy. So at 18 I was in the academy already. The thought process that was governing me at 18, I would say — the minute I got into the academy I realised that it was very hard, it was very challenging, very demanding. So the thought that was governing me, my philosophy at that point of time, was only, you know, if the person next to me can do it, then I can also do it. And that was a thought that was keeping me there. A lot of people leave, a lot of kids leave the academy in the first month when you go there, because it is just something that is very hard and they did not expect it to be like that. But the thought that kept me there for those three years was this: if somebody else can do it, then I will also do it, and I will finish it off. So that was what was governing me at 18. That continued to be my mantra for certain years, to the time I finished my training, got into the flying, aviation, and continued doing that. At 28, 29 — I would say at 28, 10 years down the line, right? This would be around 2014, '15."
+    },
+    {
+      "start": 2278000,
+      "text": "Abhay Tandon: I would say 2000 to 2003, we are talking about."
+    },
+    {
+      "start": 2287000,
+      "text": "Shubhanshu Shukla: Yeah, 2013, 2014. So I was already posted in a place called Srinagar. I was there. And I'd done most of my flying, you know, whatever qualifications I could achieve, I had achieved. And I was there. I was posted as an instructor there teaching combat. And I was doing..."
+    },
+    {
+      "start": 2302000,
+      "text": "Abhay Tandon: By then, you were already a test pilot."
+    },
+    {
+      "start": 2304000,
+      "text": "Shubhanshu Shukla: No, I wasn't."
+    },
+    {
+      "start": 2305000,
+      "text": "Abhay Tandon: You weren't, okay."
+    },
+    {
+      "start": 2305000,
+      "text": "Shubhanshu Shukla: I wasn't a test pilot. So test pilot is an optional choice. Not everybody becomes a test pilot."
+    },
+    {
+      "start": 2309000,
+      "text": "Abhay Tandon: Of course."
+    },
+    {
+      "start": 2310000,
+      "text": "Shubhanshu Shukla: Right. So I was a fighter combat leader by that time."
+    },
+    {
+      "start": 2313000,
+      "text": "Abhay Tandon: Oh, wow."
+    },
+    {
+      "start": 2314000,
+      "text": "Shubhanshu Shukla: The qualification which empowers you to teach combat in the squadron that you're posted in. So I was posted, I was teaching combat, had almost all the qualifications. It was flying that I was doing — teaching combat and doing everything. And in those 28, 29 years, the thought that was governing me was that I was thinking, is this it? Is this what I'm going to be doing the rest of my time here in the Air Force? And I realised that the answer was that I was not okay with being stagnated at that point of time. And that guided me to apply for the test pilot course. So it's a voluntary course; you apply for it. You have to undergo a selection process — again, written, and viva, and flying. And once you get through, you do the course for one year. So after 28, I applied for the test pilot course, got through and then got selected. I was there in Bangalore when the selection process for the astronauts happened. At 39, I was sitting on top of the rocket and probably waiting for getting launched to space. So I think these three different phases, three different philosophies — but change was the only constant at every stage. There was something different that was happening. There was something that was moving me towards some new experience or some new learning at that point of time."
+    },
+    {
+      "start": 2391000,
+      "text": "Abhay Tandon: Fantastic. No, I mean, this is very compressed, but I'm sure that the kind of learnings and the kind of experiences that you've had are super fascinating, right? Because one thing that I took away from the NDA part that you described is that typically, you know, NDA builds a lot of character, a lot of strength in anyone who goes through that process. But I also believe that the people who survive there and who thrive eventually are the ones who are mentally very strong, because you also develop that capability of being mentally very strong. Air Force goes without saying — the kind of risk associated with that. And you've flown all kinds of aircraft, right from Sukhois to MiGs and so on and so forth. In fact, I think the MiG-21 was the one that you started on."
+    },
+    {
+      "start": 2435000,
+      "text": "Shubhanshu Shukla: Yes, started on."
+    },
+    {
+      "start": 2435000,
+      "text": "Abhay Tandon: Right. Probably one of those most comfortable that you were in, I think — MiG-21 Bison."
+    },
+    {
+      "start": 2441000,
+      "text": "Shubhanshu Shukla: Yes."
+    },
+    {
+      "start": 2441000,
+      "text": "Abhay Tandon: Right. So it's known to be a risky aircraft now that we look back in hindsight; there have been a lot of issues over a period of time. And then to think about the fact that you then took on a role of a test pilot — I mean, probably people who are seeing this do not understand that the risk level increases further, because now you're saying there's a new aircraft that's come in, and before you create a manual, let me test out all the different capabilities that this new craft possesses, and then you create a manual on top of it so that others can fly, hopefully, safer. So the risk appetite goes even further up there. And then eventually you join IISc as well, and ISRO. I'm assuming that you started working towards astronaut training as well in this whole process. And when you went through this training of being an astronaut, I'm assuming there's a lot of stuff that was taught to you around aerospace and mathematics and physics and so on and so forth — academic training as well. Did it teach you something different than the thousands of hours of cockpit training that you already had as a fighter pilot, as a test pilot?"
+    },
+    {
+      "start": 2512000,
+      "text": "Shubhanshu Shukla: Did what teach me different?"
+    },
+    {
+      "start": 2512000,
+      "text": "Abhay Tandon: The academic learning."
+    },
+    {
+      "start": 2512000,
+      "text": "Shubhanshu Shukla: The academic learning when I joined the IISc, you were saying?"
+    },
+    {
+      "start": 2517000,
+      "text": "Abhay Tandon: IISc and even as an astronaut as well, you must have picked up a lot of academic learnings on aviation at large beyond your actual practical in-cockpit experience of thousands of hours."
+    },
+    {
+      "start": 2530000,
+      "text": "Shubhanshu Shukla: So I think both are different forms of learning. One is theoretical learning that you have in the classroom when you are trying to understand concepts; and the second is a very practical form of learning, when you are actually putting that knowledge to some kind of use when you are out there in the open. So getting into IISc and starting research was definitely a very different domain for me. It was a very different type of learning. Even the academic learning that we have in the Air Force is mostly towards your operational utilisation of that learning. So you do calculations, weapon trajectories, mission calculations, timings — all these things you keep on doing over a period of time. When you become a test pilot, you get into the engineering domain. But again, it is with the backdrop of utilising it for some operational use, whether it is a weapon integration or a system integration or a new aircraft development. So it is theoretical knowledge that is being used for a practical application. When I got into research, I think there was a shift in what I saw: that at the fundamental science level, the research was being done to find out concepts. There may not be any immediate visible operational utilisation of that concept, but it is being done because it is known that over a period of time it will eventually lead to that particular place. I found that difficult; this kind of was a conflict for me. So when I started doing my research work at IISc, I chose to work on extraterrestrial habitats, because that is where I saw the operational utilisation of the research that I would be doing. I was guided very suitably by a lot of professors there to make it more specific to the domain, because you need to go deep into a particular topic, which I did. But I always wanted to connect it back to the habitat, because that is where I come from. That is where I wanted it to be. What does it do? What is the science that I'm doing in the lab — what does it do finally? Where does it get utilised? So this is why we came out with this concept of BHEEM, the extraterrestrial habitat that we were working on. The research that I did in the lab, I connected it to what we are eventually going to do there. But yes, it was a very different and unique experience for me, a lot of learning. I think the philosophy is just slightly different — that is what I would say — between what I was learning in the Air Force and how I shifted when I went to the IISc."
+    },
+    {
+      "start": 2667000,
+      "text": "Abhay Tandon: I'm assuming that must be a very strong combination, because potentially what IISc taught you was a lot of scientific temperament towards research, and the forces experience must be a very action-oriented role as well. Of course, there's a lot of thought process that goes behind it, a lot of preparation that goes behind that as well. But there are two very different streams coming together to mould you as a professional, right? You then took up the spaceflight mission as well."
+    },
+    {
+      "start": 2698000,
+      "text": "Shubhanshu Shukla: Yes. I think if you look at any field, the cross-pollination of skills and ideas is what produces new things. You know, when you think about an existing field, you come from a different field and you use the concepts being used in your field to this new field. And I think that produces something unique and something very, very different. I really enjoyed this entire experience. Been working together with the professor at the IISc, who is my guide, Professor Alok. And we were able to discuss and deliberate on what we want to do and what do we want to evolve this, what we are doing research, you know, all the time. So I think, yes, it was very exciting to combine my background from where I was coming into something that I was learning at hand and come up with an operational use case for what that research is all about."
+    },
+    {
+      "start": 2745000,
+      "text": "Abhay Tandon: Fantastic. Back in the day, I used to be the global director for innovation and site leader, APAC, for Lowe's. Lowe's is a Fortune 30, $100 billion top-line retailer. And one of the experiments that was conducted in the US in partnership with NASA back in the day was: can home improvements be done in space, in microgravity situations? So that eventually, when we ever land on the Moon or Mars, can we use 3D printers to build out basic structures in place? Eventually it got shut down, because people inside the organisation — the board members, etc. — were like, you're thinking too far-fetched, first let's focus on Earth before we focus on that. But we spoke about extraterrestrial habitats, and that rang a bell in my head, and I was like, wow, this is a very fascinating subject to do your research on as well. I do also get another perspective. All these institutions that you've been a part of ideally teach you to lead — basically developing the leadership traits and capabilities around that. But in your space journey you mentioned that it's a team, and sometimes each person of the team brings in a different skill set, a different capability. And while for one particular facet of the journey one person is a leader, for another skill the other person takes up the leadership role and you become a follower. How does that work when you have been trained all your life — because at least from an Indian cultural ethos standpoint we're always told that you imbibe the leadership qualities and be a leader in the room? At the same time, the space journey taught you followership as well. So how do they both work together, and in tandem?"
+    },
+    {
+      "start": 2840000,
+      "text": "Shubhanshu Shukla: I think this was one of the very significant learnings for me when I got into the astronaut programme and space exploration as well. And what I believe now, today, is that a leader has to be a good follower. There is no other way; you have to be. And you have to understand that authority should always try to track competence, not rank. So what is it that you're wanting to do? Collectively, your objective is that the team should be successful. So at some point of time you may have the expertise, you take the decision. But if at other times you know that somebody is better suited to do the job, you let that person do the job. Ambition, if it is driven by personal glory, I think it kind of truncates the accomplishments of the team collectively. It is always going to be the nature. So if your collective objective is the goal of the team, then you should be ready to step down — step down, let somebody else take charge at some point of time. And that is how the team collectively wins. So again, like I said, competence should drive the selection of the individual who is going to decide at that point of time. And obviously it will be a rotational-basis thing, because at different points of time you will navigate, or you will encounter, different things which are outside your domain of expertise. So it is always going to be the case. So no one person gets to lead at one point of time. Yes, there has to be an overall leader. Even in spaceflight, there is a designated commander who is responsible for the overall safety of the crew and the mission per se. But that commander delegates and says, okay, this is something that you are good at, tell us what to do. And when the solution is on board, it is discussed, and then that decision is taken by the commander. If at all there is a conflict of decision at some point of time, the commander has the word — what they will say will have to be done, and everybody aligns with that. But this distribution of responsibilities to people based on their competence, based on their expertise, is an essential part of teamwork. And that is what I feel that leaders should be able to do. They should learn when to step up and be a leader, and when to step down and be a follower of someone who is better suited to do the job."
+    },
+    {
+      "start": 2971000,
+      "text": "Abhay Tandon: Makes a lot of sense. Thank you so much. This is again a very, very, very strong lesson for a lot of youngsters who are following it, even aspiring leaders. Right. Because, you know, I've had various guests talk about leadership traits. But the way you describe the fact that, you know, any good leader should also know how to follow first. Right. So this is a very, very strong perspective and a very good learning for a lot of people. Thank you so much for sharing that. I also want to come on the book, The Second Orbit. Again, my assumption is that the first orbit was being referenced to, you know, Wing Commander Rakesh Sharma, sir, for completing the first orbit as an Indian. The second orbit was yours or is yours. And it also in some ways signifies that, you know, you know, along the trajectory of your life, you achieved the orbital velocity beyond to escape velocity to cross into a different orbit as a second orbit. I just wanted to understand, you know, these are, you know, everyone would have their own assumptions of what the title means to you. Could you share a little bit of a perspective about what the second orbit means?"
+    },
+    {
+      "start": 3038000,
+      "text": "Shubhanshu Shukla: Yeah, I think your first interpretation is absolutely correct. That was the genesis of this thought. The first orbit that India took was in 1984, through Wing Commander Rakesh Sharma, sir, and it took us about 41 years to get back into space. And again, this title came from a very dear friend when I was training in the US. We were talking about what this mission means for us and how is it going to impact people back home, and that was the time that this title, Second Orbit, came up. So it was kind of a tribute to our first Indian astronaut, Wing Commander Rakesh Sharma. And also I feel — I have written about it as well — that yes, it took us about 41 years to reach here, to take the second orbit, but I want, or I wish, that we undertake many more such orbits in future, so that the title becomes irrelevant. You know, it is not being used by people anymore. But the tribute, and the acknowledgement that it was done long back in 1984 and now we're doing it again in 2025 — it's a very different situation. It is not the same. We are in a much better position to take it further today, and that has to be acknowledged, I feel, when we are doing it today. But the title derives its inspiration from the first mission, from Wing Commander Rakesh Sharma's mission."
+    },
+    {
+      "start": 3114000,
+      "text": "Abhay Tandon: Yeah, I read the foreword as well, about '84. And I did mention it to you that luckily for me I had met him — I had the opportunity to meet him at BITS Pilani years ago. And it was quite a funny scenario for me, because all over my growing-up years I've always seen Rakesh Sharma sir's singular photograph in all the textbooks. And for some reason, when he was in front of me, I almost couldn't recognise him — till someone told me, that's Rakesh Sharma sir. And I'm like, oh wow, like, really? Because we've grown up reading about him in textbooks for years and years. So I had a very brief five-minute chat with him, and it was lovely. And to think about the fact that it took us 41 years is a very long period of time. I've also been reading and following up a lot of news on space tech, and I'll get into those aspects as well, where I see that now India is the fourth nation to do this and that and so on and so forth — so many amazing achievements in the last three, four years as well, including you being there. And finally the second orbit. Again, a philosophical one, before I get into the technical ones and more business-oriented ones that I wanted to get deeper perspectives on from you. The 14-year-old — the letter that I read as well, who wrote your letter, and eventually you wrote a letter back to him as well — the 14-year-old Shubhanshu Shukla who wrote the letter: if he were to, let's say, walk into the podcast room today and see the Ashok Chakra awardee, the second Indian astronaut to go to space, the first Indian to actually be on the International Space Station, 20 days — that is so much that you've done, all the achievements and accolades that you've created, and a bunch of other futuristic projects that you're involved in right now. What would surprise the 14-year-old Shubhanshu the most at this point?"
+    },
+    {
+      "start": 3232000,
+      "text": "Shubhanshu Shukla: I think everything would surprise him. First thing I think that he wouldn't believe, even though he would see, he wouldn't believe. You know, I think that is going to be the thing. That is what I was when I was that age. The lack of belief, the lack of conviction that such things are possible. I had a belief at that age that, you know, these are different kind of people who do such things. You know, even when Wing Commander Rakesh went to space, as you said, we were reading about him in textbooks and classrooms. But they thought that I could be somebody like him. You know, it never occurred to me. It never even crossed my mind. So I thought that these are different people who, you know, do such things. So I think that is going to be the sentiment if we go back historically and get that boy here. He would still feel that. He would be very, very elated, obviously, over a period of time when he sinks in and he really believes that this has happened. But this is the part that I tell kids today when I go and talk to them. Again, deriving from my own personal experience that belief is very, very important. People who do great things, people who go on to achieve something significant are people like you and me. People, you know, who just have the same faculties that what we have. It is just the belief and hard work over a period of time that gets them there. You know, so that conviction, that belief has to be there. It has to happen somewhere, which obviously built for me over a period of time when I started my journey through the academy and then in the aviation as well. But as a child, you know, I think that it was very different. I did not have that conviction. So I think he would be very surprised and in disbelief. But when he understands that it has really happened, I'm sure he'll be very happy."
+    },
+    {
+      "start": 3329000,
+      "text": "Abhay Tandon: I'm sure too. I mean, anyone would be so proud to see your journey. And that's why I said, I did allude to the fact that I think they're going to be movie producers — I just need to write a movie about you. But I'm also going to now go to the next part of the conversation, which is a very critical one, because now I want to focus on the future of the space ecosystem in India. If I can take the liberty of saying, your first orbit was personal, the second orbit was this journey, and now the third orbit, which potentially refers to the future of how things are going to evolve from here. So we've been hearing for decades now that the space journey is increasing in India, and I think in the last 10-odd years we have seen exponential growth in the country's space programme as well. I remember being very, very angry when I saw the New York Times cartoon in poor taste, showing an Indian man in a dhoti with a cow knocking on the elite space club door after India finished the Mangalyaan mission. And of course eventually they apologised, because there was a lot of backlash — it was in poor taste, and it was frustrating to see the racial bias that the New York Times published this with. Cut to today, there's so much more advancement that we have seen in our space economy, and there's a lot of different levers that are moving simultaneously — the 2023 privatisation, the IN-SPACe Decadal Vision and Strategy that we are seeing today in India. In fact, PM Modi went on record to say that the next decade is going to be very, very big, because of the fact that the strength of the government organisations and institutions, coupled with the hustle and the energy of startups coming together, will mean that sky is not even — sky is not the limit. I think this is what his quote was, if I'm not wrong. I mentioned it some time back. All these things culminating together — what are your thoughts about how the landscape is already evolving?"
+    },
+    {
+      "start": 3452000,
+      "text": "Shubhanshu Shukla: Yeah, I think the exponential growth that you're talking about, I would not extend it to 10 years also — I would extend it to the last five years. This is where we have seen this exponential growth in what is happening in India. There is a lot of excitement, and there is a lot of support from the government to enable this, as you said. And ISRO has been the shining star of our country, ever since all these missions that we are proud of, that on an international forum we have been successfully able to do. ISRO has been single-handedly carrying that torch for decades for India — Mangalyaan, then Chandrayaan, then whether it was Aditya-L1, all these kinds of missions which have been happening. It is just fascinating. Now what is happening is that along with this public sector — sorry, the private sector is also emerging and very rapidly catching up. Every institution that we have, or every different domain that we are talking about, has their own strength. So if you take ISRO, the public institution, they have the rich culture that they have built over a period of decades, the organisational knowledge that they have, the institutional knowledge, the expertise — all of that is the strength, that stability that can give to something humongous, something big that we are planning to do. On the other side, if you look at the private sector, the agility, the innovation, the rapidity with which the decisions can be made, the unique ways of thinking, the out-of-the-box solutions — all of that is possible from this sector that is emerging. So if we combine these strengths of both, I think we are sitting at a very interesting point wherein collectively, as a country, we can progress very rapidly in this domain. Which is, I think, very well understood by people who are sitting at the right places in the policy chairs, and they are guiding this very effectively as well. You are seeing what changes are happening, as you mentioned. So I think we are sitting at a very interesting cross point in this particular sector. Now, what is interesting is that — I don't know if it is understood by everyone — but space is one of those disciplines wherein it touches every aspect of your life. It touches every discipline, it touches every domain: whether it is agriculture, whether it is shipping, whether it is logistics, whether it is roadways, whether it is your daily life. Every possible sector — space has the capability to transform that sector by utilising the assets which we are deploying in space. So that is what is very interesting. Traditionally we know of a few sectors — the upstream, downstream, midstream that we talked about: the launch segment, the on-orbit segment, the downstream applications part of it. But it is much beyond that. The downstream segment, when we talk about it, the possibilities are endless. It is only restricted, limited, by the imagination that we have. Let's say six, seven years back, a farmer applying for a loan had to wait for probably months before a person can go verify the land, look at the crop, look at the yields, everything, and then eventually they would get some kind of a loan. Right now, based on the statistical or the observational data that you can collect over a period of years — you map that land, you see the weather pattern, you see the crop yields of the previous years, you have data available already with you — within half an hour you get a loan approved for a farmer. So this is the utilisation of technology for the benefit of people right here on the ground. So I think that it really has the potential to change a lot of different fields, this particular sector, which is what we are going to see in the next decade. So yes, again, very, very exciting time, and I am very hopeful of this sector to play a very major part in our dream of becoming a developed nation by 2047."
+    },
+    {
+      "start": 3674000,
+      "text": "Abhay Tandon: No, that's fantastic. In fact, the application, the way you spoke about that makes a lot of sense because I think now people will start understanding what those applications are."
+    },
+    {
+      "start": 3681000,
+      "text": "Shubhanshu Shukla: Yes."
+    },
+    {
+      "start": 3681000,
+      "text": "Abhay Tandon: In fact, you refer to LEO as well, right? Earth observation, low Earth orbit, right? In which the satellites are provided, right? We'll probably also give a little bit of a perspective on the, through the infographics about the different kind of ranges."
+    },
+    {
+      "start": 3697000,
+      "text": "Shubhanshu Shukla: Yes."
+    },
+    {
+      "start": 3697000,
+      "text": "Abhay Tandon: But Earth has been — I mean, we as space-tech folks, I mean not me, but in India we've been making a lot of strides. Specifically, like you mentioned, downstream: there's no lack, it's because of lack of imagination that we are not even thinking about some of the applications. There are so many applications. But even on the upstream aspect, where we are talking about creating much better rockets in partnership with ISRO and NSIL, we're talking about the private players coming in, we're talking about propellants, you're talking about capsules, you're talking about satellites, all kinds of payloads and so on, and various other capabilities. For example, I recently read there's a very, very successful experiment that happened in 2025 where our autonomous capability of docking and undocking was very successful for India — again, ISRO was at the helm of it. And recently, about four days back — I don't know, about some days back — we also pushed, or was it today that we pushed out the satellite in the—"
+    },
+    {
+      "start": 3754000,
+      "text": "Shubhanshu Shukla: Yeah, early morning today."
+    },
+    {
+      "start": 3754000,
+      "text": "Abhay Tandon: Early morning. Yeah, okay. Which is going to be between the Sun and the Earth, to manage at 36,000 kilometres — to manage the overall viewpoint, or vantage point, from a defence standpoint as well, I'm assuming, beyond just agri and other use cases. There could be a lot of defence capabilities that lie there as well, right?"
+    },
+    {
+      "start": 3778000,
+      "text": "Shubhanshu Shukla: Yes so if if it is okay I would like to just so what happens is that when you launch a satellite, like we are talking about low Earth orbit, when you launch a satellite, which is closer to Earth, it moves very rapidly. So when you get inserted at an altitude of about 200 kilometres, you're moving at about 7.9 kilometres per second. That is your speed that you have. The farther you go away from Earth, your velocity keeps on reducing. It has to be seen in terms of energy potential and kinetic. Overall energy, you know, is essentially the same. It is being created and you go higher and higher. Your velocity keeps on reducing. So there is an altitude which is around 35,786 kilometres, which is a geostationary orbit. Right. At this altitude, your rate of movement around the Earth matches the rotation rate of the Earth. So you remain stationary at that point. And this becomes particularly of interest because then your view angle, then your area of interest, it remains constant. And it is available to you 24 by 7, 365. Right. It's not a repetitivity or, you know, you're not looking at when will the satellite come back again. Satellite is always looking at that, always looking at that range, you know. So that is why it has got some very interesting applications in terms of communications, observation or, you know, all those different domains."
+    },
+    {
+      "start": 3851000,
+      "text": "Abhay Tandon: That is a region specific, I'm assuming."
+    },
+    {
+      "start": 3853000,
+      "text": "Shubhanshu Shukla: Yeah, but it becomes really wide from that range. You know, the view angle is really wide. Almost one third of Earth you can actually map from that particular place. So it becomes very interesting. So if you are interested in our region and the region around us, it makes a lot of sense to just, you know, pick something there and which is looking at that particular point from a very wide lens."
+    },
+    {
+      "start": 3874000,
+      "text": "Abhay Tandon: Right."
+    },
+    {
+      "start": 3874000,
+      "text": "Shubhanshu Shukla: Yeah."
+    },
+    {
+      "start": 3875000,
+      "text": "Abhay Tandon: And LEOs — you know, the satellites move very fast, like you mentioned."
+    },
+    {
+      "start": 3879000,
+      "text": "Shubhanshu Shukla: Very rapidly."
+    },
+    {
+      "start": 3879000,
+      "text": "Abhay Tandon: So you need multiple of them."
+    },
+    {
+      "start": 3880000,
+      "text": "Shubhanshu Shukla: 120 minutes to complete the circle."
+    },
+    {
+      "start": 3882000,
+      "text": "Abhay Tandon: Yes, exactly."
+    },
+    {
+      "start": 3883000,
+      "text": "Shubhanshu Shukla: So it is just that you need multiples of them to have constant—"
+    },
+    {
+      "start": 3887000,
+      "text": "Abhay Tandon: Constellations."
+    },
+    {
+      "start": 3888000,
+      "text": "Shubhanshu Shukla: Yeah. That is why — the constellations that you—"
+    },
+    {
+      "start": 3890000,
+      "text": "Abhay Tandon: Makes sense. And I think now India is at a place where we have the capability to send these satellites and payloads on demand, right? So that was something that was missing about five years ago. Now we have that capability, that we can start sending these massive clusters or constellations of satellites for different kinds of activities. The midstream aspect, I think, is something that is still something I see as an opportunity. I just wanted to get your views on that. We know how to send a lot of satellites up there. The human space programme, or human spaceflight programme, is something that ISRO is constantly working on. There's one more Gaganyaan mission that's likely to happen in a few weeks from now, which is unmanned this time, though. But I think there was also a press release of sorts, or a brief that was released, that there's a lot of work happening on the human spaceflight mission as well, where India is coming up with a bunch of different things. One is the safety protocols have improved through the bunch of experiments that you also ran. Second thing is, we have our own space station coming up. There's a BHEEM programme that you've spoken about as well, recently. A lot of those things — which means my assumption is the space-for-space aspect is opening up as well, as a massive opportunity for both private and public players to come in together."
+    },
+    {
+      "start": 3967000,
+      "text": "Shubhanshu Shukla: No, absolutely. I think this is a domain that continues to be underexplored as of now. It is going to increase in the future. Multiple of these programmes that you're talking about are officially sanctioned ones, like Gaganyaan and Bharatiya Antariksh Station. The concept BHEEM is a research project as of now, and hopefully it will translate into something more tangible over the next few years. But yes, I agree with what you're saying — that the opportunities which are opening up because of what we are doing are just endless as of now. There are so many domains to be researched, there are so many things that we can do in this domain. And what I also believe very strongly about is — you know, I also get this question often, that we have so many issues here, we have so many problems here on Earth today, why are we doing this? Why are we going and doing something like this, which is going out in space and enabling life out there? First let us solve problems here. So to this argument, what I believe is that you cannot solve today's problems by using today's technology. It is not possible. You have to invest in the technology of tomorrow to solve today's problem, because otherwise you'll always be playing catch-up. And that is what happens when you try to go into the unknown domains, which is what exploration is essentially all about. And it has been proven historically as well — some transformational technology has come which has helped us in so many significant ways, which was not even thought of before, that something like this is possible. So for those reasons it is very essential for us to go and explore. And I'm sure that this exploration will drive a lot of innovation, which is going to give us many more new technologies which we can utilise for the benefit of humanity here on Earth as well."
+    },
+    {
+      "start": 4058000,
+      "text": "Abhay Tandon: It makes a lot of sense. In fact, I would perceive — and this has been happening since the inception of the space programme in the 1960s — but Dr Vikram Sarabhai, as a new country, there was a lot of pushback to him by both politicians as well as citizens, saying that we are a new country, shouldn't we be focused on the White Revolution, the Green Revolution, rather than talking about a space revolution? Do we really need that? And it's because of him and a lot of other scientists who followed suit that we have a meaningful space programme, and we have all the applications that you spoke about as well. People sometimes don't realise that. And I saw there was a comment on our Instagram post where someone wrote that we have purchased a seat on Ax-4 to send an astronaut to space — it was a reference to you — and there was a cost associated as well. Is this justified? Can we not use that money for removing poverty? And in my head I was thinking, one, poverty is a function of a lot of different factors and not this; but the kind of experiments that you have done in space outweigh the cost multiple times. It opens up a whole new chapter for India. And I want you to talk about how this is super critical for us in the future, because I don't think people understand — when you as an astronaut went up there and spent 20 days, some of the research that you have done, how it opens up and unlocks a lot of doors for a lot of our research which is likely to happen in the next decade as well."
+    },
+    {
+      "start": 4166000,
+      "text": "Shubhanshu Shukla: Yeah, I think, again, it is a very interesting perspective. It's a very simplistic analysis when you do such arguments — when you say you're spending so much money here, why can't we do it to remove poverty? What do you imply by removing poverty? Just distributing that money? I don't think it is going to exactly help us in a very organised way to remove that. You invest in the future, because then that allows you to tackle the problem of poverty by creating jobs, by creating opportunities for people. That is what happens. Now, coming specifically to my mission and what it entailed: we are embarking on this journey of human spaceflight for the first time. And what is probably not very clearly understood is that jumping from doing satellite missions to doing human space missions is not a delta jump. It is not a change in degree of what you're doing; it is a change in kind. It is a different nature of mission."
+    },
+    {
+      "start": 4222000,
+      "text": "Abhay Tandon: Of course."
+    },
+    {
+      "start": 4222000,
+      "text": "Shubhanshu Shukla: Yeah, right. It's a different culture. There is a different ecosystem that you have to establish to do human space missions. We have not done this before. We are doing it for the first time. ISRO has a lot of expertise in doing space missions, which is proving very useful to us for conducting these missions as well. But in spite of that, there are a lot many new things which we have to learn, which we have to understand — okay, how do we do this? How do we navigate that? And so towards that, my participation in this mission — what it meant was, scientific experiments were one part of it. But by being a part of this end-to-end human space mission, the kind of experiential knowledge that we have gained is phenomenal, which is what is going into our own programmes, which we are trying to enable here. So again, I would reiterate that it is not a simplistic justification of the money. The returns are much more, manyfold more, than what we have been investing. And by investing money in such places only will you progress, will you learn, and will you be able to do them for yourselves. And I'm sure that this was a very deliberate decision taken by the authorities at the right places to do that. We are seeing the pace in the programme that is happening, the companies that are coming up, the excitement that is built up, the ecosystems that now we are establishing, the protocols that now we are establishing for our own space station."
+    },
+    {
+      "start": 4299000,
+      "text": "Abhay Tandon: Right. And knowledge is getting into that, right?"
+    },
+    {
+      "start": 4302000,
+      "text": "Shubhanshu Shukla: Exactly. It is getting transmitted into that. So I think that it has got really tangible benefits of participating in missions like these. And I hope that it keeps happening in future as well."
+    },
+    {
+      "start": 4312000,
+      "text": "Abhay Tandon: Do we have a definitive timeline of when our space station will be out there?"
+    },
+    {
+      "start": 4316000,
+      "text": "Shubhanshu Shukla: See, again, it is very difficult to give a definitive timeline for such missions, given the nature of complexity that is involved. And in missions like these, you also learn while you are doing things. So that experience also guides, you know, where you are and what you need to change and when will it happen. However, officially, as of now, I think the 2035 is the time when we are saying that we will have a space station completed. That is the timeline that officially is out there in the media as well."
+    },
+    {
+      "start": 4345000,
+      "text": "Abhay Tandon: We wish to see you a lot more in action as well — hopefully, if you choose to do that too. But you know, this is fantastic news. In fact, privatisation of the space economy in the country also happened in 2023. And we know the strength that ISRO carried; a lot of people from ISRO have moved out and started their own companies and startups, as we refer to them. But Astrobase released a 3D printed engine which allows for the same rocket to be reutilised 50 times, is what it's called — so very, very complex design is what I understand, with liquid oxygen and methane. And the fourth country again to do it. So a lot of times I see — except for the lunar mission, probably, as a south pole of the moon mission; so that was probably one of those, or we were probably one of the fastest—"
+    },
+    {
+      "start": 4392000,
+      "text": "Shubhanshu Shukla: We were the first."
+    },
+    {
+      "start": 4392000,
+      "text": "Abhay Tandon: We're the first, right. First in the world to do that. But a lot of times I see 'the fourth nation', which means that there's the US, China, Russia who have probably done that and then we become the fourth. Which, again, I would not like to take anything away from — the fact that we're still a lot ahead of a lot of other nations who are doing that. But I think with the space station coming up, with a lot of privatisation happening — Skyroot did the Vikram-1 launch recently, so there's so much news; Cosmoserve, Agnikul and so on and so forth — it's fascinating to see. So now, with all the knowledge that you have captured over the years, if you were to, let's say, go into the private mode and build a company, or invest in a company, what is that one particular sector that you think is the most impact-creating and the most investable, so that VCs also take note of that?"
+    },
+    {
+      "start": 4442000,
+      "text": "Shubhanshu Shukla: So that is a direct advice on camera that you want out of me."
+    },
+    {
+      "start": 4449000,
+      "text": "Abhay Tandon: I mean, not a lot of people have as much of hands-on experience now that you've gone through that mission as well."
+    },
+    {
+      "start": 4456000,
+      "text": "Shubhanshu Shukla: What I would say is that, you know, I would look at it from a slightly different way. What I would say that what we understand today very well is the upstream, midstream and downstream that we talk about. You know, the launch vehicle segment that allows you access to space. Then there is a midstream segment wherein you have assets which are deployed in space. And the downstream is what do you do of the information that you're generating out of these assets. And it becomes your downstream application."
+    },
+    {
+      "start": 4480000,
+      "text": "Abhay Tandon: I think downstream is the easiest for Indians, right? Because of the fact that you've always been very heavy on software reliance and stuff."
+    },
+    {
+      "start": 4487000,
+      "text": "Shubhanshu Shukla: Yes, I think that downstream is easily implementable and it is only limited by imagination. What are the possible use cases of the data that we are generating? So it is something that will bring amazing insights of what can be done from this data. I think that is what is going to happen. Something like, you know, if you look at AI as well, it's a tool. That tool, what you do of that tool is what is, you know, going to decide of how well you're able to perform in that. So you have the data, what do you do of that data? I think that is what is, it is very interesting that how it is evolving very rapidly. And in future also, I think it is continuing to happen in the same way. But these are very well-established domains, what we understand. And everybody is working on these domains as of now, because we have to successfully demonstrate them, you know, before we move on to the next step. Another vertical is the human space vertical, which is obviously much more challenging, which is what ISRO is pursuing and we are trying to do it from within the organisation as well. What I would like to, you know, see or what I would be interested in is going to be probably another step, you know, in future, which we have not yet explored. What can you do there when you are there? We are talking about generating data about Earth. But the environment of microgravity also allows you certain unique perspectives of manufacturing in space."
+    },
+    {
+      "start": 4562000,
+      "text": "Abhay Tandon: Space for space."
+    },
+    {
+      "start": 4563000,
+      "text": "Shubhanshu Shukla: Space for space segment that you talked about. That is the segment that I think is going to be again very interesting once we reach that stage, you know, when you are able to do certain things within space, because in absence of gravity, all the physical phenomena that we know changes. Water behaves differently, fire behaves differently, everything, biological processes change, as I mentioned to you about what happens to the body as well. So that gives you very unique insights as to how can you do things differently. So I think the manufacturing in space, fabrication in space, all these other things, which then we can probably shift to extraterrestrial locations. I think this is the segment that I would be very, very interested in. I'm personally also working on that extraterrestrial habitat project, as I mentioned. So I think this is a place where I would be interested in exploring more about."
+    },
+    {
+      "start": 4608000,
+      "text": "Abhay Tandon: Could you also give your advice on patient capital? One of the things that I've seen in the Indian ecosystem is — and I know people are going to diss me on this for saying this — but venture capitalists, a lot of them do not have patient capital. And this area requires patient capital. The people who have invested in Cosmoserve, Agnikul, Skyroot, Pixxel, GalaxEye and a few others have had patient capital. And I think there's an urge for more venture capitalists to understand that they have to deploy money, because this is a very R&D-focused environment. This is a very deep-tech-focused environment. It is not a typical SaaS solution that you invest in and in the next two years you are sitting at 20x of your ARR, annual revenue. It's a very different thing here. Unlike the typical startup thought process where you can learn from your failures, fail fast, learn fast — you cannot apply that, because there's a lot of things at stake. There's a lot of money at stake. There's a lot of time at stake. Opportunity at stake. So you ensure that you're kind of simulating, doing enough simulations to get to a place where you're fairly accurate, at least keeping in mind the factors that you have in mind. And there will still be a bunch of unknown factors. So you cannot go about taking maximum risk; you have to minimise risk, as you mentioned earlier. Do you have a message for those investors as well, in terms of how should they focus on investing into these kinds of companies and projects?"
+    },
+    {
+      "start": 4698000,
+      "text": "Shubhanshu Shukla: Yeah, I think, again, a very interesting question. And you very correctly understood that this is a sector which is, you know, having different timelines than what we are used to. So I think somewhere the alignment for investors is still to those SaaS models or these software timelines. And I think that needs to be recalibrated for this particular sector. Again, for the reasons that you mentioned that there is a longer gestation period when you develop technology, then deploy technology and eventually you see the use. And for all of it, I think awareness is the first step. If the investors understand what is happening, if they understand that what is the process, how much time is it going to take and eventually what is going to happen, then they would be much more comfortable in putting their money with that long term investment timeline horizon in mind. And it's just recalibration that we are talking about. It is nothing else. But along with that, I do also have a different message. I would say that, you know, making money for making money's sake, I don't see a lot of value to that. It is not something that once you have enough, you have enough. You know, what do you do beyond that? So and I have met a few people who are interested in investing money, which also creates value for a lot of other people. So maybe there is a need to change this term altogether. You know, why? Why venture capitalists? Why do we say that? You can be transformational investors or nation building investors or anything. You have to start feeling that way, that you are doing this for a purpose, for a reason. When you do make money, but you also end up creating a lot of value for a lot of other people and for your nation altogether, which is going to serve the purpose of progress for all. And that is what the message is. Because one thing that I learned from my mission was that space is a domain which is very collaborative in nature. Actually, the tagline that we had, the patch that I'm wearing here, you know, when we came up with this patch, the tagline was that space has space for all. That is what the tagline was, you know, and this should be the guiding philosophy when we are doing something in this domain. Yes, there will be profit. Most valuable company in the world today is a space company. Right. So you there is an example right out there for you. But it takes a while to get to that place. It takes a while to get there. That is why that recalibration of timeline is number one. And second, also to see what kind of value are we creating for people downstream. I think both these aspects are very important. And if people can understand, be aware of what it all entails, I think they'll be able to make a much wiser or much more informed decision in these domains."
+    },
+    {
+      "start": 4849000,
+      "text": "Abhay Tandon: Fantastic. I love the term that you coined, nation building investors, NBI, right? As against VCs. That's a fantastic term. I hope this sticks."
+    },
+    {
+      "start": 4857000,
+      "text": "Shubhanshu Shukla: I hope it sticks because I do see a lot of value in this, you know, because we always feel that it is somebody else's job. Nation building is somebody else's job or somebody else's responsibility. Why should it be so? It should not be, right? It is yours and mine in whatever capacity we can. As small as we can do, as big as we can do, it doesn't matter. But at least we should try. We should try to do something in that direction, I would say."
+    },
+    {
+      "start": 4881000,
+      "text": "Abhay Tandon: Fantastic, sir. I also want to talk to you about sovereign AI. So we spoke about space-for-space ecosystems, extraterrestrial habitats, debris cleaning — I think that's also a massive challenge, right? There's so much debris now. We have to be focused on that. So many such projects available now. But when we talk about sovereign ecosystems: you are part of the Axiom-4 programme, with SpaceX, rocket and capsule as well. It's a global ecosystem. Your fellow astronauts were also global in nature. The International Space Station is global. At the same time, for our strategic national interests as well, there has to be some kind of sovereign capabilities that will be created — and we are doing that as well, as you mentioned. How does this happen in parallel? Is there anything that you would still be okay in saying that this is a part that we have to work with the best in the world to be able to pick up on, how we're solving for that? For example, the human spaceflight programme — your going to that space mission was an indication that you are trying to work with the best to be able to get an understanding about how to make that happen. Is there something that you feel is very sacrosanct and should not be shared globally, versus, at the same time, is there some knowledge base that you think should be shared globally as well?"
+    },
+    {
+      "start": 4964000,
+      "text": "Shubhanshu Shukla: I think — no. Capability building: I agree with you. You need to have the capability to have sovereign assets, wherein you have the assets to be able to use them if at all there is a need. Because whatever said and done, ideologically, what I'm talking about — the Overview Effect and being from one planet — it is all true, but it is only true for a very handful of people who have been there. The reality and situation is very, very different out here. So I'm very confident, sure, of the fact that we definitely need to have the sovereign capability, and we are already working on that, as you mentioned. But over and above that, when we are trying to explore space for science or for the future of humanity, I think it should be much more collaborative in nature across the world — which is what was demonstrated through my mission as well. And in any future mission, I think it should always be done with an intent that it is being done collectively as humanity. I think that is what I would like to see for the purpose of exploration and science. If that is the driving philosophy, if we can follow that for this entire segment, I think that would be something — I also feel that it is one of those sectors which can bring people together, because of the inherent nature of space exploration, like I talked about. So if we can really keep that at the centre of the core philosophies, I think it is going to take us to a better place from where we are today, as the world, as humanity."
+    },
+    {
+      "start": 5062000,
+      "text": "Abhay Tandon: Got it. So there should be Atmanirbharta, but at the same time there should also be a global-focus, give-back kind of an ecosystem."
+    },
+    {
+      "start": 5067000,
+      "text": "Shubhanshu Shukla: That has to be, absolutely. You have the capability to use the assets, to deploy the assets. Now, how do you — our founding principle for our space programme was when Vikram Sarabhai said that India should be second to none in the application of space technology for the betterment of humanity. Right? So that is the philosophy I'm talking about. Whenever you do that, you do it for humanity. So you should have the capability, because we can, because it will take us to a better place, it will uplift a lot of people, and we are doing it for everyone. We will do it for everyone, because we can, and we will do it. That's what."
+    },
+    {
+      "start": 5103000,
+      "text": "Abhay Tandon: Right. In fact, our IN-SPACe Decadal Vision and Strategy — that document and manifesto that I read as well — that also factors in, in the $44 billion market size that is estimated, $11 billion to be exports, right? Which means that this is also a thought-through strategy at a government policy level as well, that over a period of time there'll be a lot of exports of what we're building from India for global usage as well. So do you suggest startups start building it from day one for global usage, or for India-first usage? And I say this also because in AI as an area, you have suddenly started realising that countries and companies are becoming way more nationalistic. Certain models in AI are not allowed to be released globally. Or even within a country, certain models are not to be leveraged beyond national citizens of those countries, which becomes a very big challenge for those companies as well, because of the country laws. Keeping that in mind, what would your advice be for founders building in this space — to go global from day one, or to first think about the Indian market and then go global?"
+    },
+    {
+      "start": 5166000,
+      "text": "Shubhanshu Shukla: Yeah, I just, no, no, let me take a second, because something came to my mind, which I wanted to talk about."
+    },
+    {
+      "start": 5170000,
+      "text": "Abhay Tandon: Sure."
+    },
+    {
+      "start": 5171000,
+      "text": "Shubhanshu Shukla: You were saying — and then we shifted to this global and local argument. You started with the 10-year strategy of exports and the $44 billion number that you were saying. So, I read a beautiful quote somewhere — I don't remember who has said it — but the quote is that culture eats strategy for breakfast. I don't remember who the person is who said it, but it's a beautiful quote. And the $44 billion number that we are talking about today is based on the estimation that we have today, based on what is happening today. The culture, what I see physically on ground, it is changing so rapidly. Kids are interested, institutions are interested to invest in this, they are starting disciplines in this particular domain. So if you ask me personally, I feel that the number is going to be much higher. It is not going to be lesser; it is going to be north of that, not south. That is first. Secondly, what your point was — between global and local. That is the reason I feel that we as a nation have always had this philosophy of what we talked about earlier, of Vasudhaiva Kutumbakam, of the world is one, we are all one. And we have always been very open about this, extending help to everyone, or collaborating with everyone in doing a lot of things. And that is why I feel it is important for us to invest heavily into building capability. Because when we do that, we can deploy that philosophy to the rest of the world. That is what is going to happen. So this is the reason that I feel that. I don't agree with this philosophy of keeping it contained within a few people. Yes, there are national interests — secure your national interests, it is for everyone to do that. But beyond that, if it is able to benefit humanity in some way, I think it should be extended to humanity for those purposes. That should be the guiding philosophy. And I think India, we as a nation, have that philosophy always in our mind, in the backdrop. It has always been the case. And I think that is what happens — it gets extended when we have the capability. So for those reasons also, I feel that we should definitely invest heavily in building these capabilities for ourselves."
+    },
+    {
+      "start": 5295000,
+      "text": "Abhay Tandon: Great. One last question before we take a rapid fire as well with you. Imagine we are at 2040 and India has landed on the moon. We have our own space station. We have a lot of work that's already been done across the three different sectors and spectrums, including space for space. For that to have happened, for that kind of a future reality to be happening and for you to say that, you know, we didn't just dream this. We actually executed this. We are probably one of the best countries in the world, if not the best at building space ecosystems. What are probably three things that you think would have changed between now to then?"
+    },
+    {
+      "start": 5338000,
+      "text": "Shubhanshu Shukla: Yeah, again, very interesting question, because it points to the timeline. It's not a policy question; it is, what do we do from here to now? And I totally agree, I totally believe that if you want to reach there by 2040, the work doesn't start then. Work has to start today. It has to start happening now. Three pillars, I feel. Let's say like this stool which is in front of us — there are three pillars of this. So if you have to put three pillars, one would be education at the school level. You have to start the curiosity at that level, for kids to be interested in domains like this. That is pillar number one. Pillar number two: when you graduate out of school, or you go to college, you should have disciplines or opportunities which actually train you in those areas. So you have to have disciplines for that. We have traditionally aerospace, but aerospace is not space engineering — it is primarily aero, launch-vehicle dominant. So that has to change, which is also changing, by the way, today as we speak. A lot of universities and IITs are adopting this and they are doing this curriculum. And in school also we have been able to do certain things through the Atal Innovation Mission, and eventually I'm hoping that in the textbooks also it is going to come out, the syllabus for space. And the third is the industry. When you are a skilled workforce, when you are trained in those disciplines, when you have learned about these disciplines, how do you get absorbed in the industry? What are we doing, and how are we doing that? Taking the example of Astrobase, what you're saying — this is a company in India which is making a full-flow staged combustion engine, which is one of the most complex pieces of technology today. The ambition is able to reach there. We are there. That is what is very heartening. So I look at these three pillars, and we have to start working on them today — right from school to the college and the industry, simultaneously, so that tomorrow when the industry grows, you have trained manpower available through your colleges, and the kids are excited to be a part of it, and this dream that they have in childhood has a well-defined path to their career. It is not just a dream. You are saying that you want to be an astronaut in a classroom — there is a path for you to be one. You may or you may not; I'm not saying that everybody will get there. But the path is very well and very clearly defined, that this is the path that you can follow to be there, contributing to this domain. So I think these three areas have to be addressed very, very aggressively and in parallel, at the same time, for us to be able to do what we are planning to do in 2040."
+    },
+    {
+      "start": 5488000,
+      "text": "Abhay Tandon: If I can take the liberty of adding to that: any of the audience members who are watching us right now have this conversation — if any of you are building in the three pillars that sir spoke about, feel free to reach out, and if there's any support that can be provided, we're happy. Because you're already doing a lot of work."
+    },
+    {
+      "start": 5507000,
+      "text": "Shubhanshu Shukla: Yes, yes, absolutely. No, no — anything that we can do to cultivate this, it would be great. And that would absolutely be fantastic, to have people who are interested in this domain and see what can be done to further enhance this. It would be great."
+    },
+    {
+      "start": 5523000,
+      "text": "Abhay Tandon: Yes. Because right now, I think even from the education pillar standpoint — schools, you're already talking about trying to push it into the textbooks, that's a fantastic thing. Premier colleges — I think these courses are limited to premier colleges, which means that there's not democratisation of access, necessarily, very easily, for a lot of students out there who might be interested but they do not even know how to get to this premier college. Which gets answered by the first part, which is exposure. So there's still a lot of scope, and I think that will happen progressively. Over a period of time we are stepping into the right direction."
+    },
+    {
+      "start": 5559000,
+      "text": "Shubhanshu Shukla: Yes."
+    },
+    {
+      "start": 5559000,
+      "text": "Abhay Tandon: So this is fantastic to hear. So on that note, one quick rapid fire. I mean, you've been flying super fast planes, and I think Sukhois of the world, to Jaguars, and a lot of others — and Tejas as well, I'm hoping. Have you flown—"
+    },
+    {
+      "start": 5571000,
+      "text": "Shubhanshu Shukla: Yeah, I have flown Tejas. Not actively converted, but flown ones, yes."
+    },
+    {
+      "start": 5576000,
+      "text": "Abhay Tandon: Fantastic. Right, so I'm assuming that rapid fire would truly be a rapid fire in this case. So, a bunch of questions, your perspectives on those. Okay — fighter jet or spacecraft?"
+    },
+    {
+      "start": 5588000,
+      "text": "Shubhanshu Shukla: Oh, okay."
+    },
+    {
+      "start": 5588000,
+      "text": "Abhay Tandon: You told me the first one."
+    },
+    {
+      "start": 5597000,
+      "text": "Shubhanshu Shukla: Spacecraft. And in the preparation period, fighter jets — which is what I'm doing today."
+    },
+    {
+      "start": 5602000,
+      "text": "Abhay Tandon: Awesome. Launch or re-entry — which one is more exhilarating?"
+    },
+    {
+      "start": 5606000,
+      "text": "Shubhanshu Shukla: Launch."
+    },
+    {
+      "start": 5607000,
+      "text": "Abhay Tandon: One aircraft you would happily fly again tomorrow?"
+    },
+    {
+      "start": 5612000,
+      "text": "Shubhanshu Shukla: Actually, any. But if I have to choose — MiG-29 and Bison."
+    },
+    {
+      "start": 5615000,
+      "text": "Abhay Tandon: Nice. Okay. One thing Earth does better than the ISS?"
+    },
+    {
+      "start": 5620000,
+      "text": "Shubhanshu Shukla: Earth does a lot of things better than the ISS. And actually everything better than the ISS. I would flip it: what we could do better is sustainability. We can learn from the ISS."
+    },
+    {
+      "start": 5630000,
+      "text": "Abhay Tandon: Makes a lot of sense. One Indian food you miss most in space?"
+    },
+    {
+      "start": 5632000,
+      "text": "Shubhanshu Shukla: Actually, I missed salt when I was in space."
+    },
+    {
+      "start": 5640000,
+      "text": "Abhay Tandon: Salt."
+    },
+    {
+      "start": 5640000,
+      "text": "Shubhanshu Shukla: Yeah."
+    },
+    {
+      "start": 5640000,
+      "text": "Abhay Tandon: One Indian space tech company you're excited to watch?"
+    },
+    {
+      "start": 5640000,
+      "text": "Shubhanshu Shukla: I'm excited to watch, actually, all of them. They're doing very different work in different segments that we talked about. Skyroot has done a fantastic job by doing the launch. Astrobase is doing this. There's a company called Cosmoserve which is trying to do on-orbit servicing and debris removal. So I wouldn't pick one. I think that all of them are doing a very exciting job in the field of space exploration, and we are actually creating tech in India, we are making IP in India — and that is very, very exciting."
+    },
+    {
+      "start": 5672000,
+      "text": "Abhay Tandon: The full stack?"
+    },
+    {
+      "start": 5672000,
+      "text": "Shubhanshu Shukla: Absolutely. From drawing board to the product."
+    },
+    {
+      "start": 5672000,
+      "text": "Abhay Tandon: Brilliant."
+    },
+    {
+      "start": 5672000,
+      "text": "Shubhanshu Shukla: Yes."
+    },
+    {
+      "start": 5672000,
+      "text": "Abhay Tandon: Mars or Moon?"
+    },
+    {
+      "start": 5680000,
+      "text": "Shubhanshu Shukla: In the near term, Moon. Mars is definitely more exciting in terms of what is possible out there, but in terms of capability that we have, in the near term, Moon."
+    },
+    {
+      "start": 5689000,
+      "text": "Abhay Tandon: Okay. Pilot, engineer or astronaut? Which identity feels more closer to you?"
+    },
+    {
+      "start": 5694000,
+      "text": "Shubhanshu Shukla: Actually, an astronaut is all, you know. A pilot, an engineer, it subsumes everything. So, I think I would choose astronaut."
+    },
+    {
+      "start": 5702000,
+      "text": "Abhay Tandon: Okay. Rakesh Sharma, sir, in one word."
+    },
+    {
+      "start": 5705000,
+      "text": "Shubhanshu Shukla: Rakesh Sharma, sir. Oh. Mentor and a guide, I would say for me."
+    },
+    {
+      "start": 5711000,
+      "text": "Abhay Tandon: Yes. Peggy Whitson, in one word."
+    },
+    {
+      "start": 5715000,
+      "text": "Shubhanshu Shukla: Inspirational."
+    },
+    {
+      "start": 5715000,
+      "text": "Abhay Tandon: Have you met her? Of course, you've worked together, right?"
+    },
+    {
+      "start": 5719000,
+      "text": "Shubhanshu Shukla: I've been with her for one complete year in very close proximity in the capsule as well. I found her to be just absolutely inspirational woman. A lot to learn. A lot to learn from her."
+    },
+    {
+      "start": 5731000,
+      "text": "Abhay Tandon: ISRO in one word?"
+    },
+    {
+      "start": 5734000,
+      "text": "Shubhanshu Shukla: Again, I would say aspirational for an entire nation."
+    },
+    {
+      "start": 5738000,
+      "text": "Abhay Tandon: India in 2040, one word?"
+    },
+    {
+      "start": 5741000,
+      "text": "Shubhanshu Shukla: Unstoppable."
+    },
+    {
+      "start": 5743000,
+      "text": "Abhay Tandon: Fantastic. Would you go to the moon if you were offered a seat tomorrow?"
+    },
+    {
+      "start": 5748000,
+      "text": "Shubhanshu Shukla: Absolutely."
+    },
+    {
+      "start": 5749000,
+      "text": "Abhay Tandon: Wow, that's courage. Tomorrow, if you're ready to go for it."
+    },
+    {
+      "start": 5753000,
+      "text": "Shubhanshu Shukla: Yeah, that would actually be very heartening. And that we are going to the moon tomorrow, you know, it would be very heartening to see. But yes, I would definitely."
+    },
+    {
+      "start": 5763000,
+      "text": "Abhay Tandon: Last one. Innovation in one word or sentence?"
+    },
+    {
+      "start": 5771000,
+      "text": "Shubhanshu Shukla: For me, I think innovation means that you look at a problem that you have at hand and you find a new way, or a unique way, of solving that problem. It can be an existing problem; it can be a new problem that you have created. So especially if we talk about space exploration, you create new problems. You're trying to sustain life in an environment where it should not exist. So you create new problems, and in solving those problems you come up with innovations which then find a way back to society in some ways. So it works the other way around, but it definitely works. It has been proven."
+    },
+    {
+      "start": 5804000,
+      "text": "Abhay Tandon: Fantastic. Thank you so much, sir. On that note, any last thought that you would like to share with the student community? Because I know from your Instagram handle that there are lots of students who keep reaching out to you with letters, messages and so on and so forth. If there's anything that you would want to leave for them as a thought — that will keep them feeling inspired and hopefully get them to learn from you."
+    },
+    {
+      "start": 5831000,
+      "text": "Shubhanshu Shukla: Yeah. What I would say is, I would repeat what I talk to them, what I say to them: that first of all, you have to have the belief and conviction that people who do great things are people like you and me. My journey started in a classroom; yours is starting in a classroom today. So there is definitely a path that can be followed to this stage, and it is possible. For me it is possible, for you it is possible. That is number one. And the second thing is that change is not somebody else's responsibility. It is yours and mine — our responsibility. If we want to see India becoming a developed nation by 2047, it is not somebody's responsibility; it is our responsibility. So do your part, contribute to that. Anything that you do, whichever sector that you go into, have that at the back of your mind, have that as the guiding philosophy: that whatever I will do, I will contribute in this direction. That is my message. Believe in it, and continue to work towards it. And again, I conclude all my speeches and all my talks with the message that I gave from orbit when I was coming back, to which you also alluded — and the message was: sky was never the limit. Not for me, not for you, and not for Bharat."
+    },
+    {
+      "start": 5906000,
+      "text": "Abhay Tandon: Thank you so much, sir. It was so profound, so inspiring. Loved the conversation. I'm sure all the people who are listening to this conversation would go back home very inspired, and they would actually, hopefully, take the next steps, the next action, to build on top of what you just said. So thank you so much for inspiring a billion — 1.4 billion people, and more. Thank you so much."
+    },
+    {
+      "start": 5924000,
+      "text": "Shubhanshu Shukla: It was a great conversation with you, and fantastic questions. Thank you so much."
+    },
+    {
+      "start": 5928000,
+      "text": "Abhay Tandon: Thank you."
+    }
   ]
 }
