@@ -30,8 +30,8 @@ const LIVE_SERIES = [
   {
     title: "Season 2",
     description: "Weekly long-form conversations with India's top founders, CEOs, and corporate innovators — from FinTech and mythological gaming to aviation and digital commerce. Unscripted, 60–90 minutes.",
-    href: "https://www.youtube.com/watch?v=CHBv-sMconw&list=PLzz8OqkiSLALxl70gl4KImCriufD9yIaB",
-    videoId: "CHBv-sMconw",
+    href: "https://www.youtube.com/watch?v=42ExkWGLLhM&list=PLzz8OqkiSLALxl70gl4KImCriufD9yIaB",
+    videoId: "42ExkWGLLhM",
     tag: "ONGOING",
   },
   {
