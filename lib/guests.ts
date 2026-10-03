@@ -1,12 +1,21 @@
 export type GuestProfile = {
   name: string;
   role: string;
+  // Optional subtitle override. Without it the directory shows whatever the
+  // title parser left over, which repeats the guest's name on episodes whose
+  // YouTube title ends in "ft. <guest>".
+  topic?: string;
 };
 
 // Guest role lookup keyed by YouTube videoId.
 // Add a new entry whenever you publish an episode and want the role to show in the directory.
 // Anything not listed falls back to whatever the title parser extracts.
 export const GUEST_PROFILES: Record<string, GuestProfile> = {
+  "42ExkWGLLhM": {
+    name: "Group Captain Shubhanshu Shukla",
+    role: "Astronaut, Axiom Mission 4",
+    topic: "S2E16: The 41 Year Wait — India's Second Orbit",
+  },
   RXVysfTfLTU: { name: "Paroma Chatterjee", role: "CEO, Revolut India" },
   "9xX6zGVmi-I": { name: "Amish Tripathi & Mukul Deora", role: "Founders, The Age of Bhaarat" },
   ohz9qVsZKvc: { name: "Howard Dawber", role: "Deputy Mayor, London" },

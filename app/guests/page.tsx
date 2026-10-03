@@ -61,7 +61,7 @@ function GuestRow({ video, index }: { video: YTVideoFull; index: number }) {
   const parsed = parseGuest(video.title);
   const name = profile?.name ?? parsed.name;
   const role = profile?.role ?? null;
-  const topic = parsed.topic;
+  const topic = profile?.topic ?? parsed.topic;
 
   return (
     <Link
