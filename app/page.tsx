@@ -37,8 +37,8 @@ const LIVE_SERIES = [
   {
     title: "GCC Mini Series",
     description: "Deep dives into India's Global Capability Centre ecosystem and what it means for the future.",
-    href: "https://www.youtube.com/watch?v=mRzFo2O2hp4&list=PLzz8OqkiSLAJk7FAG4Ec30FNpUbLxCti7",
-    videoId: "mRzFo2O2hp4",
+    href: "https://www.youtube.com/watch?v=nWt7xr4yK8I&list=PLzz8OqkiSLAJk7FAG4Ec30FNpUbLxCti7",
+    videoId: "nWt7xr4yK8I",
     tag: "MINI SERIES",
   },
   {
