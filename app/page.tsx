@@ -32,7 +32,7 @@ const LIVE_SERIES = [
     description: "Weekly long-form conversations with India's top founders, CEOs, and corporate innovators — from FinTech and mythological gaming to aviation and digital commerce. Unscripted, 60–90 minutes.",
     href: "https://www.youtube.com/watch?v=42ExkWGLLhM&list=PLzz8OqkiSLALxl70gl4KImCriufD9yIaB",
     videoId: "42ExkWGLLhM",
-    tag: "ONGOING",
+    tag: "WRAPPED",
   },
   {
     title: "GCC Mini Series",
@@ -79,11 +79,11 @@ const FAQS = [
   },
   {
     q: "Where can I listen to TID Podcast?",
-    a: "TID Podcast is free on YouTube, Spotify, and Apple Podcasts. The YouTube channel @TheInnovatorsandDisruptorsPodc has 195K+ subscribers and hosts the full video catalogue.",
+    a: "TID Podcast is free on YouTube, Spotify, and Apple Podcasts. The YouTube channel @TheInnovatorsandDisruptorsPodc hosts the full video catalogue.",
   },
   {
     q: "How often are new episodes released?",
-    a: "New episodes drop weekly. Season 2 is currently ongoing, alongside two parallel mini-series — the GCC Mini Series on India's Global Capability Centre ecosystem, and Founders Corner with India's most ambitious early-stage founders.",
+    a: "Season 2 has wrapped — its finale with Group Captain Shubhanshu Shukla is now live. Two mini-series continue: the GCC Mini Series on India's Global Capability Centre ecosystem, and Founders Corner with India's most ambitious early-stage founders.",
   },
   {
     q: "What topics does TID Podcast cover?",
@@ -95,7 +95,7 @@ const FAQS = [
   },
   {
     q: "What is TID Collective?",
-    a: "TID Collective is the broader innovation ecosystem founded by Abhay Tandon. It comprises three verticals: TID Podcast (media, 195K+ subscribers), TID Consulting (corporate-innovation advisory, 50+ deep-tech engagements), and TID Ventures (angel investments in 30+ early-stage startups).",
+    a: "TID Collective is the broader innovation ecosystem founded by Abhay Tandon. It comprises three verticals: TID Podcast (media), TID Consulting (corporate-innovation advisory, 50+ deep-tech engagements), and TID Ventures (angel investments in 30+ early-stage startups).",
   },
   {
     q: "Who has been featured on TID Podcast?",
@@ -110,7 +110,7 @@ const TIMELINE = [
   { year: "2023", title: "Live Commerce for TVS", body: "Implements innovative live-commerce for TVS Motor Company. Begins angel investing across emerging-tech startups." },
   { year: "2024", title: "Gold at India Digital Summit", body: "Wins IAMAI Gold Award for Innovation in e-Commerce. Launches the Innovators and Disruptors Podcast." },
   { year: "2025", title: "TEDx & G20 Stage", body: "Delivers TEDx talk 'From Observation to Breakthroughs'. Represents India at the G20 Summit on India's innovation potential." },
-  { year: "Today", title: "Founder, TID Collective", body: "Runs TID Podcast (195K+), TID Consulting and TID Ventures (30+ portfolio companies). Upcoming author on Corporate Innovation." },
+  { year: "Today", title: "Founder, TID Collective", body: "Runs TID Podcast, TID Consulting and TID Ventures (30+ portfolio companies). Upcoming author on Corporate Innovation." },
 ];
 
 export default async function HomePage() {
@@ -266,12 +266,12 @@ export default async function HomePage() {
 
             {/* Season 2 */}
             <div style={{ marginBottom: 32, padding: "28px 32px 32px", borderRadius: 18, border: `1px solid ${ACCENT}22`, background: SURFACE }}>
-              <div className="season2-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 28, marginBottom: 24, alignItems: "center" }}>
+              <div className="season2-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32, marginBottom: 24, alignItems: "center" }}>
                 {/* Left: text */}
                 <div>
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 12 }}>
                     <span style={{ width: 7, height: 7, borderRadius: 99, background: ACCENT, animation: "pulse 1.6s ease-in-out infinite" }} />
-                    <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, color: ACCENT, letterSpacing: 1.6, fontWeight: 700 }}>ONGOING</span>
+                    <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, color: ACCENT, letterSpacing: 1.6, fontWeight: 700 }}>SEASON 2 WRAPPED</span>
                   </div>
                   <h2 style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 28, letterSpacing: -0.8, lineHeight: 1.1, margin: "0 0 8px" }}>Season 2</h2>
                   <p style={{ fontSize: 14, color: MUTED, margin: "0 0 18px", lineHeight: 1.6 }}>{LIVE_SERIES[0].description}</p>
@@ -284,12 +284,16 @@ export default async function HomePage() {
                 <a href={LIVE_SERIES[0].href} target="_blank" rel="noopener noreferrer" style={{ display: "block", textDecoration: "none" }}>
                   <div style={{ position: "relative", aspectRatio: "16/9", borderRadius: 12, overflow: "hidden", background: "#1a1208" }}>
                     <Image
-                      src={`https://img.youtube.com/vi/${LIVE_SERIES[0].videoId}/hqdefault.jpg`}
-                      alt="Season 2"
+                      src={`https://img.youtube.com/vi/${LIVE_SERIES[0].videoId}/maxresdefault.jpg`}
+                      alt="Season 2 finale"
                       fill
-                      sizes="320px"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       style={{ objectFit: "cover" }}
                     />
+                    <span style={{ position: "absolute", top: 12, left: 12, display: "inline-flex", alignItems: "center", gap: 7, padding: "6px 12px", borderRadius: 999, background: "rgba(0,0,0,0.75)", border: `1px solid ${ACCENT}66`, fontFamily: "var(--font-mono), monospace", fontSize: 10, color: ACCENT, letterSpacing: 1.4, fontWeight: 700 }}>
+                      <span style={{ width: 6, height: 6, borderRadius: 99, background: ACCENT, animation: "pulse 1.6s ease-in-out infinite" }} />
+                      SEASON FINALE · NOW LIVE
+                    </span>
                   </div>
                 </a>
               </div>
@@ -446,7 +450,7 @@ export default async function HomePage() {
               <span style={{ fontStyle: "italic", color: ACCENT, fontWeight: 600 }}>strategy & investing</span> in one roof.
             </h2>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: MUTED, marginTop: 22, maxWidth: 720, marginLeft: "auto", marginRight: "auto" }}>
-              Three verticals, one mission: TID Podcast (195K+ subscribers), TID Consulting (50+ deep-tech engagements), and TID Ventures (30+ portfolio companies) — all built around India&apos;s innovation ecosystem.
+              Three verticals, one mission: TID Podcast (weekly long-form conversations), TID Consulting (50+ deep-tech engagements), and TID Ventures (30+ portfolio companies) — all built around India&apos;s innovation ecosystem.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
