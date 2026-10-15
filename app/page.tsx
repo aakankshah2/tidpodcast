@@ -129,36 +129,36 @@ export default async function HomePage() {
             position: "relative", borderRadius: 20, overflow: "hidden",
             background: "radial-gradient(120% 100% at 75% 50%, #2A1F0E 0%, #120D06 35%, #050505 70%)",
             border: `1px solid ${ACCENT}22`,
-            minHeight: 380,
+            minHeight: 300,
             display: "grid", gridTemplateColumns: "1.05fr 1fr",
           }} className="hero-grid">
             {/* LEFT: copy */}
-            <div className="hero-copy" style={{ position: "relative", padding: "36px 48px 36px 52px", display: "flex", flexDirection: "column", justifyContent: "center", zIndex: 2 }}>
+            <div className="hero-copy" style={{ position: "relative", padding: "20px 48px 20px 52px", display: "flex", flexDirection: "column", justifyContent: "center", zIndex: 2 }}>
               {/* Yellow rule + tagline */}
-              <div style={{ display: "flex", gap: 18, alignItems: "stretch", marginBottom: 28 }}>
+              <div style={{ display: "flex", gap: 18, alignItems: "stretch", marginBottom: 14 }}>
                 <div style={{ width: 4, background: ACCENT, borderRadius: 2 }} />
                 <div>
                   <div style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 700, fontSize: 22, letterSpacing: 0.5, color: ACCENT, lineHeight: 1.1 }}>
                     IDEAS THAT BUILD INDIA
                   </div>
-                  <div style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 500, fontSize: 16, letterSpacing: 1, color: "rgba(244,241,234,0.85)", lineHeight: 1.2, marginTop: 14 }}>
+                  <div style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 500, fontSize: 16, letterSpacing: 1, color: "rgba(244,241,234,0.85)", lineHeight: 1.2, marginTop: 8 }}>
                     IMPACT THAT SHAPES THE WORLD
                   </div>
                 </div>
               </div>
 
               {/* Wordmark */}
-              <div className="hero-wordmark" style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 800, fontSize: "clamp(64px, 7.4vw, 112px)", lineHeight: 0.86, letterSpacing: -3, color: TEXT, textTransform: "uppercase", marginTop: 4 }}>
-                Innovative<br />Stories
+              <div className="hero-wordmark" style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 800, fontSize: "clamp(34px, 3.3vw, 46px)", lineHeight: 0.94, letterSpacing: -1.2, color: TEXT, textTransform: "uppercase", marginTop: 4 }}>
+                The Innovators and<br />Disruptors Podcast
               </div>
 
               {/* What is TID Podcast — answer-format subtitle */}
-              <p style={{ fontSize: 15, lineHeight: 1.55, color: "rgba(244,241,234,0.68)", maxWidth: 440, margin: "20px 0 0" }}>
+              <p style={{ fontSize: 15, lineHeight: 1.55, color: "rgba(244,241,234,0.68)", maxWidth: 540, margin: "12px 0 0" }}>
                 India&apos;s leading long-form podcast on innovation and entrepreneurship. Weekly conversations with top founders, CEOs, and corporate innovators — free on YouTube, Spotify, and Apple Podcasts.
               </p>
 
               {/* Hosted by + socials */}
-              <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 36 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 16 }}>
                 <div>
                   <div style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, letterSpacing: 1.4, color: MUTED }}>HOSTED BY</div>
                   <div style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 600, fontSize: 22, marginTop: 4, letterSpacing: -0.4 }}>Abhay Tandon</div>
@@ -201,16 +201,16 @@ export default async function HomePage() {
                 </div>
               </div>
 
-              {/* Live pulse pill */}
-              <div className="hero-live-pill" style={{ position: "absolute", bottom: 28, right: 32, zIndex: 3, display: "inline-flex", alignItems: "center", gap: 10, padding: "10px 16px", borderRadius: 14, background: "rgba(11,11,11,0.78)", border: `1px solid ${ACCENT}44`, backdropFilter: "blur(10px)", maxWidth: 360 }}>
+              {/* Live pulse pill — latest episode */}
+              <a href={`https://www.youtube.com/watch?v=${LIVE_SERIES[0].videoId}`} target="_blank" rel="noopener noreferrer" className="hero-live-pill" style={{ position: "absolute", bottom: 28, right: 32, zIndex: 3, display: "inline-flex", alignItems: "center", gap: 10, padding: "10px 16px", borderRadius: 14, background: "rgba(11,11,11,0.78)", border: `1px solid ${ACCENT}44`, backdropFilter: "blur(10px)", maxWidth: 380, textDecoration: "none" }}>
                 <span style={{ width: 8, height: 8, borderRadius: 99, background: ACCENT, boxShadow: `0 0 12px ${ACCENT}`, animation: "pulse 1.6s ease-in-out infinite", flexShrink: 0 }} />
                 <div style={{ display: "flex", flexDirection: "column", gap: 2, lineHeight: 1.1, minWidth: 0 }}>
-                  <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1.4, color: ACCENT, fontWeight: 600 }}>S2 · EP. 14 — OUT NOW</span>
+                  <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, letterSpacing: 1.4, color: ACCENT, fontWeight: 600 }}>S2 FINALE — OUT NOW</span>
                   <span style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 600, fontSize: 13, color: TEXT, letterSpacing: -0.2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    The Stories That Control Us — Free Will, AI &amp; Civilisation
+                    The 41 Year Wait ft. Gp Capt Shubhanshu Shukla
                   </span>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -248,12 +248,12 @@ export default async function HomePage() {
       </section>
 
       {/* ── Stats + Currently Live + Stellar Episodes ── */}
-      <section id="episodes" className="section-px" style={{ padding: "40px 32px 100px" }}>
+      <section id="episodes" className="section-px" style={{ padding: "12px 32px 100px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
 
           {/* Currently Live series */}
           <div style={{ marginBottom: 72 }}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 36 }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
                 <div style={{ width: 32, height: 3, background: ACCENT, borderRadius: 3 }} />
                 <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 1.6, fontWeight: 600 }}>CURRENTLY LIVE</span>

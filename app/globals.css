@@ -54,14 +54,14 @@ body::before {
   .hero-grid { grid-template-columns: 1fr !important; min-height: auto !important; }
   .hero-grid > * { min-width: 0 !important; }
   .hero-image-panel {
-    height: 380px !important;
+    height: 300px !important;
     order: -1 !important;
   }
   .hero-image { object-position: center 18% !important; }
   .hero-copy { padding: 28px 20px 36px !important; }
   .hero-wordmark {
-    font-size: 48px !important;
-    letter-spacing: -1.5px !important;
+    font-size: 30px !important;
+    letter-spacing: -0.8px !important;
   }
   .hero-badge-stack {
     top: 16px !important;
