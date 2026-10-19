@@ -66,21 +66,21 @@ export default async function CollectivePage() {
       <NavBar />
 
       {/* Breadcrumb */}
-      <div style={{ padding: "28px 32px 0", maxWidth: 1280, margin: "0 auto", display: "flex", alignItems: "center", gap: 10 }}>
+      <div className="section-px" style={{ padding: "28px 32px 0", maxWidth: 1280, margin: "0 auto", display: "flex", alignItems: "center", gap: 10 }}>
         <Link href="/" style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: MUTED, textDecoration: "none", letterSpacing: 0.8 }}>HOME</Link>
         <span style={{ color: MUTED, fontSize: 12 }}>/</span>
         <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 0.8 }}>COLLECTIVE</span>
       </div>
 
       {/* Hero */}
-      <section style={{ padding: "60px 32px 80px" }}>
+      <section className="section-px" style={{ padding: "60px 32px 80px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, letterSpacing: 1.4, marginBottom: 24 }}>
             <span style={{ width: 14, height: 2, background: ACCENT }} />
             TID COLLECTIVE
             <span style={{ width: 14, height: 2, background: ACCENT }} />
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: 72, alignItems: "center" }}>
+          <div className="col-hero-grid" style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: 72, alignItems: "center" }}>
             <div>
               <h1 style={{ fontFamily: "var(--font-display), system-ui", fontSize: "clamp(44px, 5.5vw, 80px)", fontWeight: 800, letterSpacing: -3, lineHeight: 0.9, margin: "0 0 28px" }}>
                 Storytelling.<br />
@@ -124,7 +124,7 @@ export default async function CollectivePage() {
       </section>
 
       {/* Three pillars */}
-      <section style={{ padding: "0 32px 100px" }}>
+      <section className="section-px" style={{ padding: "0 32px 100px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 40 }}>
             <div style={{ width: 32, height: 3, background: ACCENT, borderRadius: 3 }} />
@@ -132,14 +132,14 @@ export default async function CollectivePage() {
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
             {PILLARS.map((p, i) => (
-              <div key={p.title} style={{ display: "grid", gridTemplateColumns: i % 2 === 0 ? "1fr 0.85fr" : "0.85fr 1fr", gap: 0, borderRadius: 24, overflow: "hidden", border: `1px solid rgba(244,241,234,0.07)`, background: SURFACE }}>
+              <div key={p.title} className="col-pillar" style={{ display: "grid", gridTemplateColumns: i % 2 === 0 ? "1fr 0.85fr" : "0.85fr 1fr", gap: 0, borderRadius: 24, overflow: "hidden", border: `1px solid rgba(244,241,234,0.07)`, background: SURFACE }}>
                 {/* Image panel */}
-                <div style={{ order: i % 2 === 0 ? 0 : 1, position: "relative", minHeight: 320 }}>
-                  <Image src={p.img} alt={p.title} fill sizes="50vw" style={{ objectFit: "cover", filter: "brightness(0.8)" }} />
+                <div className="col-pillar-img" style={{ order: i % 2 === 0 ? 0 : 1, position: "relative", minHeight: 320 }}>
+                  <Image src={p.img} alt={p.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover", filter: "brightness(0.8)" }} />
                   <div style={{ position: "absolute", inset: 0, background: i % 2 === 0 ? "linear-gradient(90deg, rgba(20,20,20,0) 60%, rgba(20,20,20,0.95) 100%)" : "linear-gradient(270deg, rgba(20,20,20,0) 60%, rgba(20,20,20,0.95) 100%)" }} />
                 </div>
                 {/* Content panel */}
-                <div style={{ order: i % 2 === 0 ? 1 : 0, padding: "52px 48px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                <div className="col-pillar-copy" style={{ order: i % 2 === 0 ? 1 : 0, padding: "52px 48px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                   <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: p.color, letterSpacing: 1.4, marginBottom: 20 }}>{p.num} / 03</span>
                   <h2 style={{ fontFamily: "var(--font-display), system-ui", fontSize: "clamp(28px, 3vw, 42px)", fontWeight: 800, letterSpacing: -1.5, lineHeight: 1.05, margin: "0 0 8px" }}>{p.title}</h2>
                   <p style={{ fontSize: 14, fontStyle: "italic", color: p.color, margin: "0 0 18px", fontFamily: "var(--font-display), system-ui", fontWeight: 500 }}>{p.tagline}</p>
@@ -162,7 +162,7 @@ export default async function CollectivePage() {
       </section>
 
       {/* Values / Philosophy */}
-      <section style={{ padding: "100px 32px", background: "#050505" }}>
+      <section className="section-px" style={{ padding: "100px 32px", background: "#050505" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, letterSpacing: 1.4, marginBottom: 18 }}>
@@ -175,7 +175,7 @@ export default async function CollectivePage() {
               <span style={{ fontStyle: "italic", color: ACCENT }}>One mission.</span>
             </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2 }}>
+          <div className="col-values-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2 }}>
             {VALUES.map((v, i) => (
               <div key={v.title} style={{ padding: "44px 36px", background: SURFACE, borderRadius: i === 0 ? "16px 0 0 16px" : i === 2 ? "0 16px 16px 0" : 0, borderLeft: i > 0 ? `1px solid rgba(244,241,234,0.06)` : "none" }}>
                 <div style={{ fontFamily: "var(--font-display), system-ui", fontSize: 40, fontWeight: 800, letterSpacing: -1.5, color: ACCENT, lineHeight: 1, marginBottom: 20 }}>{v.title}</div>
@@ -187,7 +187,7 @@ export default async function CollectivePage() {
       </section>
 
       {/* CTA footer */}
-      <section style={{ padding: "100px 32px" }}>
+      <section className="section-px" style={{ padding: "100px 32px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-display), system-ui", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 700, letterSpacing: -1.8, lineHeight: 1.05, margin: "0 0 20px" }}>
             Ready to build with India&apos;s boldest?

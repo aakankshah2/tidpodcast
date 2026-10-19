@@ -123,7 +123,7 @@ export default async function HomePage() {
       <NavBar />
 
       {/* ── Hero ── */}
-      <section id="top" style={{ padding: "32px 32px 24px" }}>
+      <section id="top" className="section-px" style={{ padding: "32px 32px 24px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{
             position: "relative", borderRadius: 20, overflow: "hidden",
@@ -149,7 +149,7 @@ export default async function HomePage() {
 
               {/* Wordmark */}
               <div className="hero-wordmark" style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 800, fontSize: "clamp(34px, 3.3vw, 46px)", lineHeight: 0.94, letterSpacing: -1.2, color: TEXT, textTransform: "uppercase", marginTop: 4 }}>
-                The Innovators and<br />Disruptors Podcast
+                The Innovators and{" "}<br />Disruptors Podcast
               </div>
 
               {/* What is TID Podcast — answer-format subtitle */}
@@ -158,12 +158,12 @@ export default async function HomePage() {
               </p>
 
               {/* Hosted by + socials */}
-              <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 16 }}>
+              <div className="hero-host" style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 16 }}>
                 <div>
                   <div style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, letterSpacing: 1.4, color: MUTED }}>HOSTED BY</div>
                   <div style={{ fontFamily: "var(--font-display), system-ui", fontWeight: 600, fontSize: 22, marginTop: 4, letterSpacing: -0.4 }}>Abhay Tandon</div>
                 </div>
-                <div style={{ width: 1, height: 36, background: "rgba(244,241,234,0.18)" }} />
+                <div className="hero-host-divider" style={{ width: 1, height: 36, background: "rgba(244,241,234,0.18)" }} />
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   {SOCIALS.map((s) => (
                     <a key={s.label} href={s.href} aria-label={`Abhay on ${s.label}`} target="_blank" rel="noopener noreferrer"
@@ -437,7 +437,7 @@ export default async function HomePage() {
       </section>
 
       {/* ── TID Collective ── */}
-      <section id="collective" style={{ padding: "120px 32px", background: BG }}>
+      <section id="collective" className="section-px" style={{ padding: "120px 32px", background: BG }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 56 }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, letterSpacing: 1.4, marginBottom: 18 }}>
@@ -453,7 +453,7 @@ export default async function HomePage() {
               Three verticals, one mission: TID Podcast (weekly long-form conversations), TID Consulting (50+ deep-tech engagements), and TID Ventures (30+ portfolio companies) — all built around India&apos;s innovation ecosystem.
             </p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
+          <div className="collective-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 18 }}>
             {[
               { num: "01", title: "TID Podcast", tagline: "Innovators, leaders, and creators — Building in India.", meta: `${channelStats && !channelStats.hiddenSubscriberCount ? `${fmt(channelStats.subscriberCount)}+` : "195K+"} subscribers · Weekly drops`, img: "/tid-podcast.jpg" },
               { num: "02", title: "TID Consulting", tagline: "Partnering with corporates and startups to unlock growth.", meta: "50+ deep-tech engagements", img: "/tid-consulting.jpg" },
@@ -464,7 +464,7 @@ export default async function HomePage() {
                   <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, letterSpacing: 1.2 }}>{p.num} / 03</span>
                 </div>
                 <div style={{ height: 200, borderRadius: 12, overflow: "hidden", border: `1px solid ${ACCENT}22`, position: "relative" }}>
-                  <Image src={p.img} alt={p.title} fill sizes="33vw" style={{ objectFit: "cover" }} />
+                  <Image src={p.img} alt={p.title} fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: "cover" }} />
                 </div>
                 <div>
                   <h3 style={{ fontFamily: "var(--font-display), system-ui", fontSize: 26, fontWeight: 700, letterSpacing: -0.8, margin: 0 }}>{p.title}</h3>

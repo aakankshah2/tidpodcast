@@ -32,8 +32,18 @@ const SOCIALS = [
   },
 ];
 
+const LINKS = [
+  ["Episodes", "/#episodes"],
+  ["Guests", "/guests"],
+  ["Collective", "/collective"],
+  ["Meet the Host", "/#about"],
+];
+
+const LISTEN_HREF = "https://podcasts.apple.com/gb/podcast/the-innovators-and-disruptors-podcast/id1798971388";
+
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -48,12 +58,12 @@ export default function NavBar() {
         top: 0,
         zIndex: 50,
         backdropFilter: "blur(14px)",
-        background: scrolled ? "rgba(11,11,11,0.82)" : "transparent",
+        background: scrolled || menuOpen ? "rgba(11,11,11,0.92)" : "transparent",
         borderBottom: scrolled ? "1px solid rgba(245,197,24,0.14)" : "1px solid transparent",
         transition: "all 240ms ease",
       }}
     >
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "14px 32px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <div className="nav-inner" style={{ maxWidth: 1280, margin: "0 auto", padding: "14px 32px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         {/* Logo + wordmark */}
         <a href="#top" style={{ display: "flex", alignItems: "center", gap: 14, textDecoration: "none", color: "inherit" }}>
           <div style={{
@@ -75,12 +85,7 @@ export default function NavBar() {
 
         {/* Nav links + socials + CTA */}
         <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: 24 }}>
-          {[
-            ["Episodes", "#episodes"],
-            ["Guests", "/guests"],
-            ["Collective", "/collective"],
-            ["Meet the Host", "/#about"],
-          ].map(([label, href]) => (
+          {LINKS.map(([label, href]) => (
             <a key={label} href={href} style={{ color: "var(--text)", textDecoration: "none", fontSize: 14, opacity: 0.72, transition: "opacity 160ms" }}
               onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.opacity = "1")}
               onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.opacity = "0.72")}>
@@ -101,7 +106,7 @@ export default function NavBar() {
           </div>
 
           <a
-            href="https://podcasts.apple.com/gb/podcast/the-innovators-and-disruptors-podcast/id1798971388"
+            href={LISTEN_HREF}
             target="_blank" rel="noopener noreferrer"
             style={{
               background: ACCENT, color: "#0B0B0B", border: "none",
@@ -111,7 +116,45 @@ export default function NavBar() {
             Listen ↗
           </a>
         </div>
+
+        {/* Mobile menu button */}
+        <button
+          className="nav-burger"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((o) => !o)}
+          style={{ width: 42, height: 42, borderRadius: 10, placeItems: "center", background: "rgba(244,241,234,0.04)", border: `1px solid ${ACCENT}33`, color: "var(--text)", cursor: "pointer", padding: 0 }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            {menuOpen ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+          </svg>
+        </button>
       </div>
+
+      {/* Mobile menu panel */}
+      {menuOpen && (
+        <div className="nav-menu" style={{ flexDirection: "column", padding: "8px 16px 20px", borderTop: `1px solid ${ACCENT}22` }}>
+          {LINKS.map(([label, href]) => (
+            <a key={label} href={href} onClick={() => setMenuOpen(false)}
+              style={{ color: "var(--text)", textDecoration: "none", fontSize: 17, fontWeight: 500, padding: "14px 4px", borderBottom: "1px solid rgba(244,241,234,0.08)" }}>
+              {label}
+            </a>
+          ))}
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 18 }}>
+            <div style={{ display: "flex", gap: 4 }}>
+              {SOCIALS.map((s) => (
+                <a key={s.label} href={s.href} aria-label={s.label} target="_blank" rel="noopener noreferrer"
+                  style={{ width: 38, height: 38, borderRadius: 8, display: "grid", placeItems: "center", color: "var(--text)", opacity: 0.75, textDecoration: "none" }}>
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d={s.path} /></svg>
+                </a>
+              ))}
+            </div>
+            <a href={LISTEN_HREF} target="_blank" rel="noopener noreferrer"
+              style={{ background: ACCENT, color: "#0B0B0B", padding: "10px 18px", borderRadius: 999, fontWeight: 600, fontSize: 14, textDecoration: "none", whiteSpace: "nowrap" }}>
+              Listen ↗
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
