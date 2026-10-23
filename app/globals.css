@@ -60,6 +60,10 @@ body::before {
   .hero-host-divider { display: none; }
   .collective-grid { grid-template-columns: 1fr !important; }
 
+  /* Green Room page */
+  .green-room-card { padding: 40px 22px !important; border-radius: 20px !important; }
+  .green-room-proof { grid-template-columns: 1fr !important; }
+
   /* Collective page */
   .col-hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
   .col-pillar { grid-template-columns: 1fr !important; }

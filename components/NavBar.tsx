@@ -37,6 +37,7 @@ const LINKS = [
   ["Guests", "/guests"],
   ["Collective", "/collective"],
   ["Meet the Host", "/#about"],
+  ["Green Room", "/green-room"],
 ];
 
 const LISTEN_HREF = "https://podcasts.apple.com/gb/podcast/the-innovators-and-disruptors-podcast/id1798971388";

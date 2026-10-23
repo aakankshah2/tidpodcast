@@ -4,7 +4,7 @@
 
 ## About
 
-TID Podcast is the flagship media property of TID Collective. The show launched in 2024 and is currently in Season 2, with parallel mini-series running on India's Global Capability Centre (GCC) ecosystem and a Founders Corner series for India's most ambitious early-stage founders. Episodes are unscripted long-form conversations, typically 60–90 minutes, with no edits.
+TID Podcast is the flagship media property of TID Collective. The show launched in 2024. Season 2 wrapped in 2026 with a finale featuring Group Captain Shubhanshu Shukla, the Indian Air Force astronaut. Two mini-series continue: one on India's Global Capability Centre (GCC) ecosystem, and Founders Corner for India's most ambitious early-stage founders. Episodes are unscripted long-form conversations, typically 60–90 minutes, with no edits.
 
 - **Host**: Abhay Tandon — founder of TID Collective, TEDx 2025 speaker, Forbes Technology Council member, angel investor in 30+ early-stage startups, G20 Summit speaker on India's innovation potential.
 - **YouTube channel**: @TheInnovatorsandDisruptorsPodc
@@ -17,9 +17,11 @@ TID Podcast is the flagship media property of TID Collective. The show launched 
 - [Homepage](https://tidpodcast.in): Overview of the podcast, host bio, all active series, featured guests, and FAQ
 - [All guests](https://tidpodcast.in/guests): Full directory of every guest who has appeared on the show, pulled live from YouTube
 - [TID Collective](https://tidpodcast.in/collective): The broader ecosystem — TID Podcast (media), TID Consulting (corporate-innovation advisory), TID Ventures (early-stage investing)
+- [The Green Room](https://tidpodcast.in/green-room): How brands, future teammates and freelance creators can partner or work with TID Podcast
 
 ## Featured guests
 
+- Group Captain Shubhanshu Shukla — Indian Air Force astronaut, Ashoka Chakra awardee (Season 2 finale: "The 41 Year Wait — India's Second Orbit")
 - Paroma Chatterjee — CEO, Revolut India
 - Amish Tripathi & Mukul Deora — Founders, The Age of Bhaarat (mythology-native gaming)
 - Howard Dawber — Deputy Mayor of London
@@ -27,6 +29,14 @@ TID Podcast is the flagship media property of TID Collective. The show launched 
 - Sanjeev Gupta — Karnataka's billion-dollar innovation playbook
 - Dr. Shubha — Modern spirituality for high-output leaders
 - Belson Coutinho — Co-Founder & COO, Akasa Air
+
+## Work with TID Podcast
+
+- **Contact**: abhay@tidventures.com
+- **Brand partnerships**: brands can partner with TID Podcast to reach India's founders, CXOs and builders. Email with the subject "TID × Brand partnership".
+- **Join the team**: TID is a small team open to curious people who love great content. Email with the subject "TID × I want to join".
+- **Freelancers and creators**: video editors, designers, writers, motion designers and researchers can send work samples with the subject "TID × Freelance collab".
+- **Details**: https://tidpodcast.in/green-room
 
 ## Where to listen
 

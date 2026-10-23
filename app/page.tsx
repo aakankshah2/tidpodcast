@@ -94,6 +94,10 @@ const FAQS = [
     a: "Episodes typically run 60 to 90 minutes. They are unscripted long-form conversations with no edits or filler — built for listeners who want depth, not headlines.",
   },
   {
+    q: "How can brands, creators or job-seekers work with TID Podcast?",
+    a: "Head to The Green Room at tidpodcast.in/green-room, or email abhay@tidventures.com. Brands can partner to reach India's founders, CXOs and builders; freelancers (editors, designers, writers) and future teammates are welcome to reach out too.",
+  },
+  {
     q: "What is TID Collective?",
     a: "TID Collective is the broader innovation ecosystem founded by Abhay Tandon. It comprises three verticals: TID Podcast (media), TID Consulting (corporate-innovation advisory, 50+ deep-tech engagements), and TID Ventures (angel investments in 30+ early-stage startups).",
   },
@@ -636,7 +640,7 @@ export default async function HomePage() {
           </div>
           {[
             { h: "Listen", l: [["Spotify", "https://creators.spotify.com/pod/profile/abhay-tandon"], ["Apple Podcasts", "https://podcasts.apple.com/gb/podcast/the-innovators-and-disruptors-podcast/id1798971388"], ["YouTube", "https://www.youtube.com/@TheInnovatorsandDisruptorsPodc"]] },
-            { h: "Explore", l: [["All episodes", "#episodes"], ["Guests", "/guests"], ["About Abhay", "#about"], ["FAQ", "#faq"], ["TID Collective", "/collective"]] },
+            { h: "Explore", l: [["All episodes", "#episodes"], ["Guests", "/guests"], ["About Abhay", "#about"], ["FAQ", "#faq"], ["TID Collective", "/collective"], ["The Green Room", "/green-room"]] },
             { h: "Connect", l: [["LinkedIn", "https://www.linkedin.com/in/abhaytandon/"], ["Instagram", "https://www.instagram.com/theinnovatorsanddisruptors/"]] },
           ].map((c) => (
             <div key={c.h}>

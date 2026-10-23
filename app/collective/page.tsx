@@ -12,6 +12,7 @@ const MUTED = "#8A867E";
 export const metadata = {
   title: "TID Collective",
   description: "An ecosystem at the intersection of storytelling, strategy, and startups.",
+  alternates: { canonical: "https://tidpodcast.in/collective" },
 };
 
 const PILLARS = [
