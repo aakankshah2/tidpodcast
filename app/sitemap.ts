@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllEpisodes } from "@/lib/episodes";
 import { getAllVideos, filterLongForm } from "@/lib/youtube";
+import { slugForVideo } from "@/lib/episodeSlugs";
 
 const SITE_URL = "https://tidpodcast.in";
 
@@ -16,7 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   const ytEpisodeUrls = ytVideos.map((v) => ({
-    url: `${SITE_URL}/episodes/yt/${v.id}`,
+    url: `${SITE_URL}/episodes/${slugForVideo(v.id, v.title)}`,
     lastModified: new Date(v.publishedAt),
     changeFrequency: "monthly" as const,
     priority: 0.8,

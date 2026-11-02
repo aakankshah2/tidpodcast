@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import { getAllVideos, filterLongForm, type YTVideoFull } from "@/lib/youtube";
 import { getGuestProfile } from "@/lib/guests";
 import type { Metadata } from "next";
+import { slugForVideo } from "@/lib/episodeSlugs";
 
 export const dynamic = "force-dynamic";
 
@@ -65,7 +66,7 @@ function GuestRow({ video, index }: { video: YTVideoFull; index: number }) {
 
   return (
     <Link
-      href={`/episodes/yt/${video.id}`}
+      href={`/episodes/${slugForVideo(video.id, video.title)}`}
       className="guest-row"
       style={{
         textDecoration: "none",

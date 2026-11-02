@@ -1,15 +1,16 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllEpisodes, getEpisodeBySlug, getRelatedEpisodes } from "@/lib/episodes";
+import { getEpisodeBySlug, getRelatedEpisodes } from "@/lib/episodes";
 import { EpisodeCard } from "@/components/EpisodeCard";
+import YTEpisode, { ytEpisodeMetadata } from "@/components/YTEpisode";
+import { videoIdForSlug } from "@/lib/episodeSlugs";
 
 const SITE_URL = "https://tidpodcast.in";
 
-// ── Static generation: pre-render all episode pages at build time ──
-export function generateStaticParams() {
-  return getAllEpisodes().map((ep) => ({ slug: ep.slug }));
-}
+// ── Rendered per request: YouTube-backed episodes fetch live view counts
+// (no-store), which a prerendered route can't do at runtime. ──
+export const dynamic = "force-dynamic";
 
 // ── Per-episode meta tags ──
 export async function generateMetadata(
@@ -17,7 +18,11 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { slug } = await params;
   const ep = getEpisodeBySlug(slug);
-  if (!ep) return {};
+  if (!ep) {
+    // Most episodes are YouTube-backed rather than hand-written.
+    const videoId = await videoIdForSlug(slug);
+    return videoId ? ytEpisodeMetadata(videoId, slug) : {};
+  }
 
   const title = ep.title;
   const brandedTitle = `${ep.title} | TID Podcast`;
@@ -48,7 +53,11 @@ export default async function EpisodePage(
 ) {
   const { slug } = await params;
   const ep = getEpisodeBySlug(slug);
-  if (!ep) notFound();
+  if (!ep) {
+    const videoId = await videoIdForSlug(slug);
+    if (!videoId) notFound();
+    return <YTEpisode videoId={videoId} slug={slug} />;
+  }
 
   const related = getRelatedEpisodes(slug, 3);
 
