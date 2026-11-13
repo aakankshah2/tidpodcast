@@ -21,6 +21,1291 @@
       "Gaganyaan",
       "Indian Space Research Organisation",
       "Human spaceflight"
+    ],
+    "faq": [
+      {
+        "q": "What experiments did Shubhanshu Shukla carry out on the International Space Station?",
+        "a": "He took seven experiments prepared by institutions across India, all aimed at enabling India's own human spaceflight. They included myogenesis research to prevent muscle loss in space, growing cyanobacteria and microalgae as possible food sources, sprouting seeds for food security on long missions, and studying the mental load on astronauts using screens in microgravity.",
+        "t": 1221
+      },
+      {
+        "q": "What does 'The Second Orbit' mean?",
+        "a": "It is the title of Shubhanshu Shukla's book and a tribute to Wing Commander Rakesh Sharma, whose 1984 flight was India's first orbit. It took India 41 years to return to space. He says he hopes India makes so many more orbits that the title becomes irrelevant.",
+        "t": 3038
+      },
+      {
+        "q": "How do astronauts deal with fear and risk at launch?",
+        "a": "He says the courage is collective: it rests on the work of thousands of engineers who built the system over years. Risk is never zero, so it is calculated, reduced as far as possible and then accepted. Everyone feels fear at ignition; the key skill, in space or any field, is knowing how to push through it.",
+        "t": 722
+      },
+      {
+        "q": "What does it feel like to see Earth from space?",
+        "a": "His first feeling was 'this is home'. He explains that we always take our identity from the place we have left: our school in college, our city at work, our country abroad, and so, from space, the whole planet. He also says everything he is today he owes to India and its people.",
+        "t": 1020
+      },
+      {
+        "q": "What happens to the human body in space?",
+        "a": "In the first days there are headaches, backache and a lengthening spine, and the body takes about a week to adjust. Longer-term effects include higher radiation exposure and muscle loss. NASA treats missions under 30 days as short-duration; the longer the stay, the longer the rehabilitation back on Earth.",
+        "t": 1681
+      },
+      {
+        "q": "Why should India invest in space when it has problems on Earth?",
+        "a": "His answer: you cannot solve today's problems with today's technology. You have to invest in tomorrow's technology, or you will always be playing catch-up, and exploration has historically produced transformational technologies. He notes Gaganyaan and the Bharatiya Antariksh Station are officially sanctioned programmes.",
+        "t": 3887
+      },
+      {
+        "q": "What leadership lesson did spaceflight teach Shubhanshu Shukla?",
+        "a": "That a leader has to be a good follower, and that authority should follow competence, not rank. Even with a designated commander, tasks go to whoever is best suited, and ambition driven by personal glory limits what a team achieves.",
+        "t": 2840
+      }
+    ]
+  },
+  "mRzFo2O2hp4": {
+    "faq": [
+      {
+        "q": "What does Kenvue's GCC in India do?",
+        "a": "Dr. Rajesh Puneyani, who heads Kenvue's India GCC (global capability centre), describes it in one line as a global hub for cross-functional collaboration on all of Kenvue's data and digital initiatives.",
+        "t": 243
+      },
+      {
+        "q": "How have GCCs in India evolved?",
+        "a": "In the early 2000s GCCs did tasks the headquarters handed them. As talent and domain knowledge grew, they began delivering whole programmes, then taking on full problem statements. Today the best GCCs find problems the parent company hasn't raised yet and solve them, increasingly with GenAI. He expects GCCs to anchor enterprise transformation, and warns that those whose value doesn't rise may cease to exist.",
+        "t": 306
+      },
+      {
+        "q": "What are the four Ps that will help a GCC move up the value chain?",
+        "a": "Preventive, proactive, predictive and personalised solutions. GCCs that deliver on one or more of these, he says, become strategic value creators and partners for the headquarters.",
+        "t": 445
+      },
+      {
+        "q": "What should someone who wants to be a GCC site leader in 10 years focus on?",
+        "a": "Four things: understand the business and how your work affects teams upstream and downstream; practise 'context translation', asking why the headquarters needs a piece of work; break the 10-year goal into 12–18-month milestones and review them with mentors; and keep upskilling before it becomes urgent.",
+        "t": 2080
+      },
+      {
+        "q": "Where can startups and GCCs work together?",
+        "a": "He sees four areas: digital transformation, sustainability (for example tracking carbon footprint), workplace collaboration for hybrid teams, and adding extra value on speed to market, quality and compliance, so the GCC can stay focused on its core priorities.",
+        "t": 2317
+      },
+      {
+        "q": "Is AI creating real impact in consumer health yet?",
+        "a": "He says it is still early days. There are successful agentic AI use cases in finance and HR that speed up go-to-market, but he expects AI's real potential to show from 2026 onwards as systems mature.",
+        "t": 1327
+      }
+    ]
+  },
+  "pQEEHc66VFE": {
+    "faq": [
+      {
+        "q": "What is Cent Health?",
+        "a": "Cent is a preventive health platform co-founded by Shashank ND, Arpit Garg and Anshul Khandelwal. It runs comprehensive full-body screening (imaging plus tests) for people with no symptoms, aiming first to catch anything life-threatening while there is still time to act, then to predict and prevent disease, then to slow functional decline.",
+        "t": 803
+      },
+      {
+        "q": "Why is India's healthcare system reactive rather than preventive?",
+        "a": "Anshul Khandelwal says it is a design problem, not an intent problem: India has excellent doctors and reactive care, but the system and its incentives were built to fix illness after symptoms appear. Add 'optimism bias' (I feel fine, it won't happen to me) and people rarely get checked until something goes wrong. He argues India needs purpose-built prevention infrastructure that sits before the hospital and the doctor.",
+        "t": 183
+      },
+      {
+        "q": "Is a blood test enough for a full-body health checkup?",
+        "a": "No, he says. Blood is like the fluid in the pipes; it tells you little about the pipes themselves. Blood tests are useful but not a whole-body check, and a 'normal' result can lull people into doing nothing for one to two years. He also criticises cheap 'full body checkup' packages, since India has no definition of what 'full body' must include.",
+        "t": 526
+      },
+      {
+        "q": "Does preventive health screening make financial sense in India?",
+        "a": "His rough maths: spending about ₹20,000–25,000 a year on screening for 20 years comes to around ₹5 lakh, while treating late-stage cancer can cost ₹30–40 lakh or more. He compares it to car or health insurance, which people renew every year without question, and says annual screening should become just as normal.",
+        "t": 1644
+      },
+      {
+        "q": "Do MRI scans expose you to radiation?",
+        "a": "No. Anshul explains that MRI uses magnetic resonance, not ionising radiation, so it is safe to repeat. CT and DEXA scans do use ionising radiation, but he says Cent keeps those at ultra-low doses, under one millisievert, which he compares to less than a Delhi–London flight.",
+        "t": 1767
+      },
+      {
+        "q": "What has Cent found in people it has screened?",
+        "a": "He says that of roughly 10,000 people Cent had scanned at the time, about 5% had something critical and about 25% something major. Examples he gives include a 32-year-old who cycled in and was found to have kidney cancer, and people told to get surgery within days to avoid a stroke.",
+        "t": 1885
+      }
+    ]
+  },
+  "lsg8hvBEflw": {
+    "faq": [
+      {
+        "q": "What are the 'three B's' of Indian entertainment?",
+        "a": "Vijay Subramaniam calls them Bollywood, Bachche (children and youth) and Bhagwan (mythology and faith): three things he says India will never run out of. Collective has built businesses in all three, from film talent to a mythology and history platform to a large student community.",
+        "t": 786
+      },
+      {
+        "q": "Is traditional media dying?",
+        "a": "He believes old-school ad-agency and media-agency models are on a ventilator. Talent creates content, content needs funding and distribution, and his bet is to own that whole flywheel in one ecosystem, with advertisers following audiences and engagement rather than TV commercials.",
+        "t": 1560
+      },
+      {
+        "q": "Can Indian mythology be told at the scale of Lord of the Rings?",
+        "a": "Yes, he argues: technology has solved for budget, so stories like Hanuman or the Mahabharata can be made to look world-class. But AI is only a tool; the story, the director's vision and the emotional connection remain the core. Mythology is one of the few things that speaks to audiences from 3 to 90.",
+        "t": 1677
+      },
+      {
+        "q": "Is it better to have true fans or a big following?",
+        "a": "He would rather have 100,000 true fans than a million people who just know your name. His advice to mid-career creators is to make content that resonates with you first and not chase numbers, using heavy metal as an example of a niche whose stars still built huge fortunes.",
+        "t": 2005
+      },
+      {
+        "q": "Will AI take creative jobs?",
+        "a": "His view: AI isn't evolving, it is already here, and you won't lose your job to AI but to a person who knows how to use it. He compares it to email replacing the postman and engines replacing chariots, and says AI is democratising access by making production cheaper.",
+        "t": 2474
+      },
+      {
+        "q": "What is content-to-commerce, and will it work in India?",
+        "a": "He calls content-to-commerce the next big thing, whether through AI characters, creators or stories, and imagines mythology extended into products, rides and experiences. He believes India will skip the social-commerce stage that China went through and go straight to a 'watch and buy' generation.",
+        "t": 3945
+      }
+    ]
+  },
+  "CHBv-sMconw": {
+    "faq": [
+      {
+        "q": "What is MAYA by Anand Gandhi and Zain Memon?",
+        "a": "MAYA is a story universe that filmmaker Anand Gandhi (Ship of Theseus, Tumbbad) and game designer Zain Memon (SHASN) are building together as one IP across films, games, graphic novels, novels and theme parks. They describe it as transmedia from the start, not a film with a game tacked on, and say they have committed the next 15 years to it, beginning with a novel and a tabletop game.",
+        "t": 3022
+      },
+      {
+        "q": "What does the board game SHASN teach about politics?",
+        "a": "SHASN puts players in the position of a politician and nudges them to behave in corrupt ways to win, using what the creators call the 'antagonist method'. The aim is to make the political system legible from the inside, so players see that bad outcomes are usually a systems problem rather than one bad individual, and recognise the ways voters can be manipulated.",
+        "t": 2069
+      },
+      {
+        "q": "Why does a story today need to exist across many formats?",
+        "a": "Because 'the monoculture is dead'. A family that once watched the same TV now splits across games, YouTube, sports and short videos. To reach a billion people you have to speak their language, and the medium is now the language, which is why MAYA is built for every format at once.",
+        "t": 2948
+      },
+      {
+        "q": "Why hasn't India produced a global entertainment IP?",
+        "a": "They say few people can name a modern Indian IP that has gone global, which is both a problem and a white space. The fear is that India becomes the back office of the world's film and games industry. The opportunity is to export IP rather than services, because most of the value is captured at the IP level.",
+        "t": 4133
+      },
+      {
+        "q": "How does game design influence human behaviour?",
+        "a": "One small change in incentives can make players angry or turn them against each other. The casino is the classic example: players are made to feel they have a fair chance, even though the house is designed never to lose. The same behavioural design is used, for good or ill, well beyond games.",
+        "t": 1237
+      },
+      {
+        "q": "Does media shape our free will?",
+        "a": "They argue that for a species that stores knowledge outside the body, 'the media becomes the brain'. Citing philosopher David Chalmers' example of a man whose notebook works as his memory, they say the information we take in shapes our choices, which is why whoever controls information pathways has so much influence.",
+        "t": 533
+      },
+      {
+        "q": "Do the biggest games come from big studios?",
+        "a": "Not usually, they say: games like Dota, Counter-Strike and PUBG started with small teams building something they believed in. MAYA's 'plan A' is to become India's Star Wars, while leaving room for the community to tell its own stories in the world.",
+        "t": 4559
+      }
+    ]
+  },
+  "6boCRQzRLKo": {
+    "faq": [
+      {
+        "q": "Why did Richa Chadha become a film producer?",
+        "a": "She says actors, especially female actors, don't have the power she wanted in the industry. Becoming a producer gives her creative agency to tell riskier stories that can become cult films. She calls herself an 'accidental producer': it began by helping a college batchmate's script reach a script lab, and grew into Pushing Buttons Studios with her husband Ali Fazal.",
+        "t": 284
+      },
+      {
+        "q": "What happened when a financier pulled out of 'Girls Will Be Girls'?",
+        "a": "A financier backed out while the film was already shooting. Rather than let the first film she and Ali Fazal produced be shelved, she broke fixed deposits and put in her own money, partly to show other financiers she believed in it, and partly because she did not want investment with strings attached.",
+        "t": 1763
+      },
+      {
+        "q": "How should investors think about putting money into Indian films?",
+        "a": "Her advice is to look at return on investment. Rather than one ₹500-crore star vehicle, which she says is more likely to lose money, an investor with ₹50 crore might make several smaller films, because India's high entertainment taxes and costs eat into big-budget returns.",
+        "t": 1879
+      },
+      {
+        "q": "What is Undercurrent Lab and why does it train women gaffers?",
+        "a": "Gaffers handle film lighting with the director of photography, and Richa says it is the department with the lowest participation of women. While crewing 'Girls Will Be Girls' they found almost no female gaffers. She rejects the idea that women can't lift heavy equipment, saying women already do 'all the heavy lifting'.",
+        "t": 2977
+      },
+      {
+        "q": "What is Richa Chadha's view on data centres in India?",
+        "a": "She says she is not against AI, but questions using India's fresh water to cool data centres that serve users elsewhere. If data centres are built in India, she argues, they should use options like desalinated ocean water rather than fresh water.",
+        "t": 2833
+      },
+      {
+        "q": "What is the 'flywheel' Richa Chadha wants to build?",
+        "a": "An ecosystem where many people can create abundance and wealth for themselves and their communities while living in harmony with nature. She says it is a myth that business has to come at the cost of the environment, since 'all economy comes from ecology'.",
+        "t": 319
+      }
+    ]
+  },
+  "r48cgtqKcAQ": {
+    "faq": [
+      {
+        "q": "Is the Ramayana relevant to modern business leaders?",
+        "a": "Anil Chilla, who spent 25 years in digital leadership at L'Oréal, Levi's and Dell and has studied the Ramayana for 16 years, says yes. Beyond its spiritual reading, its characters make hard choices under time pressure, such as loyalty versus the right path or power versus dharma, which mirror the grey-versus-grey decisions leaders face today.",
+        "t": 565
+      },
+      {
+        "q": "What three Ramayana principles apply to early-stage founders?",
+        "a": "Dhriti, or purposeful resilience: bouncing back and heading in the right direction. The 'Sugriva principle': building psychological safety so the team can bring you bad news and contrary views. And Swadharma: clarity about which role you are playing at each moment, whether raising money, building product or hiring, and not mixing them up.",
+        "t": 833
+      },
+      {
+        "q": "What can startups learn from the alliance between Rama and Sugriva?",
+        "a": "It was not a blind alliance. Each had what the other needed (Sugriva's knowledge and resources, Rama's strength), and Sugriva tested Rama before committing. Anil compares this to business partnerships: start from a framework, prove capability through a pilot, and only then sign a long-term deal.",
+        "t": 720
+      },
+      {
+        "q": "What is the difference between Rama-like and Ravana-like leadership?",
+        "a": "Rama holds the same values whatever role he is in. Ravana was brilliant and powerful, but his fatal flaw was not listening to his team; his lieutenants fed his ego instead of giving him bad news. Anil adds that Ravana controlled the world around him but not himself, while Rama, Hanuman and others controlled themselves first.",
+        "t": 1336
+      },
+      {
+        "q": "How can leaders stay steady in the fast-moving age of AI?",
+        "a": "Through 'Vivek', which he describes as discriminating judgement: the ability to weigh similar choices against a clear north star. AI gives speed and information, but the judgement, empathy and trade-offs still have to be made by a human.",
+        "t": 1577
+      },
+      {
+        "q": "What lesson did Anil Chilla learn from rolling out e-commerce across Asia?",
+        "a": "Early on he announced decisions without explaining why. Rolling one enterprise e-commerce product across markets failed in places like China because local teams didn't understand the choice. His lesson: explain the 'why', and understand each market's context before deploying a solution.",
+        "t": 156
+      }
+    ]
+  },
+  "5y6zuB2KB-8": {
+    "faq": [
+      {
+        "q": "What do Carrier's GCC hubs in India, China and Mexico each do?",
+        "a": "Kamal Sharma says each hub has a clearly defined role so they complement rather than compete. India is the deep-tech centre for emerging tech and core enterprise skills. Mexico, near a large cluster of factories and in a US time zone, drives digital transformation of factories and ERP systems. China serves local compliance needs and taps strong talent in automation and AI for factories.",
+        "t": 578
+      },
+      {
+        "q": "Why do GCCs need innovation programmes?",
+        "a": "For talent retention, he argues. Without talent there is nothing in a GCC, and losing people means hiring costs and lost IP. Innovation programmes keep curious young employees engaged, so he says any GCC that wants to thrive needs a deep-rooted innovation programme.",
+        "t": 1352
+      },
+      {
+        "q": "How is Carrier approaching AI?",
+        "a": "Carrier focuses on 'relevant AI, not hyped AI', starting from the purpose of each initiative. He warns that many companies built AI solutions only to find, months into production, that token costs wiped out the expected savings, so choosing the right problem matters as much as the technology.",
+        "t": 1842
+      },
+      {
+        "q": "How is a GCC's business impact measured?",
+        "a": "Carrier uses 'digitally enabled revenue', a common industry metric: the share of revenue enabled by programmes built in the India, China and Mexico hubs, for example in aftermarket services, reported every year. Beyond counting proofs of concept, he tracks how many actually scale.",
+        "t": 2344
+      },
+      {
+        "q": "How does Discover Dollar use AI to stop leakage in procurement?",
+        "a": "Subu Rao explains that in large enterprises, data passes through six or seven teams from sourcing to payments, and gaps create leakage such as missed discounts and overpayments. Discover Dollar's AI sits on top of enterprise data, finds the leaks, helps recover the money and identifies root causes, and it charges only when it delivers an impact.",
+        "t": 3121
+      },
+      {
+        "q": "How should a GCC pick which proof of concept to fund?",
+        "a": "Start from the organisation's goals for the next one, three and five years and tie innovation to them, then prioritise by impact, for example a problem affecting 50 people over one affecting two. Strong governance at the top of the funnel is what makes the outcomes strong.",
+        "t": 3223
+      }
+    ]
+  },
+  "KGhzluwzY40": {
+    "faq": [
+      {
+        "q": "Why was Akasa Air started?",
+        "a": "Belson Coutinho says the founders believed that if an Indian airline is run professionally, with professionals making the decisions, it can be profitable and sustainable, backed by confidence in India's growth story. Although it was built during the pandemic, there were aircraft available, and Akasa placed an order for 72 planes and took its first flight in August 2022.",
+        "t": 1720
+      },
+      {
+        "q": "What are Akasa Air's core pillars?",
+        "a": "Four: cost leadership (a solid unit-cost structure, since aviation is all about cash flow), employee centricity (for example, crew wear sneakers rather than high heels), service excellence, and world-class safety, which he says Akasa aims to hold well above the minimum regulatory standard.",
+        "t": 2076
+      },
+      {
+        "q": "What makes the Akasa Air cabin experience different?",
+        "a": "He points to modern, fuel-efficient aircraft with a cabin he says is about 40% quieter than older planes, extra seat cushioning and legroom, a pet-friendly policy, and inclusive touches such as food menus and safety cards in Braille.",
+        "t": 2238
+      },
+      {
+        "q": "How do airlines prepare for shocks like conflicts or volcanic ash?",
+        "a": "'In aviation, surprise is just around the corner,' he says. Akasa plans for uncertainty through its cost structure, cash planning and capitalisation, treats shocks as short-term, and plans for scale years ahead, placing its next aircraft order within months of the first.",
+        "t": 2599
+      },
+      {
+        "q": "How big is the growth opportunity for aviation in India?",
+        "a": "Only a small share of Indians fly today (the episode notes put it at 3–4%), so even a fraction of a percentage point of growth is a huge market. He cites rising GDP and incomes, much-improved airports, collaborative regulators, high load factors and many first-time flyers.",
+        "t": 3817
+      },
+      {
+        "q": "How did e-tickets change Indian air travel?",
+        "a": "He recalls India's first IATA-defined online e-ticket booking in April 2004, which his team celebrated by meeting the passenger at Mumbai airport before his flight. To build trust before online payments were common, tickets could be couriered and paid for in cash on delivery. E-tickets later made mobile check-in and home-printed boarding passes possible.",
+        "t": 543
+      }
+    ]
+  },
+  "nWt7xr4yK8I": {
+    "faq": [
+      {
+        "q": "What does Okta do, and why does identity matter for AI agents?",
+        "a": "Rebecca Port describes identity as the 'fabric' or trust layer every organisation needs. As AI agents join the workforce, she says they must be treated like employees: you need to know where your agents are, what they are doing and what they can access. She cites Okta research that about 90% of organisations use AI but only around 10% understand identity around it. She likens Okta to electricity: you can't operate without it, and you can't see it.",
+        "t": 282
+      },
+      {
+        "q": "Will AI agents become part of the workforce?",
+        "a": "Yes, she expects agents to become a core part of the employee population, alongside humans and AI-augmented roles. Managers may oversee a mix of agents and people, and every function will need to rethink roles, skills and structures, including questions like how you put an agent on a performance improvement plan.",
+        "t": 354
+      },
+      {
+        "q": "Why do companies need a 'kill switch' for AI agents?",
+        "a": "Because at today's speed, mistakes, governance changes or new regulations are inevitable. A kill switch lets an organisation act immediately when an agent goes wrong. She even asks whether the kill switch is the agent equivalent of a performance improvement plan.",
+        "t": 1435
+      },
+      {
+        "q": "Is replacing work with AI agents always cost-effective?",
+        "a": "Not always. Okta says it has saved 300,000 hours by removing low-value work, but she says every role needs a cost-benefit test. Her example: if an agent costs $250,000 to buy, integrate and run in tokens, and replaces three employees costing $25,000 each, it isn't worth it.",
+        "t": 1829
+      },
+      {
+        "q": "Why does Okta call its Bengaluru centre an innovation centre rather than a GCC?",
+        "a": "She calls it a 'cockpit', not a support or shared-services centre. The naming is deliberate: the Bengaluru Innovation Center ships products and uses India's talent across engineering, people and finance, as every role is being redesigned for the AI era.",
+        "t": 958
+      },
+      {
+        "q": "What career advice does Okta's Chief People Officer give young professionals in India?",
+        "a": "Find the problems you can help solve when you join an organisation, and figure out what is needed to solve them. She says that is how her own career thrived, and that organisations always need smart people who solve problems.",
+        "t": 2642
+      }
+    ]
+  },
+  "QNzp6k7ABCs": {
+    "faq": [
+      {
+        "q": "How fast is India's population ageing?",
+        "a": "Ishaan Khanna says about 19,500 Indians become seniors every day, roughly one every 4.4 seconds, and India is heading towards around 300 million seniors by about 2050. At the same time families are becoming nuclear, with children often living in other cities or countries.",
+        "t": 247
+      },
+      {
+        "q": "Are Indian seniors becoming more financially independent?",
+        "a": "Yes, he says. He points to the National Pension System's assets under management of about ₹16 lakh crore and to investments in retirement mutual funds that have grown by around 230% over five years, as signs that today's seniors and tomorrow's are planning for retirement.",
+        "t": 316
+      },
+      {
+        "q": "Should longevity focus on lifespan or health span?",
+        "a": "Antara over-indexes on health span: making sure the years people live are spent in good health, with relevance, purpose and community around them, rather than only adding years to life.",
+        "t": 712
+      },
+      {
+        "q": "What is the difference between an old age home and senior living?",
+        "a": "He avoids the term 'old age home' because of its image of neglected parents. Senior living and assisted care are designed residences and communities for seniors. When Antara launched in 2013, moving out of the family home was taboo, but the model was built on research into senior communities around the world.",
+        "t": 842
+      },
+      {
+        "q": "Why does India need more geriatricians and trained caregivers?",
+        "a": "Seniors often live with several chronic conditions at once, and specialists each look at only one. A geriatrician looks at the whole person, including how different medications interact. He says India lacks geriatricians and trained caregivers, and that the government should create training and incentives, including in smaller towns, so caregivers stay in India.",
+        "t": 2242
+      },
+      {
+        "q": "How big is India's senior care market?",
+        "a": "He cites estimates that India will need around 20 lakh senior residences against roughly 18,000–20,000 today, and that the industry, valued at around $10–15 billion, could reach $30–35 billion. He calls this an undervalue, because seniors also need technology, products, travel and financial instruments that nobody has fully quantified.",
+        "t": 2411
+      }
+    ]
+  },
+  "G71YHYnxJSE": {
+    "faq": [
+      {
+        "q": "Will every Indian have an AI tutor?",
+        "a": "The episode discusses Vinod Khosla's claim that, thanks to India's digital public infrastructure (the rails that made UPI frictionless), every Indian could have an AI tutor within about two years. Peeyush Ranjan says AI's real superpower in education is making personalised learning available to everyone, not just giving out information.",
+        "t": 205
+      },
+      {
+        "q": "What is the 'productive struggle' and why does Fermi protect it?",
+        "a": "Most AI tools are built for speed, which helps everyone's productivity except a learner's. A teenager's main job is to build skills, and giving them instant answers is like handing a calculator to someone learning maths. Fermi, the AI learning company Peeyush founded, is designed to guide students through the struggle of working things out instead of giving them answers.",
+        "t": 546
+      },
+      {
+        "q": "What is the real moat for AI startups?",
+        "a": "Effort, he says, not data. Applying AI natively rather than as a thin wrapper on existing products takes daily work to learn what works, what doesn't and what only humans can do. That accumulated learning is the advantage, at least until it too becomes easy.",
+        "t": 1321
+      },
+      {
+        "q": "What was the Udacity × Flipkart hiring experiment?",
+        "a": "As Flipkart's CTO, Peeyush agreed with Udacity that learners on its Android Nanodegree would be assessed on their learning data, and the first email from Flipkart would be a job offer. The interview committee could only say hire or no-hire. A year later those hires were among the best performers in their fresher cohort, which he says shows learning data can replace interviews.",
+        "t": 1521
+      },
+      {
+        "q": "What would Peeyush Ranjan build if he were 22 with six months of runway?",
+        "a": "He would pick a problem that many people face, one he is passionate about, drop everything, and slide down the learning curve as fast as possible. He calls this a 'golden time' to build, and gives health access in India as one example of a big problem worth taking on.",
+        "t": 4161
+      }
+    ]
+  },
+  "RXVysfTfLTU": {
+    "faq": [
+      {
+        "q": "What is Revolut in India?",
+        "a": "Paroma Chatterjee describes it as an everyday account: a wallet account, an alternative to a bank account, where you keep money and spend with a card. In India it is integrated with UPI, and the same account works as a forex card for Indians who travel or send money abroad.",
+        "t": 203
+      },
+      {
+        "q": "Why is Revolut's India launch significant?",
+        "a": "She notes that over the last 25 years many global fintechs tried India but few survived in a meaningful way. Revolut says it is here for the long term, aiming to win over Indian consumers, regulators and the wider ecosystem, as one of the first global companies to do so at scale.",
+        "t": 373
+      },
+      {
+        "q": "What keeps customers using Revolut every day?",
+        "a": "Competitive forex rates and fast currency conversion bring customers in. What keeps them, she says, is covering the customer's entire financial life in one app: budgeting and analytics, family accounts, forex, savings and investments, which she says is hard for others to replicate.",
+        "t": 719
+      },
+      {
+        "q": "Why is now the right time for a global fintech to enter India?",
+        "a": "Because UPI has already taught Indians of all ages, from metros to rural India, to pay digitally as an everyday habit. She says Indian consumers are now ready to demand the same seamless experience when they spend or send money overseas, so a global company doesn't need to start by teaching them what digital payments are.",
+        "t": 1006
+      },
+      {
+        "q": "What is India building for Revolut globally?",
+        "a": "Many of Revolut's analysts and engineers for transaction processing and monitoring are in India, and India-specific innovations like Aadhaar-based onboarding and video KYC were built here. She says the company is exploring whether some of these modules can be reused elsewhere in the world.",
+        "t": 1781
+      },
+      {
+        "q": "What advice does Revolut India's CEO give young founders?",
+        "a": "Think consumer first, not product first. Get off your laptop, watch your users' lives, and find a real need waiting to be disrupted, rather than tweaking existing products. If you meaningfully improve people's lives, she says, you build a product, a company and a legacy.",
+        "t": 3091
+      }
+    ]
+  },
+  "jstfeUM53WA": {
+    "faq": [
+      {
+        "q": "What is Foxo?",
+        "a": "Subhendu Panigrahi describes Foxo as a 'longevity system for Indians': a combination of human experts and a digital platform that helps people stay on a longevity path, not just an app or a one-off service.",
+        "t": 69
+      },
+      {
+        "q": "What does longevity actually mean?",
+        "a": "He defines longevity as staying at your peak health for as long as possible, so that your health quotient is still high even at the end of life. In other words, it is about health span, not just adding years.",
+        "t": 69
+      },
+      {
+        "q": "Why does Foxo say 'nobody is healthy, you just don't know it yet'?",
+        "a": "That was his founding bet. Today's system only recognises you once you have a diagnosed disease that insurers and hospitals can code. But a heart attack or late-stage cancer builds over 10–15 years. True prevention means finding where you are on that spectrum early and moving back towards health.",
+        "t": 218
+      },
+      {
+        "q": "Are IV vitamin drips safe to use for energy or glowing skin?",
+        "a": "He warns they are being misused. IV micronutrient therapy is meant for people who can't absorb nutrients properly, for example because of gut issues, not as a way to stay energetic at weddings, detox after parties or get glowing skin.",
+        "t": 919
+      },
+      {
+        "q": "What simple diet advice does Foxo's founder give a 30-year-old?",
+        "a": "His rule of thumb: calories determine how much you weigh, macronutrients determine how you look, micronutrients determine how you feel, and antioxidants help you feel younger. So eat a varied, colourful plate of vegetables and nuts, ideally in a mild calorie deficit.",
+        "t": 1685
+      }
+    ]
+  },
+  "9xX6zGVmi-I": {
+    "faq": [
+      {
+        "q": "What is The Age of Bhaarat?",
+        "a": "It is a AAA role-playing video game being built by Tara Gaming, founded by author Amish Tripathi and producer Mukul Deora, set in an Indian-themed world drawn from the country's ancient stories. Mukul describes it as the kind of large-scale RPG that hasn't yet been made from Indian stories.",
+        "t": 1515
+      },
+      {
+        "q": "Why do Amish Tripathi and Mukul Deora see gaming as the new frontier for Indian culture?",
+        "a": "Amish says Indian stories in books and films were once exoticised, but that has changed over the last 20 years in every medium except gaming. India has huge numbers of gamers who don't see their own culture in the games they play, which makes gaming 'the final frontier' for Indian culture.",
+        "t": 1931
+      },
+      {
+        "q": "Can the Mahabharata work as a video game?",
+        "a": "Mukul Deora calls the Mahabharata one of his favourite stories ever, 'Game of Thrones meets Lord of the Rings times 10', and says none of this has been shown in gaming yet because the tailwinds didn't exist. He believes it is now the right time for an Indian-themed global game.",
+        "t": 1626
+      },
+      {
+        "q": "How is writing a game different from writing a book or film?",
+        "a": "In a book or film the author sets the journey. In a game the player has the agency and chooses the path, so the narrative team has to build a universe with enough gameplay for around 70+ hours while staying engaging and consistent whatever route the player takes. It is far more work, but also more fun.",
+        "t": 2320
+      },
+      {
+        "q": "How do you make an Indian story work for players who know nothing about India?",
+        "a": "Mukul says the project is about doing something 'from India for the world', as with his film The White Tiger. His working assumption is that a player from somewhere like Texas knows nothing about Indian epics, so the game must be enjoyable without that background.",
+        "t": 2703
+      },
+      {
+        "q": "How big is India's gaming market compared with China's?",
+        "a": "They put India's gaming industry, after the real-money gaming ban, at roughly $1.5–2 billion, against about $50 billion in China. They see that gap as the opportunity, given India's huge, young player base and supportive tailwinds, and expect gaming to become a major employer.",
+        "t": 3876
+      }
+    ]
+  },
+  "EtjjAmPeUv8": {
+    "faq": [
+      {
+        "q": "What does the Dutch Consul General in Bengaluru actually do?",
+        "a": "Ewout de Wit says his main job is not visas but bringing Dutch and Indian businesses and academia together: helping Dutch companies find partners and opportunities in South India, connecting research, and growing the economic relationship under the Netherlands' slogan of solving global challenges together.",
+        "t": 201
+      },
+      {
+        "q": "Why are Dutch companies coming to South India?",
+        "a": "'Talent, talent, talent.' The Netherlands faces severe labour shortages and doesn't encourage large-scale immigration, so companies look to India. He cites Philips' new innovation campus and fintech Adyen's newest tech hub in Bengaluru, Heineken's GCC in Hyderabad and Shell in Chennai.",
+        "t": 278
+      },
+      {
+        "q": "How can the Netherlands and India work together on semiconductors?",
+        "a": "He notes ASML sits at the top of a pyramid of more than 300 Dutch companies and relies heavily on Indian talent. Partnerships between Dutch technical universities and the IITs could help talent move across while Dutch technology supports India's young chip ecosystem as it works towards its first made-in-India chips.",
+        "t": 346
+      },
+      {
+        "q": "What can India learn from Dutch agriculture?",
+        "a": "He says the Netherlands, though a small country, is the world's second-largest agricultural exporter after the US. Today it focuses on selling its farming technology and combining it with local solutions to improve food security, rather than just exporting food.",
+        "t": 346
+      },
+      {
+        "q": "Is ease of doing business improving in India?",
+        "a": "Yes, he says India is improving, helped by states competing with each other to attract investment, which pushes processes to get better.",
+        "t": 1230
+      },
+      {
+        "q": "Why should Indian companies use the Netherlands as a gateway to Europe?",
+        "a": "He points to a highly innovative economy where business, academia and government work closely together, a skilled workforce where almost everyone speaks English, easy permit processes, and an investment agency that actively supports high-value companies. He adds that the hardest step is usually opening a bank account.",
+        "t": 2046
+      }
+    ]
+  },
+  "aTK95ETRnxg": {
+    "faq": [
+      {
+        "q": "What does 7-Eleven's GSC in India do?",
+        "a": "7-Eleven GSC is the India-based global services centre of the world's largest convenience store chain. As described in the episode, it powers global operations through digital transformation, technology, product building and global business services.",
+        "t": 171
+      },
+      {
+        "q": "How was 7-Eleven's India centre set up?",
+        "a": "Malahar Pinelli says every GCC has to work through the legal entity, compliance, cross-border rules and first hires. 7-Eleven started with a partner and later brought the work in-house, reaching 100-plus people within 12–18 months. It began by bringing technology to niche talent, especially in cybersecurity.",
+        "t": 353
+      },
+      {
+        "q": "How does technology built in India help 7-Eleven stores?",
+        "a": "Systems built from the India centre send nudges to store associates on handhelds and back-office systems, telling them what to do and when. That matters in convenience retail, where fresh food, beverages and frozen drinks arrive daily from distribution centres, brands and wholesalers.",
+        "t": 1055
+      },
+      {
+        "q": "What qualities does 7-Eleven GSC hire for?",
+        "a": "Three: learnability and flexibility, which he calls non-negotiable; being a team player, because even a rock-star individual contributor must know where they fit; and accountability, one of 7-Eleven's leadership principles.",
+        "t": 1272
+      },
+      {
+        "q": "How does 7-Eleven balance experimentation with business value?",
+        "a": "Its leadership principle is 'act like an entrepreneur': every initiative is tied to value metrics and a clear end goal. The company has tested drone delivery and every checkout format, but won't roll everything out to every store, since each store serves a specific neighbourhood with about 20% variation in what it sells.",
+        "t": 1801
+      }
+    ]
+  },
+  "mlgIgeQEg_M": {
+    "faq": [
+      {
+        "q": "Can spirituality work for busy, KPI-driven leaders?",
+        "a": "Dr. Shubha Vilas, an engineer and patent lawyer turned spiritual teacher, points to the Gita, in which Krishna taught Arjuna the art of balance. His aim is to help people find that middle path: keeping their spiritual practice without watering it down, while living fully modern, high-output lives.",
+        "t": 478
+      },
+      {
+        "q": "What is a quick way to calm anxiety or anger?",
+        "a": "Because body and mind are linked, he suggests starting physically. Splashing cold water on your face, or a cold bath, calms the mind almost instantly. If that isn't possible, take a few slow, deep breaths (pranayama), for example three deep breaths before going on stage to ease stage fright.",
+        "t": 1689
+      },
+      {
+        "q": "What strategy lessons can leaders learn from Krishna?",
+        "a": "In the Gita Krishna says whatever standard a leader sets, others follow. Shubha Vilas also cites Krishna fighting Jarasandha 17 times and, on the 18th attack, choosing to leave rather than fight, as a lesson that not every battle is worth fighting and that strategic retreat can be wisdom.",
+        "t": 1991
+      },
+      {
+        "q": "How can you avoid burnout, according to Shubha Vilas?",
+        "a": "Spend time every day 'filling the well'. He warns that scrolling social media or binge-watching feels relaxing but quietly adds stress. He suggests at least 15 minutes a day of reading a deep book such as the Gita, Ramayana or Mahabharata, meditation, gadget-free walks in nature, heartfelt journaling, and deep conversations.",
+        "t": 2901
+      },
+      {
+        "q": "What are people really looking for when they come to a spiritual talk?",
+        "a": "Often they don't know, he says. He describes a corporate Diwali session where organisers worried the audience, including Gen Z, only wanted entertainment, yet people stayed engaged with deep Ramayana stories for a long time, because meaningful content resonates.",
+        "t": 576
+      }
+    ]
+  },
+  "eDHxchzMRAY": {
+    "faq": [
+      {
+        "q": "Why is the Aditya Birla Group called a microcosm of the Indian economy?",
+        "a": "Pankaj Rai points to its spread across cement, metals, fashion, financial services, trading, paints, jewellery, new digital businesses such as B2B e-commerce and D2C brands, and green energy. He says the group grew from about $200 million in market cap to around $110 billion in roughly 30 years, an average of about 17–18% a year.",
+        "t": 370
+      },
+      {
+        "q": "Should companies be 'AI-first'?",
+        "a": "He is wary of 'X-first' labels. The value comes when technology is merged with a business outcome: start with the problem, why it needs solving and whether it moves the top line, bottom line or customer satisfaction, then bring in the technology. He compares it to hiring Six Sigma experts with no context of the process they were meant to improve.",
+        "t": 671
+      },
+      {
+        "q": "Do you need to be good at maths to work with AI and data?",
+        "a": "Not as a user, he argues. LLMs have democratised data science: using them is mostly about asking good questions, and 'the best questions are not asked by mathematicians, they're asked by philosophers'. People from economics or the liberal arts may ask better questions than engineers, although building the technology still needs scientists.",
+        "t": 772
+      },
+      {
+        "q": "Why does data quality matter so much in industrial AI?",
+        "a": "With many plants, machines and sensors, a model is only as good as its inputs. The group is building a unified data quality engine that checks sensors are in place, reporting within the expected range (for example temperature or pressure) and at the right frequency, so that when something breaks you know what went wrong.",
+        "t": 1024
+      }
+    ]
+  },
+  "Z-9Q-XAHzMY": {
+    "faq": [
+      {
+        "q": "How did Comic Con India start?",
+        "a": "Jatin Varma founded Comic Con India in Delhi in 2011, when India had fans of comics and pop culture but no single place for them to come together. At the first show, many of the people in costume were his own team, friends and family; visitors called it 'fancy dress', but cosplayers became mini-celebrities, and it got easier every year after.",
+        "t": 147
+      },
+      {
+        "q": "How does Comic Con India make money?",
+        "a": "He says revenue splits roughly equally across three pillars: exhibition space rental, ticketing and sponsorship. The aim is to recover costs through tickets and exhibition space, with sponsorship as 'the cherry on the cake'.",
+        "t": 757
+      },
+      {
+        "q": "How big did Comic Con India grow?",
+        "a": "By the time he exited in 2024, Comic Con India ran shows in five cities (Delhi, Mumbai, Bengaluru, Hyderabad and Chennai), drawing close to 2.5 lakh visitors a year, with about 40,000–50,000 people at a typical weekend show. An investor that also owned New York Comic Con helped professionalise the business.",
+        "t": 1111
+      },
+      {
+        "q": "Are Indian fans too price-sensitive to pay for pop culture events?",
+        "a": "No, he says. People warned him Indians were price-minded, but fandom is a niche audience willing to spend when it gets real value and a unique experience. Moving from free entry to paid tickets drew some online pushback, but ticket prices have risen every few years without hurting demand.",
+        "t": 1186
+      },
+      {
+        "q": "Why is it hard to build a comics business in India?",
+        "a": "Comics are a niche, and in India 'a niche of a niche'. The biggest barrier, he says, is the belief that comics are only for kids, when comics around the world are largely made for adults. He has seen many people try to build comics businesses and go bust over 15 years.",
+        "t": 1703
+      }
+    ]
+  },
+  "dbRXcHDwvKk": {
+    "faq": [
+      {
+        "q": "What is coto?",
+        "a": "coto, founded by Tarun Katial, is a 24x7 emotional wellness platform that connects users with live experts across a spectrum of modalities: psychologists for mental health support, relationship coaches, Reiki and energy healers, mindfulness coaches, astrologers and tarot practitioners. The idea is that no single approach fits everyone, so people find their own healing path.",
+        "t": 963
+      },
+      {
+        "q": "Is mental wellness the same as emotional wellness?",
+        "a": "He sees mental wellness as a subset of emotional wellness. Emotional wellbeing also draws on things like spiritual practice, and he says people with spiritual support often cope with mental health challenges very differently.",
+        "t": 452
+      },
+      {
+        "q": "How does social media affect our emotional wellbeing?",
+        "a": "It creates constant comparison at every age, from a Gen Z worried about relationships or startups to a 45-plus person comparing homes and family lives. All that vanity makes people feel not good enough and chase a 'better life' that he calls an illusion.",
+        "t": 752
+      },
+      {
+        "q": "Should a wellness app aim for users to keep coming back?",
+        "a": "Not indefinitely, he says. Like a good GP, if users need the platform too often, it is only giving quick fixes. coto aims to be transformational rather than a crutch, and he would question the approach if someone still needed it after around 13 weeks.",
+        "t": 1110
+      },
+      {
+        "q": "Can AI replace human experts in emotional wellness?",
+        "a": "Not today. What people say in a call, a form and through body language can differ, and deep listening, empathy and reading non-verbal cues need a human expert. coto uses AI behind the scenes to give its experts data-driven insights, and he expects AI to get there in a few years.",
+        "t": 1981
+      },
+      {
+        "q": "What did building Zee5 teach Tarun Katial?",
+        "a": "Coming from media, he assumed content would win. At a media-tech company he learned it is 50/50 between content and user experience, which led him, in his mid-40s, to go back to school at Kellogg for a two-year programme in digital transformation, product strategy and AI.",
+        "t": 3375
+      }
+    ]
+  },
+  "TMTcFqtu1fw": {
+    "faq": [
+      {
+        "q": "What is the Karnataka Digital Economy Mission (KDEM)?",
+        "a": "Sanjeev Kumar Gupta, its CEO, says KDEM was set up by the Government of Karnataka to bridge the gap between industry and government, because technology and industry needs now change so fast that government must listen to and collaborate with industry far more deeply than before. It covers IT, GCCs, electronics manufacturing (ESDM) and startups.",
+        "t": 180
+      },
+      {
+        "q": "What are Karnataka's six 'Beyond Bengaluru' clusters?",
+        "a": "Outside Bengaluru, the state is divided into six clusters: Mysuru, Mangaluru, Hubballi-Dharwad, Kalaburagi, Tumakuru and Shivamogga. The government treats each cluster as a 'product', defining its features and benefits so it can be sold to investors who ask why they should set up there.",
+        "t": 471
+      },
+      {
+        "q": "How does Karnataka help companies hire and train talent in smaller cities?",
+        "a": "Under its skilling scheme, industry decides the curriculum, training partner and candidates, and the government supplies the talent and reimburses 40% of the training cost, including for upskilling middle managers. A 'Come Back Home' campaign invites professionals from those regions to return; he says it drew a large response within 48 hours of launch for the Mangaluru and Mysuru clusters.",
+        "t": 955
+      },
+      {
+        "q": "Are startup ecosystems growing beyond Bengaluru?",
+        "a": "Yes, he says. With a ₹75 crore cluster seed fund and accelerator cohorts under way, he expects each cluster to have mature accelerators within 18–24 months. He was especially pleased to hear Mangaluru had set up its own gaming-focused venture capital fund.",
+        "t": 1715
+      },
+      {
+        "q": "What is Karnataka's $300 billion digital economy goal?",
+        "a": "Karnataka aims to contribute $300 billion, about a third, of India's $1 trillion digital economy target, up from roughly $150 billion of services exports today. Targets for the clusters include around $10 billion of IT exports (from roughly $2 billion), 10,000 tech startups and about 10 lakh jobs.",
+        "t": 2197
+      }
+    ]
+  },
+  "Ugqz_Fuw7Uw": {
+    "faq": [
+      {
+        "q": "What is the difference between a GIC and a GCC?",
+        "a": "Lalit Ahuja explains that GICs (global in-house centres) were built around transactional, commoditised work aimed at cost savings. The shift to GCCs (global capability centres) marked a move to leveraging competency and capability, building products and driving transformation from India alongside the headquarters.",
+        "t": 881
+      },
+      {
+        "q": "Why is Target's India centre called the gold standard for GCCs?",
+        "a": "ANSR helped set up Target in India in 2005 and has since set up close to 200 GCCs, yet he says it has never 'done another Target'. He credits strong executive sponsorship and advocacy, a 'second headquarters' model, and a focus on hiring the best talent rather than the cheapest.",
+        "t": 1303
+      },
+      {
+        "q": "Why does India have a unique advantage as a GCC hub?",
+        "a": "Having seen it unfold since setting up LG Electronics' centre in 1995, he says the formula is simple: when you have good people and contextually empower and enable them to solve complex problems, 'magic happens'. India's depth of such talent is the advantage.",
+        "t": 1048
+      },
+      {
+        "q": "Should GCCs be measured on cost savings?",
+        "a": "No. ANSR has never reported cost metrics across its GCCs and doesn't believe in generic maturity frameworks. He argues a GCC is not a services company but an integral part of the business, so it should be judged on how well it integrates and whether its talent meets the same bar as the rest of the company.",
+        "t": 2171
+      },
+      {
+        "q": "How will US H-1B visa changes affect GCCs in India?",
+        "a": "He expects GCCs to benefit. H-1B visas are about people going to the work; GCCs are about work coming to the people, whether in India, Poland, Manila, Vietnam or Mexico. So constraints on H-1B visas should push more work to GCCs.",
+        "t": 2947
+      }
+    ]
+  },
+  "ohz9qVsZKvc": {
+    "faq": [
+      {
+        "q": "What does the UK–India trade deal mean for businesses?",
+        "a": "Howard Dawber calls it a real partnership rather than a simple tariff-cutting deal, and 'the deepest FTA India has signed with anybody'. It mainly covers physical goods, opening the UK to Indian agricultural and industrial products and India to UK products such as cars, whisky and gin.",
+        "t": 121
+      },
+      {
+        "q": "How does London help Indian companies that set up there?",
+        "a": "Through London & Partners, the city's inward investment and business growth agency. Once a company sets up in London, he says, it is treated as a London company and helped straight away to find customers, staff and premises and to grow.",
+        "t": 486
+      },
+      {
+        "q": "Why should Indian startups choose London for their first international office?",
+        "a": "He argues London is the best springboard for global growth, ahead of alternatives such as Dubai, Singapore, the Netherlands, Paris or Dublin. His advice: if you want to crack the US, 'do London first', and London also gives easy access to the EU and to Commonwealth markets such as Canada and Africa.",
+        "t": 644
+      },
+      {
+        "q": "What is London's growth plan?",
+        "a": "Published in February with founders and tech organisations, the London Growth Plan runs to 2035. Its headline goal is to grow London's economy by 20%, an extra £107 billion, taking the city from roughly £630 billion to about £750 billion.",
+        "t": 1154
+      },
+      {
+        "q": "Why is sustainability now a growth sector for London?",
+        "a": "Net zero was long seen as a necessary cost, but he says it has reached a tipping point where it is making money and opening global opportunities, in areas such as new materials, recycling, energy generation and use, carbon capture and storage, and the finance behind them.",
+        "t": 2201
+      }
+    ]
+  },
+  "xOF4Tq_2vmM": {
+    "faq": [
+      {
+        "q": "Who were the guests on Season 1 of the TID Podcast?",
+        "a": "Season 1 of The Innovators and Disruptors Podcast featured 16 impact-makers, including Mabel Chacko, Madan Padaki, Sudeep Ralhan, Vargab Bakshi, Satya Chakravarthy, Aishwarya Pissay, Vishakha Singh, Vinayak Hegde, Preeti Vyas, Ritukar Vijay, Arjun Vaidya, Ashray Malhotra and Dr. Kushal Sanghvi, among others.",
+        "t": 0
+      },
+      {
+        "q": "What are the key lessons for founders from Season 1?",
+        "a": "Host Abhay Tandon groups the 16 lessons into three acts: founders' grit and category creation, deep tech and AI, and leadership and storytelling. Lessons include that high passion drives breakthroughs, profit and purpose aren't mutually exclusive, the biggest opportunities hide in uncomfortable conversations, deep tech needs deep patience, and authenticity is the only moat in a post-truth world.",
+        "t": 0
+      },
+      {
+        "q": "What is the one big takeaway from TID Podcast Season 1?",
+        "a": "'16 impact makers, 16 journeys, three acts, one truth': innovation isn't about ideas, it's about obsession, honest experiments and the grit to turn sparks into flames.",
+        "t": 186
+      }
+    ]
+  },
+  "oqMMEUa8T9o": {
+    "faq": [
+      {
+        "q": "How did Bold Care start?",
+        "a": "Rajat Jadhav says that while building an earlier app as 19-year-olds, the founders noticed unusually high interest in sexual health problems. After time working at investment funds, he saw the same pattern again: people had strong intent to solve these problems but no easy, legitimate path to a complete solution. That gap became Bold Care, a men's sexual wellness company.",
+        "t": 270
+      },
+      {
+        "q": "How common is erectile dysfunction in India?",
+        "a": "He estimates that about 90 million men in India will face erectile dysfunction or premature ejaculation at some point in their lives, roughly two and a half times the number of men with diabetes, which shows how large and under-served the problem is.",
+        "t": 344
+      },
+      {
+        "q": "How do you build a brand in a taboo category like men's sexual health?",
+        "a": "Treat it as a healthcare issue, not something to whisper about under the blanket, he says. Once one platform or partner agreed to take Bold Care on, others followed. The company also works within regulations that span its products, from allopathy to natural remedies.",
+        "t": 814
+      },
+      {
+        "q": "Why do young Indian men turn to brands like Bold Care?",
+        "a": "A 29- or 30-year-old today has grown up online and doesn't trust the solutions people relied on decades ago. They are looking for legitimate answers but struggle to find them, which is the gap Bold Care aims to fill. He adds that younger consumers prioritise self-care and health even with limited money.",
+        "t": 980
+      },
+      {
+        "q": "Why did Bold Care use humour, including the Johnny Sins ad, in its marketing?",
+        "a": "Because humour is the best way to bring a taboo topic to the masses at scale. The goal was to get in front of as many people as possible, show that Bold Care exists to solve a real problem, and invite them to explore it, rather than make a polished ad nobody notices.",
+        "t": 2562
+      }
+    ]
+  },
+  "wPZgRdPNSgU": {
+    "faq": [
+      {
+        "q": "How did UTV become India's largest film studio?",
+        "a": "Amit Banka recalls that UTV was listed but mostly in debt until it sold Hungama TV and brought Disney on board. With about ₹220 crore suddenly in the bank and very little dilution, it rewrote its story and, within two and a half to three years, became the largest studio in the country.",
+        "t": 1160
+      },
+      {
+        "q": "What did Amit Banka learn working with Ronnie Screwvala?",
+        "a": "That Ronnie was very open to experiments and ideas, and stood out for his mental maths and how fast he learned. Exposure to many diverse businesses meant he could hold a conversation on almost anything, which pushed the people around him to think differently and keep pace.",
+        "t": 1673
+      },
+      {
+        "q": "What is WeNaturalists?",
+        "a": "WeNaturalists is a community platform Amit Banka built for people who work for nature, such as naturalists and foresters, after bird photography made him confront what was destroying ecosystems. It was shaped by talking to people on the ground about their lives. He says its private, encrypted community spaces are used by groups worldwide, including UNICEF, with 48 chapters using it in some form.",
+        "t": 2605
+      },
+      {
+        "q": "Can we 'save nature'?",
+        "a": "He argues the framing is wrong: nature doesn't need our help and will find its own course. Some changes, like rising temperatures, can't be reversed. The real issue, he says, is the huge lack of awareness, so WeNaturalists focuses on exposure and making people conscious of the changes they need to make.",
+        "t": 2664
+      }
+    ]
+  },
+  "fxm_EEExMnc": {
+    "faq": [
+      {
+        "q": "Why has UPI grown so fast?",
+        "a": "Vijay Rajagopal says UPI has achieved more than 10 times what credit cards achieved over two decades, powering millions of small businesses with almost zero-cost, frictionless payments. He credits a convergence of mobile infrastructure, smartphone adoption, comfort with online transactions and the inclusion of micro and small enterprises.",
+        "t": 336
+      },
+      {
+        "q": "What happens behind the scenes of a UPI transaction?",
+        "a": "NPCI, an umbrella organisation backed by India's top banks, built the core 'pipe'. He compares it to a national highway, with state highways and city roads branching off it. Customers and merchants each have IDs issued by banks under KYC norms, and the transaction travels through this shared infrastructure.",
+        "t": 2497
+      },
+      {
+        "q": "Is UPI really free?",
+        "a": "It is free for users and merchants because of the zero merchant discount rate (MDR), but not free overall. Banks bear the cost of running the system, partly subsidised by the government so they can keep investing in the infrastructure. Systems like Brazil's Pix and Singapore's PayNow were largely modelled on UPI but are not zero-cost.",
+        "t": 2721
+      },
+      {
+        "q": "What problem was Zolve built to solve?",
+        "a": "When people move abroad, for example Indian students going to the US, their credit history doesn't travel with them, so they struggle to get a card, rent a home or buy insurance. Vijay co-founded Zolve to tackle this problem, which generations of students had faced.",
+        "t": 1311
+      },
+      {
+        "q": "How has the cloud conversation changed in financial services?",
+        "a": "Five years ago the question was 'why cloud?'. Now it is 'how?': financial institutions have decided to move and want to know how to do it, while AI is changing things rapidly on top of that.",
+        "t": 2037
+      }
+    ]
+  },
+  "r2Pa7L1vsqY": {
+    "faq": [
+      {
+        "q": "How did Indian Idol become interactive in the feature-phone era?",
+        "a": "Dr. Kushal Sanghvi led FremantleMedia in India, which licenses the global Idol format. The format was built to be interactive, but in the first season most Indian homes had landlines and at most one feature phone. He recalls early meetings with Sonu Nigam, Farah Khan and Anu Malik on how to make the audience participation that worked in the US and London work in India.",
+        "t": 2526
+      },
+      {
+        "q": "Will AI replace creative ideas in advertising?",
+        "a": "No, he says: AI is the enabler, not the thinker. Someone still has to come up with the core idea, and AI then amplifies it, especially by making personalised distribution faster and cheaper, for example localising an ad for new markets without new shoots.",
+        "t": 3768
+      },
+      {
+        "q": "How can AI personalise ads at scale?",
+        "a": "He describes campaigns where a celebrity appeared to send personalised messages based on a person's digital behaviour, for example a message from Amitabh Bachchan to someone who had lingered on the finance page for a TVS Apache RTR 310. AI turned distribution into a solvable problem.",
+        "t": 3618
+      },
+      {
+        "q": "What is the future of marketing?",
+        "a": "Getting down to understanding each consumer: hyper-personalisation, where a brand might one day make a noodle or a shampoo that feels made for one person. Not every company can do that, he notes, but marketing is moving towards micro-level understanding of consumers.",
+        "t": 3896
+      }
+    ]
+  },
+  "47tZ4q9zwgo": {
+    "faq": [
+      {
+        "q": "What is Rephrase.ai?",
+        "a": "Rephrase.ai, co-founded by Ashray Malhotra and later acquired by Adobe, is a generative AI company that turns plain text into lifelike, personalised videos using synthetic avatars. Ashray says the idea came from his own frustration making short films: video creation takes weeks or months and something always goes wrong on set, so it had to become easier.",
+        "t": 946
+      },
+      {
+        "q": "What is the difference between a deepfake and a hyper-real AI video?",
+        "a": "Consent, he says. Hyper-real AI video is created with the person's permission, to scale their time, for example a celebrity campaign. Deepfakes began as non-consensual face-swaps, notably in pornography, and deserve their bad reputation. He believes generating someone's video without permission, or hiding from viewers that it is AI-generated, is wrong.",
+        "t": 1273
+      },
+      {
+        "q": "How did Rephrase.ai create the Shah Rukh Khan personalised ad?",
+        "a": "For the Shah Rukh Khan campaign, which let around 1.5 lakh local retailers get personalised video messages, Rephrase.ai generated more minutes of video featuring him in one month than in his entire 30–40-year film career, something only possible with AI and done with his consent.",
+        "t": 1273
+      },
+      {
+        "q": "Can anyone predict what the next AI model will be able to do?",
+        "a": "Not precisely, he says. General models are so broad that even the people training them, like Sam Altman, can say what they are aiming for but discover the model's real strengths and weaknesses only after building it. Developers can steer models, for example towards coding, maths or reasoning, but much remains unknown.",
+        "t": 2826
+      }
+    ]
+  },
+  "cIeX4JqATxA": {
+    "faq": [
+      {
+        "q": "How will AI change marketing?",
+        "a": "Prantik Mazumdar expects automation across the whole process: creative generation, media buying, campaign optimisation, reporting and CRM. If that holds, it levels the playing field so small businesses and startups can market at the scale of big brands. He argues marketing must be seen as a toolkit across the whole customer journey, not just top-of-funnel awareness ads.",
+        "t": 151
+      },
+      {
+        "q": "Is the India–Singapore business corridor living up to its potential?",
+        "a": "He says that despite deep historical and cultural ties, the commercial relationship is under-leveraged. He sees three big opportunities: semiconductors (where Singapore has led design and trading for decades), climate and energy sustainability, and, most immediately, deep-tech collaboration and Indian VC investment drawing on research at universities like NUS and NTU.",
+        "t": 281
+      },
+      {
+        "q": "How much does India spend on sports?",
+        "a": "He puts India's annual sports budget at roughly $450 million, about 30 cents per person, compared with around $9 in the US and $11 in Australia. He adds that only about 1.24–4% of India's roughly ₹30,000 crore a year in mandated CSR spending goes to sports.",
+        "t": 501
+      },
+      {
+        "q": "How can India become a stronger sporting nation?",
+        "a": "By widening the grassroots funnel so many more people play, building university sport, and bringing in public and private capital through instruments like social stock exchanges, not just charity. If he had $100, he would double down on Paralympic and women athletes. He sees sport as a tool for nation building, soft power and economic opportunity.",
+        "t": 568
+      }
+    ]
+  },
+  "kr7uDf-n6RM": {
+    "faq": [
+      {
+        "q": "Does AI make social media less safe?",
+        "a": "Arvinder Gujral says safety depends on the people who create and consume content, not on AI. Fake news isn't new: it was used in both World Wars and to topple governments long before AI. Bad actors could always create harmful content; AI just makes creation easier.",
+        "t": 175
+      },
+      {
+        "q": "How will AI change the content we consume?",
+        "a": "More content means shorter attention spans: with one book a day you read it, with a hundred you want one bullet point each. He expects most content to be AI-made, so human-made content, and long-form content someone dared to invest in, will become rare and command a premium.",
+        "t": 253
+      },
+      {
+        "q": "Will AI replace human customer support?",
+        "a": "Not completely. He cites a company that fired half its support staff for an AI stack and, within a year, rehired many of them because people want to talk to people. The share of conversations needing a human may fall from 50% to a few percent, but humans will stay in the loop, especially for premium customers and decisions where someone must be accountable.",
+        "t": 547
+      },
+      {
+        "q": "Why can chaining AI agents be risky?",
+        "a": "Errors compound. A small error from one AI agent becomes the input to the next and grows at each step, like a game of Chinese whispers, and you may only find out when the final answer reaches the customer.",
+        "t": 701
+      },
+      {
+        "q": "Should Indian startups expand to Southeast Asia?",
+        "a": "Yes, he says. Many Indian founders look only at India or the US, but the number of Indians with high discretionary spending is smaller than it seems. Southeast Asia has strong cultural ties and large Indian communities, and is much cheaper to enter than the US, making it a viable place to test a product, as long as B2C offerings are adapted to each market.",
+        "t": 792
+      }
+    ]
+  },
+  "l_yMgZI7qrQ": {
+    "faq": [
+      {
+        "q": "How did Dr. Vaidya's modernise Ayurveda?",
+        "a": "Arjun Vaidya, a sixth-generation heir to a 150-year Ayurvedic legacy, says he didn't change the formulations or the science, only the 'wrapper', making Ayurveda appealing and accessible to a generation that won't eat bitter chyawanprash every morning. Products like a hangover remedy and chyawanprash in toffee form drew criticism from the industry, but not being a doctor let him think outside the box.",
+        "t": 2183
+      },
+      {
+        "q": "Why does Arjun Vaidya say India must not lose Ayurveda's value to others?",
+        "a": "He points to a traditional Indian practice that was repackaged abroad into a multi-billion-dollar industry, calling it a travesty that cost India billions through complacency. Repackaging Ayurveda for modern consumers is his way of making sure the same doesn't happen again.",
+        "t": 2183
+      },
+      {
+        "q": "How do founders decide when to sell their company?",
+        "a": "He compares an exit to a batsman's shot under match pressure: easy to second-guess later, but it is a point-in-time decision. For Dr. Vaidya's, it was based on the founders' age and experience, the offer on the table and the growth they saw at the time.",
+        "t": 247
+      },
+      {
+        "q": "Why are tier-2 and tier-3 founders succeeding?",
+        "a": "Beyond lower costs, he says founders outside the metros are less distracted: they network occasionally and spend the rest of their time executing, 'a horse with blinders'. Unicorns, he argues, aren't built on brilliant ideas but on blood, sweat and better execution than everyone else.",
+        "t": 2984
+      },
+      {
+        "q": "What does Arjun Vaidya invest in now?",
+        "a": "After his exit he began putting his time, mentorship and money back into entrepreneurs, mostly in consumer brands. He describes days that range from a Surat saree business selling ₹2,000 sarees at ₹8 crore a month, to an Indian luxury perfume brand, to reviewing Kuku FM, which he says grew 100x in the two and a half years since he invested.",
+        "t": 2877
+      }
+    ]
+  },
+  "F1ybw4y9vwA": {
+    "faq": [
+      {
+        "q": "Are robots going to take over the world?",
+        "a": "No, says Ritukar Vijay, but robots will become far more common in daily life, from autonomous vehicles and delivery robots to home assistants. Ottonomy, which he co-founded, builds autonomous delivery robots. His career began in 2007 on autonomous driving software for unmanned battle tanks in India and later included BMW's L4 autonomous cars in Germany.",
+        "t": 202
+      },
+      {
+        "q": "What are the levels of vehicle autonomy?",
+        "a": "He explains that L1 covers single systems such as automatic emergency braking. L2 controls acceleration and braking (cruise control) plus some steering, such as lane-keeping. L3 adds broader control of steering and speed, including changing lanes. Higher levels hand over more of the driving to the system.",
+        "t": 1580
+      },
+      {
+        "q": "How did the pandemic shape Ottonomy?",
+        "a": "During COVID, contactless delivery became essential. Ottonomy's early concept used robots that picked up orders inside a store, carried them to the customer's car in the parking lot, let the customer scan a code to collect them, and disinfected themselves with UV, so no one had to come into contact.",
+        "t": 1995
+      },
+      {
+        "q": "How do delivery robots help hospitals?",
+        "a": "By taking over fetching and carrying so staff can focus on care, not by replacing people. He says a hospital nurse can walk around 15,000 steps a day moving things around, which isn't their main job. Robots cut that walking, giving customers a clear return on investment; similar uses exist in pharma and biosciences.",
+        "t": 2255
+      },
+      {
+        "q": "What leadership lesson did Ritukar Vijay learn building a startup?",
+        "a": "To keep 'a microscope in one hand and a telescope in the other', a balance he credits to a famous founder's advice. Early on, Ottonomy swung between being too visionary and too focused on the day-to-day, so after about 18 months it focused on yearly deliverables while showcasing its longer-term vision at events like CES.",
+        "t": 2760
+      }
+    ]
+  },
+  "IT5Uv4zQ64c": {
+    "faq": [
+      {
+        "q": "Why does storytelling still matter for children in India?",
+        "a": "Preeti Vyas says storytelling is in India's DNA, with a 5,000-year tradition, and stories remain the way each generation, past, present and future, learns values and makes sense of the world.",
+        "t": 191
+      },
+      {
+        "q": "How did Tinkle handle a story on menstruation for children?",
+        "a": "Tinkle published content explaining menstruation to children. Many children wrote in to thank the magazine, including an 8-year-old boy who had been told the topic was 'only for girls', though one angry parent asked whose permission had been taken. She congratulated the editor-in-chief for tackling the stigma.",
+        "t": 1568
+      },
+      {
+        "q": "Why do Indian myths have so many different versions?",
+        "a": "She notes there are many versions of epics like the Ramayana, including ones where Sita kills Ravana and tribal retellings. She says Indian stories thrive precisely because they have been flexible, adapting to the times and the needs of each generation, and the point is to learn from them and interpret them in your own way.",
+        "t": 2135
+      },
+      {
+        "q": "How is Amar Chitra Katha going beyond comic books?",
+        "a": "Books are published physically and digitally, alongside merchandise such as T-shirts, bobbleheads and soft toys, and audio on platforms including Audible. In animation, Zebu Animation in Bengaluru is making Suppandi and Wingstar in 3D, and Applause Entertainment has licensed the entire Amar Chitra Katha catalogue, including Panchatantra and the Mahabharata.",
+        "t": 2808
+      },
+      {
+        "q": "How did Amar Chitra Katha do at San Diego Comic-Con?",
+        "a": "Amar Chitra Katha became the first Indian comic book company at San Diego Comic-Con. Preeti says Indian-origin visitors shared the books with their non-Indian spouses and some even brought the team home-cooked meals, while many Americans of no Indian descent already knew Indian culture through yoga, Osho, the Art of Living or Autobiography of a Yogi.",
+        "t": 2963
+      }
+    ]
+  },
+  "9clLkvQSUYs": {
+    "faq": [
+      {
+        "q": "What did Vishakha Singh learn moving from acting to producing?",
+        "a": "Vishakha Singh, known for playing Neetu Ma'am in Fukrey and as producer of films such as Peddlers and Haramkhor, says that as a producer and entrepreneur she learned that 'accounts and legal are my two best friends': almost every decision involves her CA and her lawyer.",
+        "t": 1515
+      },
+      {
+        "q": "Why isn't Vishakha Singh afraid of risk as an entrepreneur?",
+        "a": "She watched her parents take many risks and rebuild their lives, so risk doesn't scare her. The worst case is failure, and failure means you learn and grow again. Life, she says, is meant to have ups and downs; if it becomes a flat line, you're just existing.",
+        "t": 2578
+      },
+      {
+        "q": "How did India's first NFT marketplace grow during the pandemic?",
+        "a": "Vishakha co-built India's first NFT marketplace. She credits its impact to community: in 2021, during the pandemic, many new technologies gained attention, and the community helped make NFTs accessible to many more people, even though marketing emerging tech is hard.",
+        "t": 2949
+      },
+      {
+        "q": "How does Vishakha Singh choose which startups to back?",
+        "a": "Having reached the 'FIRE number' she set for herself 20 years ago, she says her metric is no longer money but experience: as an investor and brand ambassador she gets to relive the founder journey. She still insists on due diligence and backs founders who share her vibe and ethics.",
+        "t": 3372
+      }
+    ]
+  },
+  "FyCBB5fb1EI": {
+    "faq": [
+      {
+        "q": "Will AI take away jobs?",
+        "a": "Vinayak Hegde's view: AI itself won't take your job, but someone who knows how to use AI will. He compares it to computers arriving in banks, when people who could use software had a huge edge over those keeping paper ledgers. What is different now is that AI automates cognitive work, but harnessing it well still gives an edge and will create new kinds of jobs.",
+        "t": 1081
+      },
+      {
+        "q": "Can AI 'hallucinations' ever be useful?",
+        "a": "The episode discusses treating hallucination as a dial rather than only a bug: turned down by limiting a model to restricted, trusted data where accuracy matters, or turned up in creative fields where unexpected output can spark new ideas.",
+        "t": 1554
+      },
+      {
+        "q": "Is building an AI 'wrapper' a real business?",
+        "a": "He calls 'wrapper' an abused term: a compiler is technically a wrapper around a CPU. What matters is depth. If a product captures feedback from users and feeds it back into the system, it becomes a self-reinforcing flywheel of better data and training, a moat that even better-funded competitors struggle to break, especially with strong distribution or domain knowledge.",
+        "t": 2817
+      },
+      {
+        "q": "Why could voice and multilingual AI be a big opportunity in India?",
+        "a": "India has a predominantly oral and visual culture: epics, songs and chants were passed down by word of mouth rather than written down. He says voice-based, multilingual AI that fits this culture could be a huge differentiator, though data for Indian languages remains a fundamental challenge.",
+        "t": 3134
+      }
+    ]
+  },
+  "EPa0GZoL5GM": {
+    "faq": [
+      {
+        "q": "Who is Aishwarya Pissay?",
+        "a": "Aishwarya Pissay is an Indian motorcycle racer who, as described in the episode, is the first and only Indian to win three world championship medals in motorsport, including the 2019 FIM Bajas World Cup, and has 11 national titles.",
+        "t": 127
+      },
+      {
+        "q": "How did Aishwarya Pissay get into motorcycling?",
+        "a": "Riding gave her a sense of freedom from the limits society put on what a woman can or can't do. An early break was a 24-day, roughly 8,000 km road trip with her best friend, from the Rann of Kutch to Cherrapunji, shooting a task at a new place every day, having never left Bengaluru before.",
+        "t": 581
+      },
+      {
+        "q": "How did Aishwarya Pissay come back from injury to win?",
+        "a": "A cab hit her on the way to training and broke her collarbone two weeks before a race in which she was leading the championship. She was in surgery within hours, back in rehab within two days, and two weeks later won her first national championships in both road racing and rally.",
+        "t": 1168
+      },
+      {
+        "q": "How do riders navigate rallies like Dakar without GPS?",
+        "a": "Riders cover 400–500 km a day across rocks and dunes using a 'road book', once a paper roll and now digital, showing the kilometre mark, compass headings, junction diagrams and hazard warnings. She says India lacks similar terrain, races and bikes to train for Dakar, which she calls the Olympics of rallying.",
+        "t": 1918
+      },
+      {
+        "q": "What does Aishwarya Pissay do before a race?",
+        "a": "She listens to music that lifts her or helps her focus, visualises the race, does breathing exercises and sets a goal. On the start line, despite crowds and chatter, she zones out to silence and thinks only about how she will take the first corner.",
+        "t": 2735
+      }
+    ]
+  },
+  "PxBviFsKqIg": {
+    "faq": [
+      {
+        "q": "What is The ePlane Company building?",
+        "a": "The ePlane Company, founded by IIT Madras aerospace professor Satya Chakravarthy, is building electric flying taxis for cities. Its first product to market is an air ambulance, because emergencies stuck in road traffic are a clear, immediate need and it lets the company manage demand expectations before launching a taxi service.",
+        "t": 1961
+      },
+      {
+        "q": "Will electric planes make flying cheaper?",
+        "a": "He says electric planes could bring the cost of flying down by about half, since maintenance and operating costs largely disappear, and building and manufacturing them in India would also cut the cost of the aircraft themselves.",
+        "t": 1998
+      },
+      {
+        "q": "Why launch air ambulances before air taxis?",
+        "a": "Because demand for air taxis will be so huge that it would be very hard to meet expectations even with 100 aircraft. Starting with air ambulances makes business sense and avoids the early hiccups that companies like Uber, BluSmart and Tesla faced when demand outran supply.",
+        "t": 2466
+      },
+      {
+        "q": "How will flying taxis be managed in crowded city airspace?",
+        "a": "He envisions mapping the exact coordinates of every point of a flight path before take-off, with aircraft following that trajectory precisely, much like rockets, instead of relying on a few waypoints. City air traffic control would need to be distributed and virtual rather than manned.",
+        "t": 2812
+      },
+      {
+        "q": "How can university research contribute to nation building?",
+        "a": "Beyond government-funded research for organisations like GE Aviation or BHEL, he believes labs like IIT Madras's combustion centre can now develop products with real market value and contribute to India's GDP. He has co-founded six deep-tech startups, including ventures in space and hyperloop technology, and advises at least three more.",
+        "t": 840
+      }
+    ]
+  },
+  "m7njvrbiSpA": {
+    "faq": [
+      {
+        "q": "Why is India hard for global tech platforms to understand?",
+        "a": "Vargab Bakshi, Shopify's first hire in APAC and later its and Wix's country manager in India, describes India as 'not one country but multiple small countries in one', like the European Union: language, food and the way business is done change every 100 kilometres. Part of his job was showing Bay Area-style companies what India really looks like.",
+        "t": 430
+      },
+      {
+        "q": "How should e-commerce brands make money in India?",
+        "a": "Pick a lane, he says: either go after the top 0.1% in the metros with exclusive or premium products and enterprise customers, or crack the long tail of 'Bharat' in tier-2, tier-3 and tier-4 cities at volume. With over a billion people, scale can make the margins work.",
+        "t": 1824
+      },
+      {
+        "q": "Is India a price-sensitive market for small businesses going online?",
+        "a": "He says India is value-conscious rather than simply price-sensitive. When Wix and Shopify made good-looking websites with all the integrations possible at low cost, small businesses jumped at the chance to get online quickly.",
+        "t": 2096
+      },
+      {
+        "q": "Will tiny teams build billion-dollar companies?",
+        "a": "He predicts that within 10 years, teams of just a few people will run billion-dollar companies, because AI will do much of the technology building. Rather than mass job losses, he expects many small teams solving niche problems better than anyone else, which makes now a great time to start something.",
+        "t": 2409
+      },
+      {
+        "q": "Why is Shopify hard to disrupt?",
+        "a": "Because it is a platform that creates more value for its ecosystem than it keeps. He says sellers on Shopify have cumulatively sold more than a trillion dollars of goods, and its partners earn roughly double Shopify's own revenue.",
+        "t": 2493
+      }
+    ]
+  },
+  "6g2ssUBs964": {
+    "faq": [
+      {
+        "q": "Why did Sudeep Ralhan choose HR as a career?",
+        "a": "During his MBA, when everyone was chasing marketing jobs, he chose HR because he never wanted to follow the crowd and because it drew on his love of people, psychology and group dynamics. He says he is a business leader who wears the HR hat.",
+        "t": 366
+      },
+      {
+        "q": "How does a toxic first job affect young professionals?",
+        "a": "He says organisations without people-friendly, meaningful policies normalise toxic work culture for young employees, who then carry the same behaviour into every company they join later.",
+        "t": 976
+      },
+      {
+        "q": "Should promotions depend on time served or impact?",
+        "a": "On impact. Older models required two, three or four years in a role before promotion. He says managers should instead tell people what impact they need to demonstrate for a bigger role; whether that takes one year or three depends on the individual.",
+        "t": 1897
+      },
+      {
+        "q": "Is diversity and inclusion good for business?",
+        "a": "Yes, he argues: great organisations have learned over time that inclusion is key to innovation and growth. Having always felt like 'the other' himself, he says inclusion isn't about altruism but about unlocking human potential as a competitive advantage.",
+        "t": 1969
+      },
+      {
+        "q": "Should companies build or buy tech skills?",
+        "a": "Build, where possible. He says the 'buy' model of mass firing and hiring is easier, but thoughtfully building the right technology skills in your existing workforce over time is more sustainable and more beneficial to the company.",
+        "t": 3093
+      }
+    ]
+  },
+  "e7bRutzpyCY": {
+    "faq": [
+      {
+        "q": "What is a social enterprise, according to Madan Padaki?",
+        "a": "Madan Padaki, who sold his previous venture MeritTrac before turning to social impact, says the world shouldn't be split into enterprises and social enterprises but into enterprises and 'anti-social enterprises'. Every enterprise should be social by DNA, and once the cause is embedded it must still behave like a business: profitable, growing, and offering something people value.",
+        "t": 219
+      },
+      {
+        "q": "Is India's 2% CSR law good or bad?",
+        "a": "Both, he says. It is good that it mandates 2% of profits for social causes, but the flip side is that it mandates only 2%. By his definition of an enterprise, 100% of what a company does should contribute to social good.",
+        "t": 290
+      },
+      {
+        "q": "Why create jobs in villages instead of moving people to cities?",
+        "a": "Through Head Held High Foundation, he saw that building skills wasn't enough; people also needed opportunities without having to migrate. A young person from a tier-3 or tier-4 town struggles to survive in Bengaluru even on ₹15,000 a month. That led the foundation to start a rural BPO in 2014, which ran for a couple of years but didn't scale, teaching him what works in rural markets.",
+        "t": 1371
+      },
+      {
+        "q": "Is rural talent as good as urban talent?",
+        "a": "He says the only difference is confidence and exposure, yet employers carry an inherent bias towards urban graduates. Rural talent is often hungrier and more adaptable, and rural India has always been entrepreneurial: a farmer or a kirana store owner faces as much risk as any startup founder.",
+        "t": 2164
+      },
+      {
+        "q": "What is 'AI for all'?",
+        "a": "An initiative by Head Held High Foundation to teach AI fundamentals to everyday people: farmers, MSMEs, housewives, women's self-help group members and government school students. He believes everyone must learn to use AI to be more productive, and says the foundation plans to train about 2,000 people over four months and study how their lives change.",
+        "t": 1953
+      }
+    ]
+  },
+  "FurFgbG5s-U": {
+    "faq": [
+      {
+        "q": "Why did Mabel Chacko get into fintech?",
+        "a": "Born to banker parents, she grew up assuming everyone had a bank account and wondered why people around her, like her family's domestic help, struggled to manage money. Volunteering in rural Gujarat after the earthquake, she saw that the banking world she grew up in didn't reach everyone, so she joined a team working on financial inclusion, and that is how she became an entrepreneur.",
+        "t": 354
+      },
+      {
+        "q": "What were Mabel Chacko's toughest early days as a founder?",
+        "a": "For about 10 months she and her co-founder could barely afford food, living on ₹20–30 a day and surviving on Tiger biscuits and chai. They saved coins from bus fares, their 'magic coins', under the mattress until they had enough for a proper meal. When that venture folded, they were back at ground zero.",
+        "t": 757
+      },
+      {
+        "q": "How did the idea for Open come about?",
+        "a": "After a previous startup was acquired by a payments company, she met many businesses, such as cab rental firms, hotels and restaurants, facing the same problem: money landed in the bank account while accounting happened somewhere else, and the two didn't talk to each other. Open was built to bring banking and accounting together for businesses.",
+        "t": 2417
+      },
+      {
+        "q": "What motivates a founder after reaching unicorn status?",
+        "a": "Mabel says that after a point, homes, cars and brands become meaningless. The motivation was never valuations or lifestyle, but finding a real problem, solving it and creating impact, which is what kept her building across five startups.",
+        "t": 2196
+      },
+      {
+        "q": "What advice does Mabel Chacko give entrepreneurs?",
+        "a": "Plans will always change, so don't be ashamed to pivot or call it quits when you must. Be guilt-free, even a little 'shameless', about saying something didn't work, then give the next idea 100%, because there will always be a better day.",
+        "t": 3144
+      }
     ]
   }
 }

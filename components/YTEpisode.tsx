@@ -179,6 +179,16 @@ export default async function YTEpisode(
             }
           : {}),
       },
+      ...(meta?.faq?.length
+        ? [{
+            "@type": "FAQPage",
+            mainEntity: meta.faq.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }]
+        : []),
     ],
   } : null;
 
@@ -233,6 +243,37 @@ export default async function YTEpisode(
                 <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: 12, color: ACCENT, letterSpacing: 0.8 }}>THE INNOVATORS & DISRUPTORS PODCAST</span>
               </span>
             </div>
+
+            {/* Key questions — open, above the notes, so readers and AI search
+                tools get the answer without digging through the transcript */}
+            {meta?.faq?.length ? (
+              <section aria-label="Key questions answered" style={{ marginBottom: 20, padding: "24px 28px", borderRadius: 14, background: SURFACE, border: `1px solid ${ACCENT}22` }}>
+                <h2 style={{ fontFamily: "var(--font-mono), monospace", fontSize: 10, fontWeight: 400, color: ACCENT, letterSpacing: 1.4, margin: "0 0 16px" }}>KEY QUESTIONS ANSWERED</h2>
+                <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+                  {meta.faq.map((f, i) => (
+                    <div key={i}>
+                      <h3 style={{ fontSize: 16, fontWeight: 700, color: TEXT, lineHeight: 1.4, margin: "0 0 6px" }}>{f.q}</h3>
+                      <p style={{ fontSize: 14, color: MUTED, lineHeight: 1.7, margin: 0 }}>
+                        {f.a}
+                        {f.t !== undefined && (
+                          <>
+                            {" "}
+                            <a
+                              href={`https://www.youtube.com/watch?v=${videoId}&t=${f.t}s`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{ fontFamily: "var(--font-mono), monospace", fontSize: 11, color: ACCENT, textDecoration: "none", whiteSpace: "nowrap" }}
+                            >
+                              ▶ {formatTimestamp(f.t * 1000)}
+                            </a>
+                          </>
+                        )}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            ) : null}
 
             {/* Description */}
             {video?.description && (

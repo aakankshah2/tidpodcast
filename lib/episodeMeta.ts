@@ -22,6 +22,12 @@ export type EpisodeMeta = {
   duration?: string;
   guest?: GuestMeta;
   about?: string[];
+  // Questions the episode answers, in plain words, shown near the top of the
+  // page and as FAQPage schema. AI search tools quote pages that answer a
+  // question directly; a 10,000-word transcript buries the answer. `t` is the
+  // second in the video where the guest says it. Every answer must be
+  // checked against the transcript — never add a claim the guest didn't make.
+  faq?: { q: string; a: string; t?: number }[];
 };
 
 export function getEpisodeMeta(videoId: string): EpisodeMeta | null {
