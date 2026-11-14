@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Bricolage_Grotesque, JetBrains_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+import TeamAnalytics from "@/components/TeamAnalytics";
 import { ConvexProviderClient } from "@/components/ConvexProviderClient";
 import "./globals.css";
 
@@ -120,7 +120,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${inter.variable} ${bricolage.variable} ${jetbrainsMono.variable}`}
       >
         <ConvexProviderClient>{children}</ConvexProviderClient>
-        <Analytics />
+        <TeamAnalytics />
       </body>
     </html>
   );
