@@ -71,7 +71,7 @@ const TOP_EPISODES = [
 const FAQS = [
   {
     q: "What is TID Podcast?",
-    a: "TID Podcast — short for The Innovators and Disruptors Podcast — is India's leading long-form podcast on innovation and entrepreneurship. Hosted by Abhay Tandon, it features weekly conversations with India's top founders, CEOs, and corporate innovation leaders.",
+    a: "TID Podcast — short for The Innovators and Disruptors Podcast — is India's leading long-form podcast on innovation and entrepreneurship. Hosted by Abhay Tandon, it features unscripted long-form conversations with India's top founders, CEOs, and corporate innovation leaders across two seasons and the GCC and Founders Corner mini-series.",
   },
   {
     q: "Who hosts TID Podcast?",
@@ -103,7 +103,7 @@ const FAQS = [
   },
   {
     q: "Who has been featured on TID Podcast?",
-    a: "Recent guests include Paroma Chatterjee (CEO, Revolut India), Amish Tripathi and Mukul Deora (founders, The Age of Bhaarat), Howard Dawber (Deputy Mayor of London), Pankaj Rai (CDO, Aditya Birla Group), Sanjeev Gupta (on Karnataka's billion-dollar playbook), and Dr. Shubha on modern spirituality for high-output leaders.",
+    a: "Recent guests include astronaut Group Captain Shubhanshu Shukla, Vijay Subramaniam (Founder & Group CEO, Collective Artists Network), Richa Chadha (actor and producer), Belson Coutinho (Co-Founder & COO, Akasa Air) and Paroma Chatterjee (CEO, Revolut India). The GCC Mini Series has featured leaders from Okta, Carrier, Kenvue and 7-Eleven, and Founders Corner recently hosted Anshul Khandelwal of Cent Health.",
   },
 ];
 
