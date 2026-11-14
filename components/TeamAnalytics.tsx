@@ -1,8 +1,9 @@
 "use client";
 // Vercel Analytics, with the team's own visits labelled instead of hidden.
 // Open any page once with ?team=<name> (e.g. ?team=abhay) on each phone and
-// laptop; from then on that browser's visits arrive tagged utm_source=team,
-// utm_medium=<name>. ?team=off removes the label.
+// laptop; from then on that browser's visits are recorded under
+// /_team/<name>/<page>. (A path, not utm tags: Vercel only reports UTM on
+// Enterprise or the Web Analytics Plus add-on.) ?team=off removes the label.
 import { Analytics, type BeforeSendEvent } from "@vercel/analytics/next";
 
 const KEY = "tid_team";
@@ -23,8 +24,7 @@ function beforeSend(event: BeforeSendEvent) {
   if (!name) return event;
   const url = new URL(event.url);
   url.searchParams.delete("team");
-  url.searchParams.set("utm_source", "team");
-  url.searchParams.set("utm_medium", name);
+  url.pathname = `/_team/${encodeURIComponent(name)}${url.pathname}`;
   return { ...event, url: url.toString() };
 }
 
